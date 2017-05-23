@@ -1,0 +1,1386 @@
+EXPORTS
+    AMBER @1 DATA
+    AfterSimInit @2
+    AfterSimStep @3
+    AgregateEvents_City @4
+    AgregateEvents_init_City @5
+    AgregateEvents_reset_City @6
+    AgregateSensors_City @7
+    AgregateSensors_init_City @8
+    AgregateSensors_reset_City @9
+    AllObstacles_City @10
+    AllObstacles_init_City @11
+    AllObstacles_reset_City @12
+    AngleDist_Utilities @13
+    AngleDist_init_Utilities @14
+    AngleDist_reset_Utilities @15
+    BLUE @16 DATA
+    BeforeSimInit @17
+    BeforeSimStep @18
+    Bound_Utilities @19
+    Bound_init_Utilities @20
+    Bound_reset_Utilities @21
+    CYAN @22 DATA
+    CarGeometry_Robot @23
+    CarGeometry_init_Robot @24
+    CarGeometry_reset_Robot @25
+    CollisionAux_City @26
+    CollisionAux_init_City @27
+    CollisionAux_reset_City @28
+    Collision_City @29
+    Collision_init_City @30
+    Collision_reset_City @31
+    ComputeWheels_Robot @32
+    ComputeWheels_init_Robot @33
+    ComputeWheels_reset_Robot @34
+    DIR_INPUTS @35 DATA
+    Driver_Robot @36
+    Driver_init_Robot @37
+    Driver_reset_Robot @38
+    EncodeColor_Utilities @39
+    EncodeColor_init_Utilities @40
+    EncodeColor_reset_Utilities @41
+    EnumToString @42
+    EventDetection_City @43
+    EventDetection_init_City @44
+    EventDetection_reset_City @45
+    ExitAux_City @46
+    ExitAux_init_City @47
+    ExitAux_reset_City @48
+    Exit_City @49
+    Exit_init_City @50
+    Exit_reset_City @51
+    ExtendedGatherDumpData @52
+    ExtendedGetDumpSize @53
+    ExtendedRestoreDumpData @54
+    ExtendedSimStop @55
+    GRAY @56 DATA
+    GREEN @57 DATA
+    GraphicalInputsConnected @58 DATA
+    GroundColorDetection_City @59
+    GroundColorDetection_init_City @60
+    GroundColorDetection_reset_City @61
+    HypotR_init_mathext_float64 @62
+    HypotR_mathext_float64 @63
+    HypotR_reset_mathext_float64 @64
+    IndividualRobotControl_Robot @65
+    IndividualRobotControl_init_Robot @66
+    IndividualRobotControl_reset_Robot @67
+    Integrator_Utilities @68
+    Integrator_init_Utilities @69
+    Integrator_reset_Utilities @70
+    Light_City @71
+    Light_init_City @72
+    Light_reset_City @73
+    MAGENTA @74 DATA
+    MapADT_City @75
+    MapADT_init_City @76
+    MapADT_reset_City @77
+    MatVectProd_init_vect_float64_2_2 @78
+    MatVectProd_reset_vect_float64_2_2 @79
+    MatVectProd_vect_float64_2_2 @80
+    ModelBasedDesignOfRobotCh @81
+    ModelBasedDesignOfRobotCh_init @82
+    ModelBasedDesignOfRobotCh_reset @83
+    Normalize_Utilities @84
+    Normalize_init_Utilities @85
+    Normalize_reset_Utilities @86
+    ObstaclesDetection_City @87
+    ObstaclesDetection_init_City @88
+    ObstaclesDetection_reset_City @89
+    OneObstacleDet_City @90
+    OneObstacleDet_init_City @91
+    OneObstacleDet_reset_City @92
+    OneObstacle_City @93
+    OneObstacle_init_City @94
+    OneObstacle_reset_City @95
+    OneTL_City @96
+    OneTL_init_City @97
+    OneTL_reset_City @98
+    OutputMessageCallback @99 DATA
+    PIDControler_Robot @100
+    PIDControler_init_Robot @101
+    PIDControler_reset_Robot @102
+    PhysicalModel_Robot @103
+    PhysicalModel_init_Robot @104
+    PhysicalModel_reset_Robot @105
+    RED @106 DATA
+    RefreshSimValues @107
+    RisingEdge_digital @108
+    RisingEdge_init_digital @109
+    RisingEdge_reset_digital @110
+    RobotSensors_City @111
+    RobotSensors_init_City @112
+    RobotSensors_reset_City @113
+    RotMatrix_Utilities @114
+    RotMatrix_init_Utilities @115
+    RotMatrix_reset_Utilities @116
+    RoundFloor_init_math_float64 @117
+    RoundFloor_math_float64 @118
+    RoundFloor_reset_math_float64 @119
+    SSM_ST_Robot_nb_values @120 DATA
+    SSM_ST_Robot_to_double @121
+    SSM_ST_Robot_to_long @122
+    SSM_ST_Robot_to_string @123
+    SSM_ST_SM1_nb_values @124 DATA
+    SSM_ST_SM1_to_double @125
+    SSM_ST_SM1_to_long @126
+    SSM_ST_SM1_to_string @127
+    SSM_ST_goPlus_nb_values @128 DATA
+    SSM_ST_goPlus_to_double @129
+    SSM_ST_goPlus_to_long @130
+    SSM_ST_goPlus_to_string @131
+    SSM_TR_Robot_nb_values @132 DATA
+    SSM_TR_Robot_to_double @133
+    SSM_TR_Robot_to_long @134
+    SSM_TR_Robot_to_string @135
+    SSM_TR_SM1_nb_values @136 DATA
+    SSM_TR_SM1_to_double @137
+    SSM_TR_SM1_to_long @138
+    SSM_TR_SM1_to_string @139
+    SSM_TR_goPlus_nb_values @140 DATA
+    SSM_TR_goPlus_to_double @141
+    SSM_TR_goPlus_to_long @142
+    SSM_TR_goPlus_to_string @143
+    STOP @144 DATA
+    ScoringA_City @145
+    ScoringA_init_City @146
+    ScoringA_reset_City @147
+    ScoringB_City @148
+    ScoringB_init_City @149
+    ScoringB_reset_City @150
+    SimCustomInit @151
+    SimInf @152
+    SimInit @153
+    SimIsInfDbl @154
+    SimIsInfFlt @155
+    SimIsNanDbl @156
+    SimIsNanFlt @157
+    SimNan @158
+    SimRealloc @159
+    SimReset @160
+    SimSignBitDbl @161
+    SimSignBitFlt @162
+    SimStep @163
+    SimStop @164
+    SimStringAlloc @165
+    SimStringAllocEx @166
+    SimStringAppend @167
+    SimStringFree @168
+    SimStringGet @169
+    SimStringListAlloc @170
+    SimStringListAllocEx @171
+    SimStringListAppend @172
+    SimStringListFree @173
+    SimStringListGetCount @174
+    SimStringListGetData @175
+    SimStringListReset @176
+    SimStringReset @177
+    SmartCityControl_City @178
+    SmartCityControl_init_City @179
+    SmartCityControl_reset_City @180
+    Speed_City @181
+    Speed_init_City @182
+    Speed_reset_City @183
+    SsmConnectExternalInputs @184
+    SsmCustomInit @185
+    SsmGatherDumpData @186
+    SsmGetCheckSum @187
+    SsmGetConverter @188
+    SsmGetDefaultRealFormat @189
+    SsmGetDumpSize @190
+    SsmGetMapping @191
+    SsmGetSmuTypesCheckSum @192
+    SsmInit @193
+    SsmInitValues @194
+    SsmLoadSnapshot @195
+    SsmOutputMessage @196
+    SsmReset @197
+    SsmRestoreDumpData @198
+    SsmSaveSnapshot @199
+    SsmSetOutputMessageCallback @200
+    SsmSetUpdateCallback @201
+    SsmStep @202
+    SsmStop @203
+    SsmUpdateValues @204
+    StringToEnum @205
+    TrafficLights_City @206
+    TrafficLights_init_City @207
+    TrafficLights_reset_City @208
+    TraficLightsDetection_City @209
+    TraficLightsDetection_init_City @210
+    TraficLightsDetection_reset_City @211
+    TruthTableValues_truthtables_nb_values @212 DATA
+    TruthTableValues_truthtables_to_double @213
+    TruthTableValues_truthtables_to_long @214
+    TruthTableValues_truthtables_to_string @215
+    TurnControlleur_Robot @216
+    TurnControlleur_init_Robot @217
+    TurnControlleur_reset_Robot @218
+    UpTime_Utilities @219
+    UpTime_init_Utilities @220
+    UpTime_reset_Utilities @221
+    UpdateSimulatorValues @222
+    UpdateSimulatorValuesCallback @223 DATA
+    UpdateValues @224
+    VTable_to_double @225
+    VTable_to_long @226
+    Variation_Utilities @227
+    Variation_init_Utilities @228
+    Variation_reset_Utilities @229
+    VectAdd_init_vect_float64_2 @230
+    VectAdd_reset_vect_float64_2 @231
+    VectAdd_vect_float64_2 @232
+    WallClock_City @233
+    WallClock_init_City @234
+    WallClock_reset_City @235
+    WrongDir_City @236
+    WrongDir_init_City @237
+    WrongDir_reset_City @238
+    YELLOW @239 DATA
+    _2_array_to_double @240
+    _2_array_to_long @241
+    _2_array_to_string @242
+    _3_array_to_double @243
+    _3_array_to_long @244
+    _3_array_to_string @245
+    _SCSIM_CheckSum @246 DATA
+    _SCSIM_SmuTypesCheckSum @247 DATA
+    _Type_SSM_ST_Robot_Utils @248 DATA
+    _Type_SSM_ST_SM1_Utils @249 DATA
+    _Type_SSM_ST_goPlus_Utils @250 DATA
+    _Type_SSM_TR_Robot_Utils @251 DATA
+    _Type_SSM_TR_SM1_Utils @252 DATA
+    _Type_SSM_TR_goPlus_Utils @253 DATA
+    _Type_TruthTableValues_truthtables_Utils @254 DATA
+    _Type__2_array_Utils @255 DATA
+    _Type__3_array_Utils @256 DATA
+    _Type_actionTy_Robot_Utils @257 DATA
+    _Type_array_Utils @258 DATA
+    _Type_array_char_7_Utils @259 DATA
+    _Type_array_float64_10_Utils @260 DATA
+    _Type_array_float64_2_2_Utils @261 DATA
+    _Type_array_float64_2_Utils @262 DATA
+    _Type_array_float64_5_Utils @263 DATA
+    _Type_array_int32_2_Utils @264 DATA
+    _Type_colorTyQ_Utils @265 DATA
+    _Type_colorTy_Utils @266 DATA
+    _Type_eventTy_Utils @267 DATA
+    _Type_interTy_Utils @268 DATA
+    _Type_itiElemArr_Robot_Utils @269 DATA
+    _Type_itiElement_Robot_Utils @270 DATA
+    _Type_kcg_bool_Utils @271 DATA
+    _Type_kcg_char_Utils @272 DATA
+    _Type_kcg_float32_Utils @273 DATA
+    _Type_kcg_float64_Utils @274 DATA
+    _Type_kcg_int16_Utils @275 DATA
+    _Type_kcg_int32_Utils @276 DATA
+    _Type_kcg_int64_Utils @277 DATA
+    _Type_kcg_int8_Utils @278 DATA
+    _Type_kcg_size_Utils @279 DATA
+    _Type_kcg_uint16_Utils @280 DATA
+    _Type_kcg_uint32_Utils @281 DATA
+    _Type_kcg_uint64_Utils @282 DATA
+    _Type_kcg_uint8_Utils @283 DATA
+    _Type_mapDataTy_City_Utils @284 DATA
+    _Type_obstArr_Utils @285 DATA
+    _Type_obstTy_Utils @286 DATA
+    _Type_paramObstArr_City_Utils @287 DATA
+    _Type_paramObstTy_City_Utils @288 DATA
+    _Type_paramTLArr_City_Utils @289 DATA
+    _Type_paramTLTy_City_Utils @290 DATA
+    _Type_phaseTy_Utils @291 DATA
+    _Type_positionTy_Utils @292 DATA
+    _Type_sensorsTy_Utils @293 DATA
+    _Type_sigTy_Utils @294 DATA
+    _Type_statusTy_Utils @295 DATA
+    _Type_trafLArr_Utils @296 DATA
+    _Type_trafLTy_Utils @297 DATA
+    _Type_wheelsTy_Robot_Utils @298 DATA
+    actionArrayOnWheels_Robot @299
+    actionArrayOnWheels_init_Robot @300
+    actionArrayOnWheels_reset_Robot @301
+    actionOnWheels_Robot @302
+    actionOnWheels_init_Robot @303
+    actionOnWheels_reset_Robot @304
+    actionTy_Robot_nb_values @305 DATA
+    actionTy_Robot_to_double @306
+    actionTy_Robot_to_long @307
+    actionTy_Robot_to_string @308
+    addOne_Robot @309
+    addOne_init_Robot @310
+    addOne_reset_Robot @311
+    array_char_7_to_double @312
+    array_char_7_to_long @313
+    array_char_7_to_string @314
+    array_float64_10_to_double @315
+    array_float64_10_to_long @316
+    array_float64_10_to_string @317
+    array_float64_2_2_to_double @318
+    array_float64_2_2_to_long @319
+    array_float64_2_2_to_string @320
+    array_float64_2_to_double @321
+    array_float64_2_to_long @322
+    array_float64_2_to_string @323
+    array_float64_5_to_double @324
+    array_float64_5_to_long @325
+    array_float64_5_to_string @326
+    array_int32_2_to_double @327
+    array_int32_2_to_long @328
+    array_int32_2_to_string @329
+    array_to_double @330
+    array_to_long @331
+    array_to_string @332
+    automatonGoPlus_Robot @333
+    automatonGoPlus_init_Robot @334
+    automatonGoPlus_reset_Robot @335
+    check_SSM_ST_Robot_string @336
+    check_SSM_ST_SM1_string @337
+    check_SSM_ST_goPlus_string @338
+    check_SSM_TR_Robot_string @339
+    check_SSM_TR_SM1_string @340
+    check_SSM_TR_goPlus_string @341
+    check_TruthTableValues_truthtables_string @342
+    check__2_array_string @343
+    check__3_array_string @344
+    check_actionTy_Robot_string @345
+    check_array_char_7_string @346
+    check_array_float64_10_string @347
+    check_array_float64_2_2_string @348
+    check_array_float64_2_string @349
+    check_array_float64_5_string @350
+    check_array_int32_2_string @351
+    check_array_string @352
+    check_colorTyQ_string @353
+    check_colorTy_string @354
+    check_eventTy_string @355
+    check_interTy_string @356
+    check_itiElemArr_Robot_string @357
+    check_itiElement_Robot_string @358
+    check_kcg_bool_string @359
+    check_kcg_char_string @360
+    check_kcg_float32_string @361
+    check_kcg_float64_string @362
+    check_kcg_int16_string @363
+    check_kcg_int32_string @364
+    check_kcg_int64_string @365
+    check_kcg_int8_string @366
+    check_kcg_size_string @367
+    check_kcg_uint16_string @368
+    check_kcg_uint32_string @369
+    check_kcg_uint64_string @370
+    check_kcg_uint8_string @371
+    check_mapDataTy_City_string @372
+    check_obstArr_string @373
+    check_obstTy_string @374
+    check_paramObstArr_City_string @375
+    check_paramObstTy_City_string @376
+    check_paramTLArr_City_string @377
+    check_paramTLTy_City_string @378
+    check_phaseTy_string @379
+    check_positionTy_string @380
+    check_sensorsTy_string @381
+    check_sigTy_string @382
+    check_statusTy_string @383
+    check_trafLArr_string @384
+    check_trafLTy_string @385
+    check_wheelsTy_Robot_string @386
+    colorTyQ_nb_values @387 DATA
+    colorTyQ_to_double @388
+    colorTyQ_to_long @389
+    colorTyQ_to_string @390
+    colorTy_to_double @391
+    colorTy_to_long @392
+    colorTy_to_string @393
+    compare_SSM_ST_Robot @394
+    compare_SSM_ST_SM1 @395
+    compare_SSM_ST_goPlus @396
+    compare_SSM_TR_Robot @397
+    compare_SSM_TR_SM1 @398
+    compare_SSM_TR_goPlus @399
+    compare_TruthTableValues_truthtables @400
+    compare__2_array @401
+    compare__3_array @402
+    compare_actionTy_Robot @403
+    compare_array @404
+    compare_array_char_7 @405
+    compare_array_float64_10 @406
+    compare_array_float64_2 @407
+    compare_array_float64_2_2 @408
+    compare_array_float64_5 @409
+    compare_array_int32_2 @410
+    compare_colorTy @411
+    compare_colorTyQ @412
+    compare_eventTy @413
+    compare_interTy @414
+    compare_itiElemArr_Robot @415
+    compare_itiElement_Robot @416
+    compare_kcg_bool @417
+    compare_kcg_char @418
+    compare_kcg_float32 @419
+    compare_kcg_float64 @420
+    compare_kcg_int16 @421
+    compare_kcg_int32 @422
+    compare_kcg_int64 @423
+    compare_kcg_int8 @424
+    compare_kcg_size @425
+    compare_kcg_uint16 @426
+    compare_kcg_uint32 @427
+    compare_kcg_uint64 @428
+    compare_kcg_uint8 @429
+    compare_mapDataTy_City @430
+    compare_obstArr @431
+    compare_obstTy @432
+    compare_paramObstArr_City @433
+    compare_paramObstTy_City @434
+    compare_paramTLArr_City @435
+    compare_paramTLTy_City @436
+    compare_phaseTy @437
+    compare_positionTy @438
+    compare_sensorsTy @439
+    compare_sigTy @440
+    compare_statusTy @441
+    compare_trafLArr @442
+    compare_trafLTy @443
+    compare_wheelsTy_Robot @444
+    count_down_digital_int32 @445
+    count_down_init_digital_int32 @446
+    count_down_reset_digital_int32 @447
+    dirCos @448
+    dirNorm @449
+    dirProd @450
+    dirProjPoint @451
+    dirVProd @452
+    distance @453
+    eventTy_to_double @454
+    eventTy_to_long @455
+    eventTy_to_string @456
+    fourAnglesInOrder @457
+    get_SSM_ST_Robot_signature @458
+    get_SSM_ST_SM1_signature @459
+    get_SSM_ST_goPlus_signature @460
+    get_SSM_TR_Robot_signature @461
+    get_SSM_TR_SM1_signature @462
+    get_SSM_TR_goPlus_signature @463
+    get_TruthTableValues_truthtables_signature @464
+    get__2_array_signature @465
+    get__3_array_signature @466
+    get_actionTy_Robot_signature @467
+    get_array_char_7_signature @468
+    get_array_float64_10_signature @469
+    get_array_float64_2_2_signature @470
+    get_array_float64_2_signature @471
+    get_array_float64_5_signature @472
+    get_array_int32_2_signature @473
+    get_array_signature @474
+    get_colorTyQ_signature @475
+    get_colorTy_signature @476
+    get_eventTy_signature @477
+    get_interTy_signature @478
+    get_itiElemArr_Robot_signature @479
+    get_itiElement_Robot_signature @480
+    get_kcg_bool_signature @481
+    get_kcg_char_signature @482
+    get_kcg_float32_signature @483
+    get_kcg_float64_signature @484
+    get_kcg_int16_signature @485
+    get_kcg_int32_signature @486
+    get_kcg_int64_signature @487
+    get_kcg_int8_signature @488
+    get_kcg_size_signature @489
+    get_kcg_uint16_signature @490
+    get_kcg_uint32_signature @491
+    get_kcg_uint64_signature @492
+    get_kcg_uint8_signature @493
+    get_mapDataTy_City_signature @494
+    get_obstArr_signature @495
+    get_obstTy_signature @496
+    get_paramObstArr_City_signature @497
+    get_paramObstTy_City_signature @498
+    get_paramTLArr_City_signature @499
+    get_paramTLTy_City_signature @500
+    get_phaseTy_signature @501
+    get_positionTy_signature @502
+    get_sensorsTy_signature @503
+    get_sigTy_signature @504
+    get_statusTy_signature @505
+    get_trafLArr_signature @506
+    get_trafLTy_signature @507
+    get_wheelsTy_Robot_signature @508
+    inputs_ctx @509 DATA
+    instrPlus_Robot @510
+    instrPlus_init_Robot @511
+    instrPlus_reset_Robot @512
+    interTy_nb_values @513 DATA
+    interTy_to_double @514
+    interTy_to_long @515
+    interTy_to_string @516
+    isGreen_Robot @517
+    isGreen_init_Robot @518
+    isGreen_reset_Robot @519
+    isInArc @520
+    isPositionOnPoint @521
+    isRed_Robot @522
+    isRed_init_Robot @523
+    isRed_reset_Robot @524
+    is_SSM_ST_Robot_double_conversion_allowed @525
+    is_SSM_ST_Robot_long_conversion_allowed @526
+    is_SSM_ST_SM1_double_conversion_allowed @527
+    is_SSM_ST_SM1_long_conversion_allowed @528
+    is_SSM_ST_goPlus_double_conversion_allowed @529
+    is_SSM_ST_goPlus_long_conversion_allowed @530
+    is_SSM_TR_Robot_double_conversion_allowed @531
+    is_SSM_TR_Robot_long_conversion_allowed @532
+    is_SSM_TR_SM1_double_conversion_allowed @533
+    is_SSM_TR_SM1_long_conversion_allowed @534
+    is_SSM_TR_goPlus_double_conversion_allowed @535
+    is_SSM_TR_goPlus_long_conversion_allowed @536
+    is_TruthTableValues_truthtables_double_conversion_allowed @537
+    is_TruthTableValues_truthtables_long_conversion_allowed @538
+    is_VTable_double_conversion_allowed @539
+    is_VTable_long_conversion_allowed @540
+    is__2_array_double_conversion_allowed @541
+    is__2_array_long_conversion_allowed @542
+    is__3_array_double_conversion_allowed @543
+    is__3_array_long_conversion_allowed @544
+    is_actionTy_Robot_double_conversion_allowed @545
+    is_actionTy_Robot_long_conversion_allowed @546
+    is_array_char_7_double_conversion_allowed @547
+    is_array_char_7_long_conversion_allowed @548
+    is_array_double_conversion_allowed @549
+    is_array_float64_10_double_conversion_allowed @550
+    is_array_float64_10_long_conversion_allowed @551
+    is_array_float64_2_2_double_conversion_allowed @552
+    is_array_float64_2_2_long_conversion_allowed @553
+    is_array_float64_2_double_conversion_allowed @554
+    is_array_float64_2_long_conversion_allowed @555
+    is_array_float64_5_double_conversion_allowed @556
+    is_array_float64_5_long_conversion_allowed @557
+    is_array_int32_2_double_conversion_allowed @558
+    is_array_int32_2_long_conversion_allowed @559
+    is_array_long_conversion_allowed @560
+    is_colorTyQ_double_conversion_allowed @561
+    is_colorTyQ_long_conversion_allowed @562
+    is_colorTy_double_conversion_allowed @563
+    is_colorTy_long_conversion_allowed @564
+    is_eventTy_double_conversion_allowed @565
+    is_eventTy_long_conversion_allowed @566
+    is_interTy_double_conversion_allowed @567
+    is_interTy_long_conversion_allowed @568
+    is_itiElemArr_Robot_double_conversion_allowed @569
+    is_itiElemArr_Robot_long_conversion_allowed @570
+    is_itiElement_Robot_double_conversion_allowed @571
+    is_itiElement_Robot_long_conversion_allowed @572
+    is_kcg_bool_double_conversion_allowed @573
+    is_kcg_bool_long_conversion_allowed @574
+    is_kcg_char_double_conversion_allowed @575
+    is_kcg_char_long_conversion_allowed @576
+    is_kcg_float32_double_conversion_allowed @577
+    is_kcg_float32_long_conversion_allowed @578
+    is_kcg_float64_double_conversion_allowed @579
+    is_kcg_float64_long_conversion_allowed @580
+    is_kcg_int16_double_conversion_allowed @581
+    is_kcg_int16_long_conversion_allowed @582
+    is_kcg_int32_double_conversion_allowed @583
+    is_kcg_int32_long_conversion_allowed @584
+    is_kcg_int64_double_conversion_allowed @585
+    is_kcg_int64_long_conversion_allowed @586
+    is_kcg_int8_double_conversion_allowed @587
+    is_kcg_int8_long_conversion_allowed @588
+    is_kcg_size_double_conversion_allowed @589
+    is_kcg_size_long_conversion_allowed @590
+    is_kcg_uint16_double_conversion_allowed @591
+    is_kcg_uint16_long_conversion_allowed @592
+    is_kcg_uint32_double_conversion_allowed @593
+    is_kcg_uint32_long_conversion_allowed @594
+    is_kcg_uint64_double_conversion_allowed @595
+    is_kcg_uint64_long_conversion_allowed @596
+    is_kcg_uint8_double_conversion_allowed @597
+    is_kcg_uint8_long_conversion_allowed @598
+    is_mapDataTy_City_double_conversion_allowed @599
+    is_mapDataTy_City_long_conversion_allowed @600
+    is_obstArr_double_conversion_allowed @601
+    is_obstArr_long_conversion_allowed @602
+    is_obstTy_double_conversion_allowed @603
+    is_obstTy_long_conversion_allowed @604
+    is_paramObstArr_City_double_conversion_allowed @605
+    is_paramObstArr_City_long_conversion_allowed @606
+    is_paramObstTy_City_double_conversion_allowed @607
+    is_paramObstTy_City_long_conversion_allowed @608
+    is_paramTLArr_City_double_conversion_allowed @609
+    is_paramTLArr_City_long_conversion_allowed @610
+    is_paramTLTy_City_double_conversion_allowed @611
+    is_paramTLTy_City_long_conversion_allowed @612
+    is_phaseTy_double_conversion_allowed @613
+    is_phaseTy_long_conversion_allowed @614
+    is_positionTy_double_conversion_allowed @615
+    is_positionTy_long_conversion_allowed @616
+    is_sensorsTy_double_conversion_allowed @617
+    is_sensorsTy_long_conversion_allowed @618
+    is_sigTy_double_conversion_allowed @619
+    is_sigTy_long_conversion_allowed @620
+    is_statusTy_double_conversion_allowed @621
+    is_statusTy_long_conversion_allowed @622
+    is_trafLArr_double_conversion_allowed @623
+    is_trafLArr_long_conversion_allowed @624
+    is_trafLTy_double_conversion_allowed @625
+    is_trafLTy_long_conversion_allowed @626
+    is_wheelsTy_Robot_double_conversion_allowed @627
+    is_wheelsTy_Robot_long_conversion_allowed @628
+    iter_array_10 @629 DATA
+    iter_array_2 @630 DATA
+    iter_array_5 @631 DATA
+    iter_array_50 @632 DATA
+    iter_array_7 @633 DATA
+    iter_fold_10 @634 DATA
+    iter_fold_2 @635 DATA
+    iter_map_10 @636 DATA
+    iter_map_2 @637 DATA
+    iter_map_5 @638 DATA
+    itiElemArr_Robot_to_double @639
+    itiElemArr_Robot_to_long @640
+    itiElemArr_Robot_to_string @641
+    itiElement_Robot_to_double @642
+    itiElement_Robot_to_long @643
+    itiElement_Robot_to_string @644
+    itineraries @645 DATA
+    kcg_bool_to_double @646
+    kcg_bool_to_long @647
+    kcg_bool_to_string @648
+    kcg_char_to_double @649
+    kcg_char_to_long @650
+    kcg_char_to_string @651
+    kcg_comp_colorTy @652
+    kcg_float32_to_double @653
+    kcg_float32_to_long @654
+    kcg_float32_to_string @655
+    kcg_float64_to_double @656
+    kcg_float64_to_long @657
+    kcg_float64_to_string @658
+    kcg_int16_to_double @659
+    kcg_int16_to_long @660
+    kcg_int16_to_string @661
+    kcg_int32_to_double @662
+    kcg_int32_to_long @663
+    kcg_int32_to_string @664
+    kcg_int64_to_double @665
+    kcg_int64_to_long @666
+    kcg_int64_to_string @667
+    kcg_int8_to_double @668
+    kcg_int8_to_long @669
+    kcg_int8_to_string @670
+    kcg_iseq_colorTy @671
+    kcg_print_colorTy @672
+    kcg_size_to_double @673
+    kcg_size_to_long @674
+    kcg_size_to_string @675
+    kcg_uint16_to_double @676
+    kcg_uint16_to_long @677
+    kcg_uint16_to_string @678
+    kcg_uint32_to_double @679
+    kcg_uint32_to_long @680
+    kcg_uint32_to_string @681
+    kcg_uint64_to_double @682
+    kcg_uint64_to_long @683
+    kcg_uint64_to_string @684
+    kcg_uint8_to_double @685
+    kcg_uint8_to_long @686
+    kcg_uint8_to_string @687
+    lineAngle @688
+    load_inC_ModelBasedDesignOfRobotCh @689
+    load_outC_AgregateEvents_City @690
+    load_outC_AgregateSensors_City @691
+    load_outC_AllObstacles_City @692
+    load_outC_AngleDist_Utilities @693
+    load_outC_Bound_Utilities @694
+    load_outC_CarGeometry_Robot @695
+    load_outC_CollisionAux_City @696
+    load_outC_Collision_City @697
+    load_outC_ComputeWheels_Robot @698
+    load_outC_Driver_Robot @699
+    load_outC_EncodeColor_Utilities @700
+    load_outC_EventDetection_City @701
+    load_outC_ExitAux_City @702
+    load_outC_Exit_City @703
+    load_outC_GroundColorDetection_City @704
+    load_outC_HypotR_mathext_float64 @705
+    load_outC_IndividualRobotControl_Robot @706
+    load_outC_Integrator_Utilities @707
+    load_outC_Light_City @708
+    load_outC_MapADT_City @709
+    load_outC_MatVectProd_vect_float64_2_2 @710
+    load_outC_ModelBasedDesignOfRobotCh @711
+    load_outC_Normalize_Utilities @712
+    load_outC_ObstaclesDetection_City @713
+    load_outC_OneObstacleDet_City @714
+    load_outC_OneObstacle_City @715
+    load_outC_OneTL_City @716
+    load_outC_PIDControler_Robot @717
+    load_outC_PhysicalModel_Robot @718
+    load_outC_RisingEdge_digital @719
+    load_outC_RobotSensors_City @720
+    load_outC_RotMatrix_Utilities @721
+    load_outC_RoundFloor_math_float64 @722
+    load_outC_ScoringA_City @723
+    load_outC_ScoringB_City @724
+    load_outC_SmartCityControl_City @725
+    load_outC_Speed_City @726
+    load_outC_TrafficLights_City @727
+    load_outC_TraficLightsDetection_City @728
+    load_outC_TurnControlleur_Robot @729
+    load_outC_UpTime_Utilities @730
+    load_outC_Variation_Utilities @731
+    load_outC_VectAdd_vect_float64_2 @732
+    load_outC_WallClock_City @733
+    load_outC_WrongDir_City @734
+    load_outC_actionArrayOnWheels_Robot @735
+    load_outC_actionOnWheels_Robot @736
+    load_outC_addOne_Robot @737
+    load_outC_automatonGoPlus_Robot @738
+    load_outC_count_down_digital_int32 @739
+    load_outC_instrPlus_Robot @740
+    load_outC_isGreen_Robot @741
+    load_outC_isRed_Robot @742
+    load_outC_pos2vec_Utilities @743
+    load_outC_readIti_Robot @744
+    load_outC_readObstacles_City @745
+    load_outC_undressItElem_Robot @746
+    load_outC_undressSensorTy_Robot @747
+    load_outC_vec2pos_Utilities @748
+    load_snapshot @749
+    load_var @750
+    logfile @751 DATA
+    mapDataTy_City_to_double @752
+    mapDataTy_City_to_long @753
+    mapDataTy_City_to_string @754
+    map_check_id @755
+    map_init_oneway @756
+    map_isAfterStop @757
+    map_isOnRoadArc @758
+    map_isOnRoadLine1 @759
+    map_isOnRoadLine2 @760
+    map_isOnTLight @761
+    map_read @762
+    mapdata_default @763
+    mapdata_getColorPoint @764
+    mapdata_getTLight @765
+    mapdata_init @766
+    maps @767 DATA
+    maps_alloc @768
+    maps_getAt @769
+    maps_init @770
+    maps_read @771
+    maps_setCrtMap @772
+    nSsmRtVersion @773 DATA
+    notvalid @774
+    obs_default @775
+    obs_init @776
+    obstArr_to_double @777
+    obstArr_to_long @778
+    obstArr_to_string @779
+    obstTy_to_double @780
+    obstTy_to_long @781
+    obstTy_to_string @782
+    obstacles @783 DATA
+    outputs_ctx @784 DATA
+    pConverter @785 DATA
+    pSimBoolVTable @786 DATA
+    pSimCharVTable @787 DATA
+    pSimFloat32VTable @788 DATA
+    pSimFloat64VTable @789 DATA
+    pSimInt16VTable @790 DATA
+    pSimInt32VTable @791 DATA
+    pSimInt64VTable @792 DATA
+    pSimInt8VTable @793 DATA
+    pSimSSM_ST_RobotVTable @794 DATA
+    pSimSSM_ST_SM1VTable @795 DATA
+    pSimSSM_ST_goPlusVTable @796 DATA
+    pSimSSM_TR_RobotVTable @797 DATA
+    pSimSSM_TR_SM1VTable @798 DATA
+    pSimSSM_TR_goPlusVTable @799 DATA
+    pSimSizeVTable @800 DATA
+    pSimTruthTableValues_truthtablesVTable @801 DATA
+    pSimUint16VTable @802 DATA
+    pSimUint32VTable @803 DATA
+    pSimUint64VTable @804 DATA
+    pSimUint8VTable @805 DATA
+    pSim_2_arrayVTable @806 DATA
+    pSim_3_arrayVTable @807 DATA
+    pSimactionTy_RobotVTable @808 DATA
+    pSimarrayVTable @809 DATA
+    pSimarray_char_7VTable @810 DATA
+    pSimarray_float64_10VTable @811 DATA
+    pSimarray_float64_2VTable @812 DATA
+    pSimarray_float64_2_2VTable @813 DATA
+    pSimarray_float64_5VTable @814 DATA
+    pSimarray_int32_2VTable @815 DATA
+    pSimcolorTyQVTable @816 DATA
+    pSimcolorTyVTable @817 DATA
+    pSimeventTyVTable @818 DATA
+    pSiminterTyVTable @819 DATA
+    pSimitiElemArr_RobotVTable @820 DATA
+    pSimitiElement_RobotVTable @821 DATA
+    pSimmapDataTy_CityVTable @822 DATA
+    pSimobstArrVTable @823 DATA
+    pSimobstTyVTable @824 DATA
+    pSimoutC_MapADT_CityIOCVTable @825 DATA
+    pSimoutC_ModelBasedDesignOfRobotChCIVTable @826 DATA
+    pSimoutC_readIti_RobotIOCVTable @827 DATA
+    pSimoutC_readObstacles_CityIOCVTable @828 DATA
+    pSimparamObstArr_CityVTable @829 DATA
+    pSimparamObstTy_CityVTable @830 DATA
+    pSimparamTLArr_CityVTable @831 DATA
+    pSimparamTLTy_CityVTable @832 DATA
+    pSimphaseTyVTable @833 DATA
+    pSimpositionTyVTable @834 DATA
+    pSimsensorsTyVTable @835 DATA
+    pSimsigTyVTable @836 DATA
+    pSimstatusTyVTable @837 DATA
+    pSimtrafLArrVTable @838 DATA
+    pSimtrafLTyVTable @839 DATA
+    pSimulator @840 DATA
+    pSimwheelsTy_RobotVTable @841 DATA
+    pTop @842 DATA
+    paramObstArr_City_to_double @843
+    paramObstArr_City_to_long @844
+    paramObstArr_City_to_string @845
+    paramObstTy_City_to_double @846
+    paramObstTy_City_to_long @847
+    paramObstTy_City_to_string @848
+    paramTLArr_City_to_double @849
+    paramTLArr_City_to_long @850
+    paramTLArr_City_to_string @851
+    paramTLTy_City_to_double @852
+    paramTLTy_City_to_long @853
+    paramTLTy_City_to_string @854
+    phaseTy_to_double @855
+    phaseTy_to_long @856
+    phaseTy_to_string @857
+    pos2vec_Utilities @858
+    pos2vec_init_Utilities @859
+    pos2vec_reset_Utilities @860
+    positionTy_to_double @861
+    positionTy_to_long @862
+    positionTy_to_string @863
+    predef_compare_enum @864
+    predef_compare_kcg_bool @865
+    predef_compare_kcg_char @866
+    predef_compare_kcg_float32 @867
+    predef_compare_kcg_float64 @868
+    predef_compare_kcg_int16 @869
+    predef_compare_kcg_int32 @870
+    predef_compare_kcg_int64 @871
+    predef_compare_kcg_int8 @872
+    predef_compare_kcg_size @873
+    predef_compare_kcg_uint16 @874
+    predef_compare_kcg_uint32 @875
+    predef_compare_kcg_uint64 @876
+    predef_compare_kcg_uint8 @877
+    predef_kcg_bool_to_string @878
+    predef_kcg_char_to_string @879
+    predef_kcg_char_to_string_helper @880
+    predef_kcg_float32_to_string @881
+    predef_kcg_float64_to_string @882
+    predef_kcg_int16_to_string @883
+    predef_kcg_int32_to_string @884
+    predef_kcg_int64_to_string @885
+    predef_kcg_int8_to_string @886
+    predef_kcg_size_to_string @887
+    predef_kcg_uint16_to_string @888
+    predef_kcg_uint32_to_string @889
+    predef_kcg_uint64_to_string @890
+    predef_kcg_uint8_to_string @891
+    predef_string_to_kcg_bool @892
+    predef_string_to_kcg_char @893
+    predef_string_to_kcg_char_helper @894
+    predef_string_to_kcg_float32 @895
+    predef_string_to_kcg_float64 @896
+    predef_string_to_kcg_int16 @897
+    predef_string_to_kcg_int32 @898
+    predef_string_to_kcg_int64 @899
+    predef_string_to_kcg_int8 @900
+    predef_string_to_kcg_size @901
+    predef_string_to_kcg_uint16 @902
+    predef_string_to_kcg_uint32 @903
+    predef_string_to_kcg_uint64 @904
+    predef_string_to_kcg_uint8 @905
+    readIti @906
+    readIti_Robot @907
+    readIti_init_Robot @908
+    readIti_reset_Robot @909
+    readObs @910
+    readObstacles_City @911
+    readObstacles_init_City @912
+    readObstacles_reset_City @913
+    read_line @914
+    rt_version @915 DATA
+    save_context @916
+    save_field @917
+    save_inC_ModelBasedDesignOfRobotCh @918
+    save_outC_AgregateEvents_City @919
+    save_outC_AgregateSensors_City @920
+    save_outC_AllObstacles_City @921
+    save_outC_AngleDist_Utilities @922
+    save_outC_Bound_Utilities @923
+    save_outC_CarGeometry_Robot @924
+    save_outC_CollisionAux_City @925
+    save_outC_Collision_City @926
+    save_outC_ComputeWheels_Robot @927
+    save_outC_Driver_Robot @928
+    save_outC_EncodeColor_Utilities @929
+    save_outC_EventDetection_City @930
+    save_outC_ExitAux_City @931
+    save_outC_Exit_City @932
+    save_outC_GroundColorDetection_City @933
+    save_outC_HypotR_mathext_float64 @934
+    save_outC_IndividualRobotControl_Robot @935
+    save_outC_Integrator_Utilities @936
+    save_outC_Light_City @937
+    save_outC_MapADT_City @938
+    save_outC_MatVectProd_vect_float64_2_2 @939
+    save_outC_ModelBasedDesignOfRobotCh @940
+    save_outC_Normalize_Utilities @941
+    save_outC_ObstaclesDetection_City @942
+    save_outC_OneObstacleDet_City @943
+    save_outC_OneObstacle_City @944
+    save_outC_OneTL_City @945
+    save_outC_PIDControler_Robot @946
+    save_outC_PhysicalModel_Robot @947
+    save_outC_RisingEdge_digital @948
+    save_outC_RobotSensors_City @949
+    save_outC_RotMatrix_Utilities @950
+    save_outC_RoundFloor_math_float64 @951
+    save_outC_ScoringA_City @952
+    save_outC_ScoringB_City @953
+    save_outC_SmartCityControl_City @954
+    save_outC_Speed_City @955
+    save_outC_TrafficLights_City @956
+    save_outC_TraficLightsDetection_City @957
+    save_outC_TurnControlleur_Robot @958
+    save_outC_UpTime_Utilities @959
+    save_outC_Variation_Utilities @960
+    save_outC_VectAdd_vect_float64_2 @961
+    save_outC_WallClock_City @962
+    save_outC_WrongDir_City @963
+    save_outC_actionArrayOnWheels_Robot @964
+    save_outC_actionOnWheels_Robot @965
+    save_outC_addOne_Robot @966
+    save_outC_automatonGoPlus_Robot @967
+    save_outC_count_down_digital_int32 @968
+    save_outC_instrPlus_Robot @969
+    save_outC_isGreen_Robot @970
+    save_outC_isRed_Robot @971
+    save_outC_pos2vec_Utilities @972
+    save_outC_readIti_Robot @973
+    save_outC_readObstacles_City @974
+    save_outC_undressItElem_Robot @975
+    save_outC_undressSensorTy_Robot @976
+    save_outC_vec2pos_Utilities @977
+    save_snapshot @978
+    save_var @979
+    scope_0 @980 DATA
+    scope_0_entries @981 DATA
+    scope_1 @982 DATA
+    scope_100 @983 DATA
+    scope_100_entries @984 DATA
+    scope_101 @985 DATA
+    scope_101_entries @986 DATA
+    scope_102 @987 DATA
+    scope_102_entries @988 DATA
+    scope_103 @989 DATA
+    scope_103_entries @990 DATA
+    scope_104 @991 DATA
+    scope_104_entries @992 DATA
+    scope_105 @993 DATA
+    scope_105_entries @994 DATA
+    scope_106 @995 DATA
+    scope_106_entries @996 DATA
+    scope_107 @997 DATA
+    scope_107_entries @998 DATA
+    scope_108 @999 DATA
+    scope_108_entries @1000 DATA
+    scope_109 @1001 DATA
+    scope_109_entries @1002 DATA
+    scope_110 @1003 DATA
+    scope_110_entries @1004 DATA
+    scope_111 @1005 DATA
+    scope_111_entries @1006 DATA
+    scope_112 @1007 DATA
+    scope_112_entries @1008 DATA
+    scope_113 @1009 DATA
+    scope_113_entries @1010 DATA
+    scope_114 @1011 DATA
+    scope_114_entries @1012 DATA
+    scope_115 @1013 DATA
+    scope_115_entries @1014 DATA
+    scope_116 @1015 DATA
+    scope_116_entries @1016 DATA
+    scope_117 @1017 DATA
+    scope_117_entries @1018 DATA
+    scope_118 @1019 DATA
+    scope_118_entries @1020 DATA
+    scope_119 @1021 DATA
+    scope_119_entries @1022 DATA
+    scope_12 @1023 DATA
+    scope_120 @1024 DATA
+    scope_120_entries @1025 DATA
+    scope_121 @1026 DATA
+    scope_121_entries @1027 DATA
+    scope_122 @1028 DATA
+    scope_122_entries @1029 DATA
+    scope_123 @1030 DATA
+    scope_123_entries @1031 DATA
+    scope_124 @1032 DATA
+    scope_124_entries @1033 DATA
+    scope_125 @1034 DATA
+    scope_125_entries @1035 DATA
+    scope_126 @1036 DATA
+    scope_126_entries @1037 DATA
+    scope_127 @1038 DATA
+    scope_127_entries @1039 DATA
+    scope_128 @1040 DATA
+    scope_128_entries @1041 DATA
+    scope_129 @1042 DATA
+    scope_129_entries @1043 DATA
+    scope_12_entries @1044 DATA
+    scope_13 @1045 DATA
+    scope_130 @1046 DATA
+    scope_130_entries @1047 DATA
+    scope_131 @1048 DATA
+    scope_131_entries @1049 DATA
+    scope_132 @1050 DATA
+    scope_132_entries @1051 DATA
+    scope_133 @1052 DATA
+    scope_133_entries @1053 DATA
+    scope_134 @1054 DATA
+    scope_134_entries @1055 DATA
+    scope_135 @1056 DATA
+    scope_135_entries @1057 DATA
+    scope_136 @1058 DATA
+    scope_136_entries @1059 DATA
+    scope_137 @1060 DATA
+    scope_137_entries @1061 DATA
+    scope_138 @1062 DATA
+    scope_138_entries @1063 DATA
+    scope_139 @1064 DATA
+    scope_139_entries @1065 DATA
+    scope_13_entries @1066 DATA
+    scope_14 @1067 DATA
+    scope_14_entries @1068 DATA
+    scope_15 @1069 DATA
+    scope_15_entries @1070 DATA
+    scope_16 @1071 DATA
+    scope_16_entries @1072 DATA
+    scope_17 @1073 DATA
+    scope_17_entries @1074 DATA
+    scope_18 @1075 DATA
+    scope_18_entries @1076 DATA
+    scope_19 @1077 DATA
+    scope_19_entries @1078 DATA
+    scope_1_entries @1079 DATA
+    scope_2 @1080 DATA
+    scope_20 @1081 DATA
+    scope_20_entries @1082 DATA
+    scope_23 @1083 DATA
+    scope_23_entries @1084 DATA
+    scope_24 @1085 DATA
+    scope_24_entries @1086 DATA
+    scope_25 @1087 DATA
+    scope_25_entries @1088 DATA
+    scope_26 @1089 DATA
+    scope_26_entries @1090 DATA
+    scope_27 @1091 DATA
+    scope_27_entries @1092 DATA
+    scope_28 @1093 DATA
+    scope_28_entries @1094 DATA
+    scope_29 @1095 DATA
+    scope_29_entries @1096 DATA
+    scope_2_entries @1097 DATA
+    scope_3 @1098 DATA
+    scope_30 @1099 DATA
+    scope_30_entries @1100 DATA
+    scope_31 @1101 DATA
+    scope_31_entries @1102 DATA
+    scope_32 @1103 DATA
+    scope_32_entries @1104 DATA
+    scope_33 @1105 DATA
+    scope_33_entries @1106 DATA
+    scope_34 @1107 DATA
+    scope_34_entries @1108 DATA
+    scope_35 @1109 DATA
+    scope_35_entries @1110 DATA
+    scope_36 @1111 DATA
+    scope_36_entries @1112 DATA
+    scope_37 @1113 DATA
+    scope_37_entries @1114 DATA
+    scope_38 @1115 DATA
+    scope_38_entries @1116 DATA
+    scope_39 @1117 DATA
+    scope_39_entries @1118 DATA
+    scope_3_entries @1119 DATA
+    scope_4 @1120 DATA
+    scope_40 @1121 DATA
+    scope_40_entries @1122 DATA
+    scope_41 @1123 DATA
+    scope_41_entries @1124 DATA
+    scope_42 @1125 DATA
+    scope_42_entries @1126 DATA
+    scope_43 @1127 DATA
+    scope_43_entries @1128 DATA
+    scope_44 @1129 DATA
+    scope_44_entries @1130 DATA
+    scope_45 @1131 DATA
+    scope_45_entries @1132 DATA
+    scope_46 @1133 DATA
+    scope_46_entries @1134 DATA
+    scope_47 @1135 DATA
+    scope_47_entries @1136 DATA
+    scope_48 @1137 DATA
+    scope_48_entries @1138 DATA
+    scope_49 @1139 DATA
+    scope_49_entries @1140 DATA
+    scope_4_entries @1141 DATA
+    scope_5 @1142 DATA
+    scope_50 @1143 DATA
+    scope_50_entries @1144 DATA
+    scope_51 @1145 DATA
+    scope_51_entries @1146 DATA
+    scope_52 @1147 DATA
+    scope_52_entries @1148 DATA
+    scope_53 @1149 DATA
+    scope_53_entries @1150 DATA
+    scope_54 @1151 DATA
+    scope_54_entries @1152 DATA
+    scope_55 @1153 DATA
+    scope_55_entries @1154 DATA
+    scope_56 @1155 DATA
+    scope_56_entries @1156 DATA
+    scope_57 @1157 DATA
+    scope_57_entries @1158 DATA
+    scope_58 @1159 DATA
+    scope_58_entries @1160 DATA
+    scope_59 @1161 DATA
+    scope_59_entries @1162 DATA
+    scope_5_entries @1163 DATA
+    scope_6 @1164 DATA
+    scope_60 @1165 DATA
+    scope_60_entries @1166 DATA
+    scope_61 @1167 DATA
+    scope_61_entries @1168 DATA
+    scope_62 @1169 DATA
+    scope_62_entries @1170 DATA
+    scope_63 @1171 DATA
+    scope_63_entries @1172 DATA
+    scope_64 @1173 DATA
+    scope_64_entries @1174 DATA
+    scope_65 @1175 DATA
+    scope_65_entries @1176 DATA
+    scope_66 @1177 DATA
+    scope_66_entries @1178 DATA
+    scope_67 @1179 DATA
+    scope_67_entries @1180 DATA
+    scope_68 @1181 DATA
+    scope_68_entries @1182 DATA
+    scope_69 @1183 DATA
+    scope_69_entries @1184 DATA
+    scope_6_entries @1185 DATA
+    scope_7 @1186 DATA
+    scope_70 @1187 DATA
+    scope_70_entries @1188 DATA
+    scope_71 @1189 DATA
+    scope_71_entries @1190 DATA
+    scope_72 @1191 DATA
+    scope_72_entries @1192 DATA
+    scope_73 @1193 DATA
+    scope_73_entries @1194 DATA
+    scope_74 @1195 DATA
+    scope_74_entries @1196 DATA
+    scope_75 @1197 DATA
+    scope_75_entries @1198 DATA
+    scope_76 @1199 DATA
+    scope_76_entries @1200 DATA
+    scope_77 @1201 DATA
+    scope_77_entries @1202 DATA
+    scope_78 @1203 DATA
+    scope_78_entries @1204 DATA
+    scope_79 @1205 DATA
+    scope_79_entries @1206 DATA
+    scope_7_entries @1207 DATA
+    scope_8 @1208 DATA
+    scope_80 @1209 DATA
+    scope_80_entries @1210 DATA
+    scope_81 @1211 DATA
+    scope_81_entries @1212 DATA
+    scope_82 @1213 DATA
+    scope_82_entries @1214 DATA
+    scope_83 @1215 DATA
+    scope_83_entries @1216 DATA
+    scope_84 @1217 DATA
+    scope_84_entries @1218 DATA
+    scope_85 @1219 DATA
+    scope_85_entries @1220 DATA
+    scope_86 @1221 DATA
+    scope_86_entries @1222 DATA
+    scope_87 @1223 DATA
+    scope_87_entries @1224 DATA
+    scope_88 @1225 DATA
+    scope_88_entries @1226 DATA
+    scope_89 @1227 DATA
+    scope_89_entries @1228 DATA
+    scope_8_entries @1229 DATA
+    scope_9 @1230 DATA
+    scope_90 @1231 DATA
+    scope_90_entries @1232 DATA
+    scope_93 @1233 DATA
+    scope_93_entries @1234 DATA
+    scope_94 @1235 DATA
+    scope_94_entries @1236 DATA
+    scope_95 @1237 DATA
+    scope_95_entries @1238 DATA
+    scope_96 @1239 DATA
+    scope_96_entries @1240 DATA
+    scope_97 @1241 DATA
+    scope_97_entries @1242 DATA
+    scope_98 @1243 DATA
+    scope_98_entries @1244 DATA
+    scope_99 @1245 DATA
+    scope_99_entries @1246 DATA
+    scope_9_entries @1247 DATA
+    sensorsTy_to_double @1248
+    sensorsTy_to_long @1249
+    sensorsTy_to_string @1250
+    set_SSM_ST_Robot_default_value @1251
+    set_SSM_ST_SM1_default_value @1252
+    set_SSM_ST_goPlus_default_value @1253
+    set_SSM_TR_Robot_default_value @1254
+    set_SSM_TR_SM1_default_value @1255
+    set_SSM_TR_goPlus_default_value @1256
+    set_TruthTableValues_truthtables_default_value @1257
+    set__2_array_default_value @1258
+    set__3_array_default_value @1259
+    set_actionTy_Robot_default_value @1260
+    set_array_char_7_default_value @1261
+    set_array_default_value @1262
+    set_array_float64_10_default_value @1263
+    set_array_float64_2_2_default_value @1264
+    set_array_float64_2_default_value @1265
+    set_array_float64_5_default_value @1266
+    set_array_int32_2_default_value @1267
+    set_colorTyQ_default_value @1268
+    set_colorTy_default_value @1269
+    set_eventTy_default_value @1270
+    set_interTy_default_value @1271
+    set_itiElemArr_Robot_default_value @1272
+    set_itiElement_Robot_default_value @1273
+    set_kcg_bool_default_value @1274
+    set_kcg_char_default_value @1275
+    set_kcg_float32_default_value @1276
+    set_kcg_float64_default_value @1277
+    set_kcg_int16_default_value @1278
+    set_kcg_int32_default_value @1279
+    set_kcg_int64_default_value @1280
+    set_kcg_int8_default_value @1281
+    set_kcg_size_default_value @1282
+    set_kcg_uint16_default_value @1283
+    set_kcg_uint32_default_value @1284
+    set_kcg_uint64_default_value @1285
+    set_kcg_uint8_default_value @1286
+    set_mapDataTy_City_default_value @1287
+    set_obstArr_default_value @1288
+    set_obstTy_default_value @1289
+    set_paramObstArr_City_default_value @1290
+    set_paramObstTy_City_default_value @1291
+    set_paramTLArr_City_default_value @1292
+    set_paramTLTy_City_default_value @1293
+    set_phaseTy_default_value @1294
+    set_positionTy_default_value @1295
+    set_sensorsTy_default_value @1296
+    set_sigTy_default_value @1297
+    set_statusTy_default_value @1298
+    set_trafLArr_default_value @1299
+    set_trafLTy_default_value @1300
+    set_wheelsTy_Robot_default_value @1301
+    sigTy_to_double @1302
+    sigTy_to_long @1303
+    sigTy_to_string @1304
+    statusTy_nb_values @1305 DATA
+    statusTy_to_double @1306
+    statusTy_to_long @1307
+    statusTy_to_string @1308
+    strDefaultRealFormat @1309 DATA
+    string_to_SSM_ST_Robot @1310
+    string_to_SSM_ST_SM1 @1311
+    string_to_SSM_ST_goPlus @1312
+    string_to_SSM_TR_Robot @1313
+    string_to_SSM_TR_SM1 @1314
+    string_to_SSM_TR_goPlus @1315
+    string_to_TruthTableValues_truthtables @1316
+    string_to_VTable @1317
+    string_to__2_array @1318
+    string_to__3_array @1319
+    string_to_actionTy_Robot @1320
+    string_to_array @1321
+    string_to_array_char_7 @1322
+    string_to_array_float64_10 @1323
+    string_to_array_float64_2 @1324
+    string_to_array_float64_2_2 @1325
+    string_to_array_float64_5 @1326
+    string_to_array_int32_2 @1327
+    string_to_colorTy @1328
+    string_to_colorTyQ @1329
+    string_to_eventTy @1330
+    string_to_interTy @1331
+    string_to_itiElemArr_Robot @1332
+    string_to_itiElement_Robot @1333
+    string_to_kcg_bool @1334
+    string_to_kcg_char @1335
+    string_to_kcg_float32 @1336
+    string_to_kcg_float64 @1337
+    string_to_kcg_int16 @1338
+    string_to_kcg_int32 @1339
+    string_to_kcg_int64 @1340
+    string_to_kcg_int8 @1341
+    string_to_kcg_size @1342
+    string_to_kcg_uint16 @1343
+    string_to_kcg_uint32 @1344
+    string_to_kcg_uint64 @1345
+    string_to_kcg_uint8 @1346
+    string_to_mapDataTy_City @1347
+    string_to_obstArr @1348
+    string_to_obstTy @1349
+    string_to_paramObstArr_City @1350
+    string_to_paramObstTy_City @1351
+    string_to_paramTLArr_City @1352
+    string_to_paramTLTy_City @1353
+    string_to_phaseTy @1354
+    string_to_positionTy @1355
+    string_to_sensorsTy @1356
+    string_to_sigTy @1357
+    string_to_statusTy @1358
+    string_to_trafLArr @1359
+    string_to_trafLTy @1360
+    string_to_wheelsTy_Robot @1361
+    szKcgTraceCheckSum @1362 DATA
+    tocadran @1363
+    todegree @1364
+    toradian @1365
+    trafLArr_to_double @1366
+    trafLArr_to_long @1367
+    trafLArr_to_string @1368
+    trafLTy_to_double @1369
+    trafLTy_to_long @1370
+    trafLTy_to_string @1371
+    undressItElem_Robot @1372
+    undressItElem_init_Robot @1373
+    undressItElem_reset_Robot @1374
+    undressSensorTy_Robot @1375
+    undressSensorTy_init_Robot @1376
+    undressSensorTy_reset_Robot @1377
+    updateCompareResult @1378
+    valid @1379
+    vec2pos_Utilities @1380
+    vec2pos_init_Utilities @1381
+    vec2pos_reset_Utilities @1382
+    wheelsTy_Robot_to_double @1383
+    wheelsTy_Robot_to_long @1384
+    wheelsTy_Robot_to_string @1385

@@ -1,0 +1,823 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/challenge/SyncContestCompetitors/Robot__dev_KCG66/config.txt
+** Generation date: 2017-01-18T22:10:02
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmathext/mathext.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <option name="input_file"
+        value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testIti.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageUtilities.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageCity.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageRobot.xscade"/>
+    <option name="input_file"
+        value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testMap.xscade"/>
+    <option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/EiDD_Challenge_SW.xscade"/>
+    <option name="probes" value="#off#"/>
+    <option name="debug" value="#off#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="#off#"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="expall" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="mathext::Inv"/>
+    <option name="exp" value="mathext::Square"/>
+    <option name="exp" value="mathext::HypotR"/>
+    <option name="target_dir" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/Robot__dev_KCG66"/>
+    <option name="target" value="C"/>
+    <option name="root" value="Robot::dev"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <array id="1" baseType="105" size="5"/>
+    <struct id="2">
+      <field id="3" name="left" type="72"/>
+      <field id="4" name="right" type="72"/>
+    </struct>
+    <struct id="5">
+      <field id="6" name="pos" type="81"/>
+      <field id="7" name="tGreen" type="65"/>
+      <field id="8" name="tAmber" type="65"/>
+      <field id="9" name="tRed" type="65"/>
+      <field id="10" name="tPhase" type="65"/>
+    </struct>
+    <array id="11" baseType="144" size="5"/>
+    <struct id="12">
+      <field id="13" name="lightRun" type="61"/>
+      <field id="14" name="speedExcess" type="61"/>
+      <field id="15" name="exitRoad" type="61"/>
+      <field id="16" name="collisionEvent" type="61"/>
+      <field id="17" name="dirEvent" type="61"/>
+    </struct>
+    <struct id="18">
+      <field id="19" name="red" type="67"/>
+      <field id="20" name="green" type="67"/>
+      <field id="21" name="blue" type="67"/>
+    </struct>
+    <struct id="22">
+      <field id="23" name="x" type="72"/>
+      <field id="24" name="y" type="72"/>
+    </struct>
+    <array id="25" baseType="119" size="10"/>
+    <struct id="26">
+      <field id="27" name="position" type="81"/>
+      <field id="28" name="light" type="109"/>
+    </struct>
+    <struct id="29">
+      <field id="30" name="action" type="135"/>
+      <field id="31" name="param" type="72"/>
+    </struct>
+    <struct id="32">
+      <field id="33" name="color" type="74"/>
+      <field id="34" name="onRoad" type="61"/>
+      <field id="35" name="maxSpeed" type="65"/>
+      <field id="36" name="TLnumber" type="65"/>
+      <field id="37" name="TLrequired" type="61"/>
+      <field id="38" name="dirx" type="72"/>
+      <field id="39" name="diry" type="72"/>
+    </struct>
+    <array id="40" baseType="146" size="10"/>
+    <struct id="41">
+      <field id="42" name="pos" type="81"/>
+      <field id="43" name="since" type="72"/>
+      <field id="44" name="till" type="72"/>
+    </struct>
+    <struct id="45">
+      <field id="46" name="position" type="81"/>
+      <field id="47" name="velocity" type="72"/>
+      <field id="48" name="heading" type="72"/>
+    </struct>
+    <struct id="49">
+      <field id="50" name="roadColor" type="74"/>
+      <field id="51" name="frontColor" type="74"/>
+      <field id="52" name="sonar" type="65"/>
+    </struct>
+    <struct id="53">
+      <field id="54" name="TLights" type="120"/>
+      <field id="55" name="obstacles" type="121"/>
+    </struct>
+    <array id="56" baseType="62" size="7"/>
+    <array id="57" baseType="133" size="50"/>
+    <struct id="58">
+      <field id="59" name="position" type="81"/>
+      <field id="60" name="present" type="61"/>
+    </struct>
+    <predefType id="61" name="bool"/>
+    <predefType id="62" name="char"/>
+    <predefType id="63" name="int8"/>
+    <predefType id="64" name="int16"/>
+    <predefType id="65" name="int32"/>
+    <predefType id="66" name="int64"/>
+    <predefType id="67" name="uint8"/>
+    <predefType id="68" name="uint16"/>
+    <predefType id="69" name="uint32"/>
+    <predefType id="70" name="uint64"/>
+    <predefType id="71" name="float32"/>
+    <predefType id="72" name="float64"/>
+    <predefType id="73" name="size"/>
+    <type id="74" name="colorTy" imported="false" type="18"/>
+    <type id="75" name="eventTy" imported="false" type="12"/>
+    <enum id="76" name="interTy">
+      <value id="77" name="waitVal" default="false"/>
+      <value id="78" name="haltVal" default="false"/>
+      <value id="79" name="okVal" default="false"/>
+    </enum>
+    <type id="80" name="phaseTy" imported="false" type="45"/>
+    <type id="81" name="positionTy" imported="false" type="22"/>
+    <type id="82" name="sensorsTy" imported="false" type="49"/>
+    <enum id="83" name="statusTy">
+      <value id="84" name="Preparing" default="false"/>
+      <value id="85" name="Running" default="false"/>
+      <value id="86" name="Arrived" default="false"/>
+      <value id="87" name="Stopped" default="false"/>
+    </enum>
+    <constant id="88" name="ITISIZE" imported="false" type="65"/>
+    <constant id="89" name="TIMESTEP" imported="false" type="72"/>
+    <constant id="90" name="D" imported="false" type="72"/>
+    <constant id="91" name="B" imported="false" type="72"/>
+    <constant id="92" name="DELTA" imported="false" type="72"/>
+    <constant id="93" name="PI" imported="false" type="72"/>
+    <constant id="94" name="SA" imported="false" type="72"/>
+    <constant id="95" name="SB" imported="false" type="72"/>
+    <constant id="96" name="SC" imported="false" type="72"/>
+    <constant id="97" name="SD" imported="false" type="72"/>
+    <constant id="98" name="RED" imported="false" type="74"/>
+    <constant id="99" name="GREEN" imported="false" type="74"/>
+    <constant id="100" name="BLUE" imported="false" type="74"/>
+    <constant id="101" name="YELLOW" imported="false" type="74"/>
+    <constant id="102" name="MAGENTA" imported="false" type="74"/>
+    <constant id="103" name="CYAN" imported="false" type="74"/>
+    <constant id="104" name="GRAY" imported="false" type="74"/>
+    <type id="105" name="trafLTy" imported="false" type="26"/>
+    <constant id="106" name="TLNUMBER" imported="false" type="65"/>
+    <type id="107" name="sigTy" imported="false" type="53"/>
+    <constant id="108" name="MAXSPEED" imported="false" type="72"/>
+    <enum id="109" name="colorTyQ">
+      <value id="110" name="redQ" default="false"/>
+      <value id="111" name="greenQ" default="false"/>
+      <value id="112" name="amberQ" default="false"/>
+      <value id="113" name="otherQ" default="false"/>
+    </enum>
+    <constant id="114" name="AMBER" imported="false" type="74"/>
+    <constant id="115" name="MAPNUM" imported="false" type="65"/>
+    <constant id="116" name="MAXWHEEL" imported="false" type="72"/>
+    <constant id="117" name="OBSTNUM" imported="false" type="65"/>
+    <constant id="118" name="SONARFAR" imported="false" type="65"/>
+    <type id="119" name="obstTy" imported="false" type="58"/>
+    <type id="120" name="trafLArr" imported="false" type="1"/>
+    <type id="121" name="obstArr" imported="false" type="25"/>
+    <constant id="122" name="ROBST" imported="false" type="72"/>
+    <constant id="123" name="DIR_INPUTS" imported="false" type="56"/>
+    <constant id="124" name="STOP" imported="false" type="133"/>
+    <constant id="125" name="KP" imported="false" type="72"/>
+    <constant id="126" name="KD" imported="false" type="72"/>
+    <constant id="127" name="KI" imported="false" type="72"/>
+    <constant id="128" name="C1" imported="false" type="72"/>
+    <constant id="129" name="C2" imported="false" type="72"/>
+    <constant id="130" name="C3" imported="false" type="72"/>
+    <package id="131" name="Robot">
+      <type id="132" name="wheelsTy" imported="false" type="2"/>
+      <type id="133" name="itiElement" imported="false" type="29"/>
+      <type id="134" name="itiElemArr" imported="false" type="57"/>
+      <enum id="135" name="actionTy">
+        <value id="136" name="go" default="false"/>
+        <value id="137" name="turn" default="false"/>
+        <value id="138" name="stop" default="false"/>
+      </enum>
+      <operator id="139" name="dev" imported="false" root="true" expanded="false">
+        <input id="140" name="color" clock="false" type="74"/>
+        <output id="141" name="d" clock="false" type="72"/>
+      </operator>
+    </package>
+    <package id="142" name="City">
+      <type id="143" name="mapDataTy" imported="false" type="32"/>
+      <type id="144" name="paramTLTy" imported="false" type="5"/>
+      <type id="145" name="paramTLArr" imported="false" type="11"/>
+      <type id="146" name="paramObstTy" imported="false" type="41"/>
+      <type id="147" name="paramObstArr" imported="false" type="40"/>
+    </package>
+    <package id="148" name="Utilities"/>
+    <package id="149" name="digital"/>
+    <package id="150" name="truthtables">
+      <enum id="151" name="TruthTableValues">
+        <value id="152" name="T" default="false"/>
+        <value id="153" name="F" default="false"/>
+        <value id="154" name="X" default="false"/>
+      </enum>
+    </package>
+    <package id="155" name="linear"/>
+    <package id="156" name="filters"/>
+    <package id="157" name="vect"/>
+    <package id="158" name="math"/>
+    <package id="159" name="mathext">
+      <package id="160" name="mathextimpl"/>
+    </package>
+    <package id="161" name="pwlinear"/>
+    <package id="162" name="lut"/>
+  </model>
+  <generated>
+    <c>
+      <file id="163" name="dev_Robot.h">
+        <function id="164" name="dev_init_Robot">
+          <parameter id="165" name="outC" type="171" pointer="true"/>
+        </function>
+        <function id="166" name="dev_reset_Robot">
+          <parameter id="167" name="outC" type="171" pointer="true"/>
+        </function>
+        <function id="168" name="dev_Robot">
+          <parameter id="169" name="inC" type="173" pointer="true"/>
+          <parameter id="170" name="outC" type="171" pointer="true"/>
+        </function>
+        <struct id="171" name="outC_dev_Robot">
+          <field id="172" name="d" type="385" pointer="false"/>
+        </struct>
+        <struct id="173" name="inC_dev_Robot">
+          <field id="174" name="color" type="290" pointer="false"/>
+        </struct>
+      </file>
+      <file id="175" name="kcg_types.h">
+        <ifdef id="176" name="kcg_use_array_char_7">
+          <function id="177" name="kcg_comp_array_char_7" returnType="387">
+            <parameter id="250" name="kcg_c1" type="330" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="330" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="180" name="kcg_use_paramTLArr_City">
+          <function id="181" name="kcg_comp_paramTLArr_City" returnType="387">
+            <parameter id="250" name="kcg_c1" type="271" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="271" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="184" name="kcg_use_obstArr">
+          <function id="185" name="kcg_comp_obstArr" returnType="387">
+            <parameter id="250" name="kcg_c1" type="301" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="301" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="188" name="kcg_use_itiElemArr_Robot">
+          <function id="189" name="kcg_comp_itiElemArr_Robot" returnType="387">
+            <parameter id="250" name="kcg_c1" type="320" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="320" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="192" name="kcg_use_trafLArr">
+          <function id="193" name="kcg_comp_trafLArr" returnType="387">
+            <parameter id="250" name="kcg_c1" type="310" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="310" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="196" name="kcg_use_paramObstArr_City">
+          <function id="197" name="kcg_comp_paramObstArr_City" returnType="387">
+            <parameter id="250" name="kcg_c1" type="305" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="305" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="200" name="kcg_use_sigTy">
+          <function id="201" name="kcg_comp_sigTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="298" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="298" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="204" name="kcg_use_mapDataTy_City">
+          <function id="205" name="kcg_comp_mapDataTy_City" returnType="387">
+            <parameter id="250" name="kcg_c1" type="282" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="282" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="208" name="kcg_use_trafLTy">
+          <function id="209" name="kcg_comp_trafLTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="311" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="311" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="212" name="kcg_use_paramObstTy_City">
+          <function id="213" name="kcg_comp_paramObstTy_City" returnType="387">
+            <parameter id="250" name="kcg_c1" type="306" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="306" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="216" name="kcg_use_itiElement_Robot">
+          <function id="217" name="kcg_comp_itiElement_Robot" returnType="387">
+            <parameter id="250" name="kcg_c1" type="321" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="321" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="220" name="kcg_use_wheelsTy_Robot">
+          <function id="221" name="kcg_comp_wheelsTy_Robot" returnType="387">
+            <parameter id="250" name="kcg_c1" type="317" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="317" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="224" name="kcg_use_colorTy">
+          <function id="225" name="kcg_comp_colorTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="290" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="290" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="228" name="kcg_use_sensorsTy">
+          <function id="229" name="kcg_comp_sensorsTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="278" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="278" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="232" name="kcg_use_eventTy">
+          <function id="233" name="kcg_comp_eventTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="324" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="324" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="236" name="kcg_use_positionTy">
+          <function id="237" name="kcg_comp_positionTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="314" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="314" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="240" name="kcg_use_paramTLTy_City">
+          <function id="241" name="kcg_comp_paramTLTy_City" returnType="387">
+            <parameter id="250" name="kcg_c1" type="272" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="272" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="244" name="kcg_use_obstTy">
+          <function id="245" name="kcg_comp_obstTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="302" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="302" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="248" name="kcg_use_phaseTy">
+          <function id="249" name="kcg_comp_phaseTy" returnType="387">
+            <parameter id="250" name="kcg_c1" type="294" pointer="true"/>
+            <parameter id="251" name="kcg_c2" type="294" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="252" name="kcg_copy_array_char_7"/>
+        <macro id="253" name="kcg_copy_paramTLArr_City"/>
+        <macro id="254" name="kcg_copy_obstArr"/>
+        <macro id="255" name="kcg_copy_itiElemArr_Robot"/>
+        <macro id="256" name="kcg_copy_trafLArr"/>
+        <macro id="257" name="kcg_copy_paramObstArr_City"/>
+        <macro id="258" name="kcg_copy_sigTy"/>
+        <macro id="259" name="kcg_copy_mapDataTy_City"/>
+        <macro id="260" name="kcg_copy_trafLTy"/>
+        <macro id="261" name="kcg_copy_paramObstTy_City"/>
+        <macro id="262" name="kcg_copy_itiElement_Robot"/>
+        <macro id="263" name="kcg_copy_wheelsTy_Robot"/>
+        <macro id="264" name="kcg_copy_colorTy"/>
+        <macro id="265" name="kcg_copy_sensorsTy"/>
+        <macro id="266" name="kcg_copy_eventTy"/>
+        <macro id="267" name="kcg_copy_positionTy"/>
+        <macro id="268" name="kcg_copy_paramTLTy_City"/>
+        <macro id="269" name="kcg_copy_obstTy"/>
+        <macro id="270" name="kcg_copy_phaseTy"/>
+        <array id="271" name="paramTLArr_City" baseType="272" size="5"/>
+        <struct id="272" name="paramTLTy_City" tagName="kcg_tag_paramTLTy_City">
+          <field id="273" name="pos" type="314" pointer="false"/>
+          <field id="274" name="tGreen" type="378" pointer="false"/>
+          <field id="275" name="tAmber" type="378" pointer="false"/>
+          <field id="276" name="tRed" type="378" pointer="false"/>
+          <field id="277" name="tPhase" type="378" pointer="false"/>
+        </struct>
+        <struct id="278" name="sensorsTy" tagName="kcg_tag_sensorsTy">
+          <field id="279" name="roadColor" type="290" pointer="false"/>
+          <field id="280" name="frontColor" type="290" pointer="false"/>
+          <field id="281" name="sonar" type="378" pointer="false"/>
+        </struct>
+        <struct id="282" name="mapDataTy_City" tagName="kcg_tag_mapDataTy_City">
+          <field id="283" name="color" type="290" pointer="false"/>
+          <field id="284" name="onRoad" type="387" pointer="false"/>
+          <field id="285" name="maxSpeed" type="378" pointer="false"/>
+          <field id="286" name="TLnumber" type="378" pointer="false"/>
+          <field id="287" name="TLrequired" type="387" pointer="false"/>
+          <field id="288" name="dirx" type="385" pointer="false"/>
+          <field id="289" name="diry" type="385" pointer="false"/>
+        </struct>
+        <struct id="290" name="colorTy" tagName="kcg_tag_colorTy">
+          <field id="291" name="red" type="380" pointer="false"/>
+          <field id="292" name="green" type="380" pointer="false"/>
+          <field id="293" name="blue" type="380" pointer="false"/>
+        </struct>
+        <struct id="294" name="phaseTy" tagName="kcg_tag_phaseTy">
+          <field id="295" name="position" type="314" pointer="false"/>
+          <field id="296" name="velocity" type="385" pointer="false"/>
+          <field id="297" name="heading" type="385" pointer="false"/>
+        </struct>
+        <struct id="298" name="sigTy" tagName="kcg_tag_sigTy">
+          <field id="299" name="TLights" type="310" pointer="false"/>
+          <field id="300" name="obstacles" type="301" pointer="false"/>
+        </struct>
+        <array id="301" name="obstArr" baseType="302" size="10"/>
+        <struct id="302" name="obstTy" tagName="kcg_tag_obstTy">
+          <field id="303" name="position" type="314" pointer="false"/>
+          <field id="304" name="present" type="387" pointer="false"/>
+        </struct>
+        <array id="305" name="paramObstArr_City" baseType="306" size="10"/>
+        <struct id="306" name="paramObstTy_City" tagName="kcg_tag_paramObstTy_City">
+          <field id="307" name="pos" type="314" pointer="false"/>
+          <field id="308" name="since" type="385" pointer="false"/>
+          <field id="309" name="till" type="385" pointer="false"/>
+        </struct>
+        <array id="310" name="trafLArr" baseType="311" size="5"/>
+        <struct id="311" name="trafLTy" tagName="kcg_tag_trafLTy">
+          <field id="312" name="position" type="314" pointer="false"/>
+          <field id="313" name="light" type="340" pointer="false"/>
+        </struct>
+        <struct id="314" name="positionTy" tagName="kcg_tag_positionTy">
+          <field id="315" name="x" type="385" pointer="false"/>
+          <field id="316" name="y" type="385" pointer="false"/>
+        </struct>
+        <struct id="317" name="wheelsTy_Robot" tagName="kcg_tag_wheelsTy_Robot">
+          <field id="318" name="left" type="385" pointer="false"/>
+          <field id="319" name="right" type="385" pointer="false"/>
+        </struct>
+        <array id="320" name="itiElemArr_Robot" baseType="321" size="50"/>
+        <struct id="321" name="itiElement_Robot" tagName="kcg_tag_itiElement_Robot">
+          <field id="322" name="action" type="345" pointer="false"/>
+          <field id="323" name="param" type="385" pointer="false"/>
+        </struct>
+        <struct id="324" name="eventTy" tagName="kcg_tag_eventTy">
+          <field id="325" name="lightRun" type="387" pointer="false"/>
+          <field id="326" name="speedExcess" type="387" pointer="false"/>
+          <field id="327" name="exitRoad" type="387" pointer="false"/>
+          <field id="328" name="collisionEvent" type="387" pointer="false"/>
+          <field id="329" name="dirEvent" type="387" pointer="false"/>
+        </struct>
+        <array id="330" name="array_char_7" baseType="388" size="7"/>
+        <enum id="331" name="interTy" tagName="kcg_tag_interTy">
+          <value id="332" name="waitVal"/>
+          <value id="333" name="haltVal"/>
+          <value id="334" name="okVal"/>
+        </enum>
+        <enum id="335" name="statusTy" tagName="kcg_tag_statusTy">
+          <value id="336" name="Preparing"/>
+          <value id="337" name="Running"/>
+          <value id="338" name="Arrived"/>
+          <value id="339" name="Stopped"/>
+        </enum>
+        <enum id="340" name="colorTyQ" tagName="kcg_tag_colorTyQ">
+          <value id="341" name="redQ"/>
+          <value id="342" name="greenQ"/>
+          <value id="343" name="amberQ"/>
+          <value id="344" name="otherQ"/>
+        </enum>
+        <enum id="345" name="actionTy_Robot" tagName="kcg_tag_actionTy_Robot">
+          <value id="346" name="go_Robot"/>
+          <value id="347" name="turn_Robot"/>
+          <value id="348" name="stop_Robot"/>
+        </enum>
+        <enum id="349" name="TruthTableValues_truthtables" tagName="kcg_tag_TruthTableValues_truthtables">
+          <value id="350" name="T_truthtables"/>
+          <value id="351" name="F_truthtables"/>
+          <value id="352" name="X_truthtables"/>
+        </enum>
+        <macro id="353" name="kcg_assign_array"/>
+        <macro id="354" name="kcg_assign_struct"/>
+        <macro id="355" name="kcg_lnot_uint8"/>
+        <macro id="356" name="kcg_lnot_uint16"/>
+        <macro id="357" name="kcg_lnot_uint32"/>
+        <macro id="358" name="kcg_lnot_uint64"/>
+        <macro id="359" name="kcg_lsl_uint8"/>
+        <macro id="360" name="kcg_lsl_uint16"/>
+        <macro id="361" name="kcg_lsl_uint32"/>
+        <macro id="362" name="kcg_lsl_uint64"/>
+        <macro id="363" name="kcg_true"/>
+        <macro id="364" name="kcg_false"/>
+        <macro id="365" name="kcg_lit_int8"/>
+        <macro id="366" name="kcg_lit_int16"/>
+        <macro id="367" name="kcg_lit_int32"/>
+        <macro id="368" name="kcg_lit_int64"/>
+        <macro id="369" name="kcg_lit_uint8"/>
+        <macro id="370" name="kcg_lit_uint16"/>
+        <macro id="371" name="kcg_lit_uint32"/>
+        <macro id="372" name="kcg_lit_uint64"/>
+        <macro id="373" name="kcg_lit_size"/>
+        <macro id="374" name="kcg_lit_float64"/>
+        <macro id="375" name="kcg_lit_float32"/>
+        <predefType id="376" name="kcg_int8"/>
+        <predefType id="377" name="kcg_int16"/>
+        <predefType id="378" name="kcg_int32"/>
+        <predefType id="379" name="kcg_int64"/>
+        <predefType id="380" name="kcg_uint8"/>
+        <predefType id="381" name="kcg_uint16"/>
+        <predefType id="382" name="kcg_uint32"/>
+        <predefType id="383" name="kcg_uint64"/>
+        <predefType id="384" name="kcg_size"/>
+        <predefType id="385" name="kcg_float64"/>
+        <predefType id="386" name="kcg_float32"/>
+        <predefType id="387" name="kcg_bool"/>
+        <predefType id="388" name="kcg_char"/>
+        <macro id="389" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="390" name="kcg_consts.h">
+        <macro id="391" name="C1" type="385"/>
+        <macro id="392" name="C2" type="385"/>
+        <macro id="393" name="C3" type="385"/>
+        <macro id="394" name="ITISIZE" type="378"/>
+        <macro id="395" name="TIMESTEP" type="385"/>
+        <macro id="396" name="D" type="385"/>
+        <macro id="397" name="B" type="385"/>
+        <macro id="398" name="DELTA" type="385"/>
+        <macro id="399" name="PI" type="385"/>
+        <macro id="400" name="SA" type="385"/>
+        <macro id="401" name="SB" type="385"/>
+        <macro id="402" name="SC" type="385"/>
+        <macro id="403" name="SD" type="385"/>
+        <constant id="404" name="RED" type="290" pointer="false"/>
+        <constant id="405" name="GREEN" type="290" pointer="false"/>
+        <constant id="406" name="BLUE" type="290" pointer="false"/>
+        <constant id="407" name="YELLOW" type="290" pointer="false"/>
+        <constant id="408" name="MAGENTA" type="290" pointer="false"/>
+        <constant id="409" name="CYAN" type="290" pointer="false"/>
+        <constant id="410" name="GRAY" type="290" pointer="false"/>
+        <macro id="411" name="TLNUMBER" type="378"/>
+        <macro id="412" name="OBSTNUM" type="378"/>
+        <macro id="413" name="MAXSPEED" type="385"/>
+        <constant id="414" name="AMBER" type="290" pointer="false"/>
+        <macro id="415" name="MAPNUM" type="378"/>
+        <macro id="416" name="MAXWHEEL" type="385"/>
+        <macro id="417" name="SONARFAR" type="378"/>
+        <macro id="418" name="ROBST" type="385"/>
+        <constant id="419" name="DIR_INPUTS" type="330" pointer="false"/>
+        <constant id="420" name="STOP" type="321" pointer="false"/>
+        <macro id="421" name="KP" type="385"/>
+        <macro id="422" name="KD" type="385"/>
+        <macro id="423" name="KI" type="385"/>
+      </file>
+      <file id="424" name="kcg_sensors.h"/>
+    </c>
+    <map srcId="385" dstId="374" role="wrapped-lit"/>
+    <map srcId="386" dstId="375" role="wrapped-lit"/>
+    <map srcId="384" dstId="373" role="wrapped-lit"/>
+    <map srcId="383" dstId="372" role="wrapped-lit"/>
+    <map srcId="383" dstId="358" role="wrapped-lnot"/>
+    <map srcId="383" dstId="362" role="wrapped-lsl"/>
+    <map srcId="382" dstId="371" role="wrapped-lit"/>
+    <map srcId="382" dstId="357" role="wrapped-lnot"/>
+    <map srcId="382" dstId="361" role="wrapped-lsl"/>
+    <map srcId="381" dstId="370" role="wrapped-lit"/>
+    <map srcId="381" dstId="356" role="wrapped-lnot"/>
+    <map srcId="381" dstId="360" role="wrapped-lsl"/>
+    <map srcId="380" dstId="369" role="wrapped-lit"/>
+    <map srcId="380" dstId="355" role="wrapped-lnot"/>
+    <map srcId="380" dstId="359" role="wrapped-lsl"/>
+    <map srcId="379" dstId="368" role="wrapped-lit"/>
+    <map srcId="378" dstId="367" role="wrapped-lit"/>
+    <map srcId="377" dstId="366" role="wrapped-lit"/>
+    <map srcId="376" dstId="365" role="wrapped-lit"/>
+    <map srcId="298" dstId="200" role="type-use"/>
+    <map srcId="298" dstId="201" role="type-comparison"/>
+    <map srcId="298" dstId="258" role="type-copy"/>
+    <map srcId="282" dstId="204" role="type-use"/>
+    <map srcId="282" dstId="205" role="type-comparison"/>
+    <map srcId="282" dstId="259" role="type-copy"/>
+    <map srcId="330" dstId="176" role="type-use"/>
+    <map srcId="330" dstId="177" role="type-comparison"/>
+    <map srcId="330" dstId="252" role="type-copy"/>
+    <map srcId="311" dstId="208" role="type-use"/>
+    <map srcId="311" dstId="209" role="type-comparison"/>
+    <map srcId="311" dstId="260" role="type-copy"/>
+    <map srcId="306" dstId="212" role="type-use"/>
+    <map srcId="306" dstId="213" role="type-comparison"/>
+    <map srcId="306" dstId="261" role="type-copy"/>
+    <map srcId="321" dstId="216" role="type-use"/>
+    <map srcId="321" dstId="217" role="type-comparison"/>
+    <map srcId="321" dstId="262" role="type-copy"/>
+    <map srcId="317" dstId="220" role="type-use"/>
+    <map srcId="317" dstId="221" role="type-comparison"/>
+    <map srcId="317" dstId="263" role="type-copy"/>
+    <map srcId="290" dstId="224" role="type-use"/>
+    <map srcId="290" dstId="225" role="type-comparison"/>
+    <map srcId="290" dstId="264" role="type-copy"/>
+    <map srcId="271" dstId="180" role="type-use"/>
+    <map srcId="271" dstId="181" role="type-comparison"/>
+    <map srcId="271" dstId="253" role="type-copy"/>
+    <map srcId="301" dstId="184" role="type-use"/>
+    <map srcId="301" dstId="185" role="type-comparison"/>
+    <map srcId="301" dstId="254" role="type-copy"/>
+    <map srcId="320" dstId="188" role="type-use"/>
+    <map srcId="320" dstId="189" role="type-comparison"/>
+    <map srcId="320" dstId="255" role="type-copy"/>
+    <map srcId="278" dstId="228" role="type-use"/>
+    <map srcId="278" dstId="229" role="type-comparison"/>
+    <map srcId="278" dstId="265" role="type-copy"/>
+    <map srcId="324" dstId="232" role="type-use"/>
+    <map srcId="324" dstId="233" role="type-comparison"/>
+    <map srcId="324" dstId="266" role="type-copy"/>
+    <map srcId="314" dstId="236" role="type-use"/>
+    <map srcId="314" dstId="237" role="type-comparison"/>
+    <map srcId="314" dstId="267" role="type-copy"/>
+    <map srcId="272" dstId="240" role="type-use"/>
+    <map srcId="272" dstId="241" role="type-comparison"/>
+    <map srcId="272" dstId="268" role="type-copy"/>
+    <map srcId="310" dstId="192" role="type-use"/>
+    <map srcId="310" dstId="193" role="type-comparison"/>
+    <map srcId="310" dstId="256" role="type-copy"/>
+    <map srcId="302" dstId="244" role="type-use"/>
+    <map srcId="302" dstId="245" role="type-comparison"/>
+    <map srcId="302" dstId="269" role="type-copy"/>
+    <map srcId="294" dstId="248" role="type-use"/>
+    <map srcId="294" dstId="249" role="type-comparison"/>
+    <map srcId="294" dstId="270" role="type-copy"/>
+    <map srcId="305" dstId="196" role="type-use"/>
+    <map srcId="305" dstId="197" role="type-comparison"/>
+    <map srcId="305" dstId="257" role="type-copy"/>
+  </generated>
+  <map modelId="154" generatedId="352"/>
+  <map modelId="153" generatedId="351"/>
+  <map modelId="152" generatedId="350"/>
+  <map modelId="137" generatedId="347"/>
+  <map modelId="136" generatedId="346"/>
+  <map modelId="113" generatedId="344"/>
+  <map modelId="112" generatedId="343"/>
+  <map modelId="111" generatedId="342"/>
+  <map modelId="110" generatedId="341"/>
+  <map modelId="87" generatedId="339"/>
+  <map modelId="86" generatedId="338"/>
+  <map modelId="85" generatedId="337"/>
+  <map modelId="84" generatedId="336"/>
+  <map modelId="79" generatedId="334"/>
+  <map modelId="78" generatedId="333"/>
+  <map modelId="77" generatedId="332"/>
+  <map modelId="139" generatedId="165" role="context-parameter"/>
+  <map modelId="139" generatedId="164" role="init-method"/>
+  <map modelId="139" generatedId="167" role="context-parameter"/>
+  <map modelId="139" generatedId="166" role="reset-method"/>
+  <map modelId="139" generatedId="169" role="input-struct-parameter"/>
+  <map modelId="140" generatedId="174"/>
+  <map modelId="139" generatedId="173" role="input-struct-type"/>
+  <map modelId="139" generatedId="170" role="context-parameter"/>
+  <map modelId="141" generatedId="172"/>
+  <map modelId="139" generatedId="171" role="context-type"/>
+  <map modelId="139" generatedId="163" role="interface-file"/>
+  <map modelId="139" generatedId="168" role="cycle-method"/>
+  <map modelId="138" generatedId="348"/>
+  <map modelId="127" generatedId="423"/>
+  <map modelId="126" generatedId="422"/>
+  <map modelId="125" generatedId="421"/>
+  <map modelId="124" generatedId="420"/>
+  <map modelId="123" generatedId="419"/>
+  <map modelId="122" generatedId="418"/>
+  <map modelId="118" generatedId="417"/>
+  <map modelId="116" generatedId="416"/>
+  <map modelId="115" generatedId="415"/>
+  <map modelId="114" generatedId="414"/>
+  <map modelId="108" generatedId="413"/>
+  <map modelId="117" generatedId="412"/>
+  <map modelId="106" generatedId="411"/>
+  <map modelId="104" generatedId="410"/>
+  <map modelId="103" generatedId="409"/>
+  <map modelId="102" generatedId="408"/>
+  <map modelId="101" generatedId="407"/>
+  <map modelId="100" generatedId="406"/>
+  <map modelId="99" generatedId="405"/>
+  <map modelId="98" generatedId="404"/>
+  <map modelId="97" generatedId="403"/>
+  <map modelId="96" generatedId="402"/>
+  <map modelId="95" generatedId="401"/>
+  <map modelId="94" generatedId="400"/>
+  <map modelId="93" generatedId="399"/>
+  <map modelId="92" generatedId="398"/>
+  <map modelId="91" generatedId="397"/>
+  <map modelId="90" generatedId="396"/>
+  <map modelId="89" generatedId="395"/>
+  <map modelId="88" generatedId="394"/>
+  <map modelId="130" generatedId="393"/>
+  <map modelId="129" generatedId="392"/>
+  <map modelId="128" generatedId="391"/>
+  <map modelId="151" generatedId="349"/>
+  <map modelId="135" generatedId="345"/>
+  <map modelId="109" generatedId="340"/>
+  <map modelId="83" generatedId="335"/>
+  <map modelId="76" generatedId="331"/>
+  <map modelId="55" generatedId="300"/>
+  <map modelId="54" generatedId="299"/>
+  <map modelId="107" generatedId="298"/>
+  <map modelId="53" generatedId="298"/>
+  <map modelId="39" generatedId="289"/>
+  <map modelId="38" generatedId="288"/>
+  <map modelId="37" generatedId="287"/>
+  <map modelId="36" generatedId="286"/>
+  <map modelId="35" generatedId="285"/>
+  <map modelId="34" generatedId="284"/>
+  <map modelId="33" generatedId="283"/>
+  <map modelId="143" generatedId="282"/>
+  <map modelId="32" generatedId="282"/>
+  <map modelId="56" generatedId="330"/>
+  <map modelId="28" generatedId="313"/>
+  <map modelId="27" generatedId="312"/>
+  <map modelId="105" generatedId="311"/>
+  <map modelId="26" generatedId="311"/>
+  <map modelId="44" generatedId="309"/>
+  <map modelId="43" generatedId="308"/>
+  <map modelId="42" generatedId="307"/>
+  <map modelId="146" generatedId="306"/>
+  <map modelId="41" generatedId="306"/>
+  <map modelId="31" generatedId="323"/>
+  <map modelId="30" generatedId="322"/>
+  <map modelId="133" generatedId="321"/>
+  <map modelId="29" generatedId="321"/>
+  <map modelId="4" generatedId="319"/>
+  <map modelId="3" generatedId="318"/>
+  <map modelId="132" generatedId="317"/>
+  <map modelId="2" generatedId="317"/>
+  <map modelId="21" generatedId="293"/>
+  <map modelId="20" generatedId="292"/>
+  <map modelId="19" generatedId="291"/>
+  <map modelId="74" generatedId="290"/>
+  <map modelId="18" generatedId="290"/>
+  <map modelId="145" generatedId="271"/>
+  <map modelId="11" generatedId="271"/>
+  <map modelId="121" generatedId="301"/>
+  <map modelId="25" generatedId="301"/>
+  <map modelId="134" generatedId="320"/>
+  <map modelId="57" generatedId="320"/>
+  <map modelId="52" generatedId="281"/>
+  <map modelId="51" generatedId="280"/>
+  <map modelId="50" generatedId="279"/>
+  <map modelId="82" generatedId="278"/>
+  <map modelId="49" generatedId="278"/>
+  <map modelId="17" generatedId="329"/>
+  <map modelId="16" generatedId="328"/>
+  <map modelId="15" generatedId="327"/>
+  <map modelId="14" generatedId="326"/>
+  <map modelId="13" generatedId="325"/>
+  <map modelId="75" generatedId="324"/>
+  <map modelId="12" generatedId="324"/>
+  <map modelId="24" generatedId="316"/>
+  <map modelId="23" generatedId="315"/>
+  <map modelId="81" generatedId="314"/>
+  <map modelId="22" generatedId="314"/>
+  <map modelId="10" generatedId="277"/>
+  <map modelId="9" generatedId="276"/>
+  <map modelId="8" generatedId="275"/>
+  <map modelId="7" generatedId="274"/>
+  <map modelId="6" generatedId="273"/>
+  <map modelId="144" generatedId="272"/>
+  <map modelId="5" generatedId="272"/>
+  <map modelId="120" generatedId="310"/>
+  <map modelId="1" generatedId="310"/>
+  <map modelId="60" generatedId="304"/>
+  <map modelId="59" generatedId="303"/>
+  <map modelId="119" generatedId="302"/>
+  <map modelId="58" generatedId="302"/>
+  <map modelId="48" generatedId="297"/>
+  <map modelId="47" generatedId="296"/>
+  <map modelId="46" generatedId="295"/>
+  <map modelId="80" generatedId="294"/>
+  <map modelId="45" generatedId="294"/>
+  <map modelId="147" generatedId="305"/>
+  <map modelId="40" generatedId="305"/>
+  <map modelId="62" generatedId="388"/>
+  <map modelId="61" generatedId="387"/>
+  <map modelId="72" generatedId="385"/>
+  <map modelId="71" generatedId="386"/>
+  <map modelId="73" generatedId="384"/>
+  <map modelId="70" generatedId="383"/>
+  <map modelId="69" generatedId="382"/>
+  <map modelId="68" generatedId="381"/>
+  <map modelId="67" generatedId="380"/>
+  <map modelId="66" generatedId="379"/>
+  <map modelId="65" generatedId="378"/>
+  <map modelId="64" generatedId="377"/>
+  <map modelId="63" generatedId="376"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** mapping.xml
+** Generation date: 2017-01-18T22:10:02
+*************************************************************$-->

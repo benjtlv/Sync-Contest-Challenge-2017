@@ -1,0 +1,44 @@
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-02-02T15:02:29
+** Command: scade -code "C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\EiDD_Challenge_SW.etp" -root Robot::Driver -conf ImportFromSystem
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\Driver_Robot.c, line 0, character 0
+ ~Driver_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\Driver_Robot_context.c, line 0, character 0
+ ~Driver_Robot_context.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\Driver_Robot_inputs.c, line 0, character 0
+ ~Driver_Robot_inputs.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\Driver_Robot_outputs.c, line 0, character 0
+ ~Driver_Robot_outputs.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\Driver_Robot.h, line 0, character 0
+ ~Driver_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\Robot__Driver_KCG66\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-02-02T15:02:32
+** sc2c.log
+*************************************************************$

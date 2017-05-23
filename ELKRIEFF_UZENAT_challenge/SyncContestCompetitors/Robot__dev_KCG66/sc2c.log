@@ -1,0 +1,9 @@
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-18T22:10:00
+** Command: scade -code "C:\Users\benja\Desktop\challenge\SyncContestCompetitors\EiDD_Challenge_SW.etp" -root Robot::dev -conf Default -build
+*************************************************************$
+*** Configuration Error (SDYERR): No Graphical Panels connection defined for root operator "Robot::dev".
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-18T22:10:03
+** sc2c.log
+*************************************************************$

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="vec2pos">
+	<inputs>
+		<Variable name="vec">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="float64"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="2"/>
+					</size>
+				</Table>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/510d/6451/1BBC/57ea309c32e2"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="pos">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="positionTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/50ff/6451/1BBC/57ea309c4c86"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="positionTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5118/6451/1BBC/57ea30ca58e9"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5134/6451/1BBC/57ea311050a2"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L4">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5144/6451/1BBC/57ea31134381"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- pos = _L2; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="pos"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L2"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5112/6451/1BBC/57ea30b81879"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = (make positionTy)(_L3, _L4); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<!-- (make positionTy)(_L3, _L4) -->
+				<CallExpression>
+					<operator>
+						<MakeOp>
+							<type>
+								<TypeRef name="positionTy"/>
+							</type>
+						</MakeOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L4"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5117/6451/1BBC/57ea30ca6f1"/>
+			</pragmas>
+		</Equation>
+		<!-- _L3 = vec[0]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<!-- vec[0] -->
+				<PrjOp name="1">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="vec"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<ConstValue value="0"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5133/6451/1BBC/57ea311036a3"/>
+			</pragmas>
+		</Equation>
+		<!-- _L4 = vec[1]; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L4"/>
+			</lefts>
+			<right>
+				<!-- vec[1] -->
+				<PrjOp name="2">
+					<flow>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="vec"/>
+							</path>
+						</IdExpression>
+					</flow>
+					<with>
+						<ConstValue value="1"/>
+					</with>
+				</PrjOp>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/5143/6451/1BBC/57ea31137ad3"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="!ed/50ce/6451/1BBC/57ea2fcd237e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<diagrams>
+				<NetDiagram name="diagram_vec2pos_1" landscape="true" format="A4 (210 297)" oid="!ed/50cf/6451/1BBC/57ea2fcd491c">
+					<presentationElements>
+						<EquationGE presentable="!ed/5112/6451/1BBC/57ea30b81879">
+							<position>
+								<Point x="6694" y="1720"/>
+							</position>
+							<size>
+								<Size width="318" height="503"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/5117/6451/1BBC/57ea30ca6f1">
+							<position>
+								<Point x="4154" y="1349"/>
+							</position>
+							<size>
+								<Size width="1270" height="1270"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5117/6451/1BBC/57ea30ca6f1" dstEquation="!ed/5112/6451/1BBC/57ea30b81879">
+							<positions>
+								<Point x="5424" y="1984"/>
+								<Point x="6085" y="1984"/>
+								<Point x="6085" y="1984"/>
+								<Point x="6747" y="1984"/>
+							</positions>
+						</Edge>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/5133/6451/1BBC/57ea311036a3">
+							<position>
+								<Point x="2064" y="1614"/>
+							</position>
+							<size>
+								<Size width="212" height="317"/>
+							</size>
+						</EquationGE>
+						<EquationGE kind="OBJ_LIT" presentable="!ed/5143/6451/1BBC/57ea31137ad3">
+							<position>
+								<Point x="2064" y="2381"/>
+							</position>
+							<size>
+								<Size width="212" height="318"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/5133/6451/1BBC/57ea311036a3" dstEquation="!ed/5117/6451/1BBC/57ea30ca6f1">
+							<positions>
+								<Point x="2275" y="1773"/>
+								<Point x="3201" y="1773"/>
+								<Point x="3201" y="1773"/>
+								<Point x="4154" y="1773"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/5143/6451/1BBC/57ea31137ad3" dstEquation="!ed/5117/6451/1BBC/57ea30ca6f1">
+							<positions>
+								<Point x="2275" y="2540"/>
+								<Point x="3201" y="2540"/>
+								<Point x="3201" y="2196"/>
+								<Point x="4154" y="2196"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

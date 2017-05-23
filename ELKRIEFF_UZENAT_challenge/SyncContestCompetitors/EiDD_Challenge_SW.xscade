@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Type name="colorTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="red">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVUE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="green">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVUU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="blue">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVUk9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_h7SVU09HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>RGB color</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="eventTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="lightRun">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h74yR09HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="speedExcess">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h74ySE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="exitRoad">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h74ySU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="collisionEvent">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h74ySk9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="dirEvent">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/4f94/7F39/A1C/57c81df94e90"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_80lGRE83Eea2CdrGRUuH_A" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>event</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="interTy">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="waitVal">
+							<pragmas>
+								<ed:Value oid="_h7cGUE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+						<Value name="haltVal">
+							<pragmas>
+								<ed:Value oid="_h7cGUU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+						<Value name="okVal">
+							<pragmas>
+								<ed:Value oid="!ed/4591/329F/CE8/57ab3c251432"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_KRH18jomEeadiM-R_A8OhQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>interrupt from rthe city to the car</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="phaseTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="position">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="positionTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7cGV09HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="velocity">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7cGWE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="heading">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7cGWU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_80SLU083Eea2CdrGRUuH_A" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment> position, speed and direction </comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="positionTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="x">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7cGVE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="y">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="float64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7cGVU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_h7cGVk9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>position</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="sensorsTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="roadColor">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="colorTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVVE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="frontColor">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="colorTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVVU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+						<Field name="sonar">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="int32"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="_h7SVVk9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_KRH18DomEeadiM-R_A8OhQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>output of 3 sensors</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="statusTy">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="Preparing">
+							<pragmas>
+								<ed:Value oid="_h7lQQE9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+						<Value name="Running">
+							<pragmas>
+								<ed:Value oid="_h7lQQU9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+						<Value name="Arrived">
+							<pragmas>
+								<ed:Value oid="_h7lQQk9HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+						<Value name="Stopped">
+							<pragmas>
+								<ed:Value oid="_h7lQQ09HEeaSZYTsW8LJgQ"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="_80SLVk83Eea2CdrGRUuH_A" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>status of the car</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="ITISIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="50"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="_h8oZIE9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>itinerary size</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="TIMESTEP">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.01"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4504/EB/19C4/57a22057438f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>time step in seconds</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="D">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5.3"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/451d/EB/19C4/57a220cf7bc8" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>wheel diameter</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="B">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="12.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4536/EB/19C4/57a221263eb1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>base (distance between wheels)</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="DELTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/453f/EB/19C4/57a2218a2836" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>distance from the point between wheels and the eye</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="PI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.1415926"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/45b0/EB/19C4/57a227686e7b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="SA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/498a/639A/19DC/57ad9cad157" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>distance from the eye to the front of the car</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="SB">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/49a0/639A/19DC/57ad9cc86a2d" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>distance from the eye to the left of the car</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="SC">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="7.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/49ae/639A/19DC/57ad9ccb4ce9" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>distance from the eye to the back of the car</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="SD">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="3.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/49bc/639A/19DC/57ad9ccd6f20" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>distance from the eye to the right of the car</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="RED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 349, green : 119, blue : 82} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="349"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="119"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="82"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/48a1/21C6/1404/57bae915b8e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GREEN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/48e9/21C6/1404/57bae9aeba2"/>
+			</pragmas>
+		</Constant>
+		<Constant name="BLUE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4908/21C6/1404/57bae9b21c8a"/>
+			</pragmas>
+		</Constant>
+		<Constant name="YELLOW">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4927/21C6/1404/57bae9b43419"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MAGENTA">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4956/21C6/1404/57baea45907"/>
+			</pragmas>
+		</Constant>
+		<Constant name="CYAN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4975/21C6/1404/57baea5f2d62"/>
+			</pragmas>
+		</Constant>
+		<Constant name="GRAY">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4994/21C6/1404/57baea753e3e"/>
+			</pragmas>
+		</Constant>
+		<Type name="trafLTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="position">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="positionTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/49d7/63E7/5AC/57bebd142e8b"/>
+							</pragmas>
+						</Field>
+						<Field name="light">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="colorTyQ"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/5308/1783/1774/57f42ecd2e30"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/49ce/63E7/5AC/57bebcd43367" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>state of one traffic light</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="TLNUMBER">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4a00/63E7/5AC/57bebeec16bf" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>number of traffic lights</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Type name="sigTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="TLights">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="trafLArr"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/5347/3648/1650/57f4bda21bec"/>
+							</pragmas>
+						</Field>
+						<Field name="obstacles">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="obstArr"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/5351/3648/1650/57f4bdc23b25"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/4a11/63E7/5AC/57bebf765349" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>state of all traffic lights and obstacles</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="MAXSPEED">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="25."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4ce2/63E7/5AC/57beea042583" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>maximal possible speed</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Type name="colorTyQ">
+			<definition>
+				<Enum>
+					<values>
+						<Value name="redQ">
+							<pragmas>
+								<ed:Value oid="!ed/50e0/63E7/5AC/57bf031c2cf0"/>
+							</pragmas>
+						</Value>
+						<Value name="greenQ">
+							<pragmas>
+								<ed:Value oid="!ed/50e1/63E7/5AC/57bf035a576f"/>
+							</pragmas>
+						</Value>
+						<Value name="amberQ">
+							<pragmas>
+								<ed:Value oid="!ed/50e2/63E7/5AC/57bf0369809"/>
+							</pragmas>
+						</Value>
+						<Value name="otherQ">
+							<pragmas>
+								<ed:Value oid="!ed/50e3/63E7/5AC/57bf037667e5"/>
+							</pragmas>
+						</Value>
+					</values>
+				</Enum>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/50df/63E7/5AC/57bf02ff68d1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>one of standard colors</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Constant name="AMBER">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {red : 0, green : 0, blue : 0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="red">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="green">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="blue">
+							<flow>
+								<ConstValue value="0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5cd6/63E7/5AC/57bf30184465"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MAPNUM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4e13/5D78/12B4/57dfffdd37bd"/>
+			</pragmas>
+		</Constant>
+		<Constant name="MAXWHEEL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="100."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/4e62/1B07/6DC/57e82a085d9b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>maximal wheel rotation speed</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="OBSTNUM">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="10"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/50a7/2034/1A8C/57f4044833f5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>number of obstacles</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="SONARFAR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1000"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/53fb/2034/1A8C/57f41765126b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>sonar distance if no obstacle</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Type name="obstTy">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="position">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="positionTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/52bd/1783/1774/57f42ddd1ef2"/>
+							</pragmas>
+						</Field>
+						<Field name="present">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/5310/1783/1774/57f42ed23bd1"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/52bc/1783/1774/57f42ddd1308" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>state of one obstacle</comment>
+				</ed:Type>
+			</pragmas>
+		</Type>
+		<Type name="trafLArr">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="trafLTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="TLNUMBER"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/5373/3648/1650/57f4be377829"/>
+			</pragmas>
+		</Type>
+		<Type name="obstArr">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="obstTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="OBSTNUM"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/5385/3648/1650/57f4be4642f5"/>
+			</pragmas>
+		</Type>
+		<Constant name="ROBST">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1.5"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/55d4/3648/1650/57f4cae03a6b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>obstacle radius</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="DIR_INPUTS">
+			<type>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="7"/>
+					</size>
+				</Table>
+			</type>
+			<value>
+				<!-- ['i', 'n', 'p', 'u', 't', 's', '\x00'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'i'"/>
+						<ConstValue value="'n'"/>
+						<ConstValue value="'p'"/>
+						<ConstValue value="'u'"/>
+						<ConstValue value="'t'"/>
+						<ConstValue value="'s'"/>
+						<ConstValue value="'\x00'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/527c/6C9/1158/57f7afaa768f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>directory for map, itinerary and obstacles files</comment>
+				</ed:Constant>
+			</pragmas>
+		</Constant>
+		<Constant name="STOP">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="Robot::itiElement"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- {action : Robot::stop, param : 0.0} -->
+				<DataStructOp>
+					<data>
+						<LabelledExpression label="action">
+							<flow>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="Robot::stop"/>
+									</path>
+								</IdExpression>
+							</flow>
+						</LabelledExpression>
+						<LabelledExpression label="param">
+							<flow>
+								<ConstValue value="0.0"/>
+							</flow>
+						</LabelledExpression>
+					</data>
+				</DataStructOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/55f9/E50/137C/5829e11c1eaf"/>
+			</pragmas>
+		</Constant>
+		<Constant name="KD">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.1"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/578c/6AC4/1408/5846f486124d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="C1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.0060931"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5703/3971/E9C/587fd7e87e1f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="C2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="-0.014601"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5724/3971/E9C/587fd817367f"/>
+			</pragmas>
+		</Constant>
+		<Constant name="C3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.0065354"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5725/3971/E9C/587fd81e756e"/>
+			</pragmas>
+		</Constant>
+		<Constant name="KP">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5835/3971/E9C/587fdbd2489c"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LIMSONAR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="18"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5706/7ED4/454/5880d7f93b62"/>
+			</pragmas>
+		</Constant>
+		<Constant name="KI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/5592/31B6/2164/5884ad315d2d"/>
+			</pragmas>
+		</Constant>
+		<Constant name="LIMCOLOR">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float64"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="1000."/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/578a/3A25/18B0/58867366316e"/>
+			</pragmas>
+		</Constant>
+	</declarations>
+</File>

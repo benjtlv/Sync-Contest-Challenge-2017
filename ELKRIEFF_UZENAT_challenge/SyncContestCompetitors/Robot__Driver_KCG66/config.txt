@@ -1,0 +1,3 @@
+-target_dir "C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/Robot__Driver_KCG66" -expall -no_observe Robot::isGreen,Utilities::Integrator,Robot::addOne,Robot::actionArrayOnWheels,Robot::instrPlus,Robot::actionOnWheels,Robot::undressSensorTy,Robot::ComputeWheels,Robot::isRed,math::Abs,Robot::PIDControler,Robot::Driver,Robot::automatonGoPlus,Robot::undressItElem -target C -global_root_context -name_length 200 -significance_length 31 -user_config "./user_macros.h" -short_circuit 
+-root Robot::Driver
+"C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/Robot__Driver_KCG66/scade_model_without_unused.scade"

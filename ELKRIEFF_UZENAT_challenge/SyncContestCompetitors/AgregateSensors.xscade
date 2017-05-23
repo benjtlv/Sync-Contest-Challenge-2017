@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="function" name="AgregateSensors">
+	<inputs>
+		<Variable name="roadColor">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8eoIE9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+		<Variable name="lightsColor">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8eoIU9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+		<Variable name="sonar">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8eoIk9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="SensorsData">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sensorsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8eoI09HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<locals>
+		<Variable name="_L1">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/466f/7702/12D8/57ac1f855012"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L2">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="colorTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4671/7702/12D8/57ac1f851b56"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L3">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4673/7702/12D8/57ac1f85562d"/>
+			</pragmas>
+		</Variable>
+		<Variable name="_L5">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="sensorsTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4fda/7EA8/1330/57c7e878676"/>
+			</pragmas>
+		</Variable>
+	</locals>
+	<data>
+		<!-- _L1 = roadColor; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L1"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="roadColor"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/466e/7702/12D8/57ac1f85fef"/>
+			</pragmas>
+		</Equation>
+		<!-- _L2 = lightsColor; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L2"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="lightsColor"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4670/7702/12D8/57ac1f856850"/>
+			</pragmas>
+		</Equation>
+		<!-- _L3 = sonar; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L3"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="sonar"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4672/7702/12D8/57ac1f853df6"/>
+			</pragmas>
+		</Equation>
+		<!-- SensorsData = _L5; -->
+		<Equation>
+			<lefts>
+				<VariableRef name="SensorsData"/>
+			</lefts>
+			<right>
+				<IdExpression>
+					<path>
+						<ConstVarRef name="_L5"/>
+					</path>
+				</IdExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4674/7702/12D8/57ac1f8533b4"/>
+			</pragmas>
+		</Equation>
+		<!-- _L5 = (make sensorsTy)(_L1, _L2, _L3); -->
+		<Equation>
+			<lefts>
+				<VariableRef name="_L5"/>
+			</lefts>
+			<right>
+				<!-- (make sensorsTy)(_L1, _L2, _L3) -->
+				<CallExpression>
+					<operator>
+						<MakeOp name="2">
+							<type>
+								<TypeRef name="sensorsTy"/>
+							</type>
+						</MakeOp>
+					</operator>
+					<callParameters>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+					</callParameters>
+				</CallExpression>
+			</right>
+			<pragmas>
+				<ed:Equation oid="!ed/4fd9/7EA8/1330/57c7e878341c"/>
+			</pragmas>
+		</Equation>
+	</data>
+	<pragmas>
+		<ed:Operator oid="_h8eoJE9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<comment>Agregates (simulated) data of 3 sensors into one structure</comment>
+			<diagrams>
+				<NetDiagram name="diagram_AgregateSensors_1" landscape="false" format="A4 (210 297)" oid="_TibfvFATEeawOKPczrkP0A">
+					<presentationElements>
+						<EquationGE presentable="!ed/466e/7702/12D8/57ac1f85fef">
+							<position>
+								<Point x="7338" y="1411"/>
+							</position>
+							<size>
+								<Size width="247" height="512"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4670/7702/12D8/57ac1f856850">
+							<position>
+								<Point x="7303" y="1958"/>
+							</position>
+							<size>
+								<Size width="247" height="511"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4672/7702/12D8/57ac1f853df6">
+							<position>
+								<Point x="7003" y="2487"/>
+							</position>
+							<size>
+								<Size width="247" height="512"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4674/7702/12D8/57ac1f8533b4">
+							<position>
+								<Point x="11060" y="1958"/>
+							</position>
+							<size>
+								<Size width="335" height="512"/>
+							</size>
+						</EquationGE>
+						<EquationGE presentable="!ed/4fd9/7EA8/1330/57c7e878341c">
+							<position>
+								<Point x="9155" y="1588"/>
+							</position>
+							<size>
+								<Size width="1270" height="1270"/>
+							</size>
+						</EquationGE>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/466e/7702/12D8/57ac1f85fef" dstEquation="!ed/4fd9/7EA8/1330/57c7e878341c">
+							<positions>
+								<Point x="7585" y="1676"/>
+								<Point x="8361" y="1676"/>
+								<Point x="8361" y="1905"/>
+								<Point x="9155" y="1905"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4670/7702/12D8/57ac1f856850" dstEquation="!ed/4fd9/7EA8/1330/57c7e878341c">
+							<positions>
+								<Point x="7549" y="2223"/>
+								<Point x="8343" y="2223"/>
+								<Point x="8343" y="2223"/>
+								<Point x="9155" y="2223"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="3" srcEquation="!ed/4672/7702/12D8/57ac1f853df6" dstEquation="!ed/4fd9/7EA8/1330/57c7e878341c">
+							<positions>
+								<Point x="7250" y="2752"/>
+								<Point x="8202" y="2752"/>
+								<Point x="8202" y="2540"/>
+								<Point x="9155" y="2540"/>
+							</positions>
+						</Edge>
+						<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4fd9/7EA8/1330/57c7e878341c" dstEquation="!ed/4674/7702/12D8/57ac1f8533b4">
+							<positions>
+								<Point x="10425" y="2223"/>
+								<Point x="10760" y="2223"/>
+								<Point x="10760" y="2223"/>
+								<Point x="11113" y="2223"/>
+							</positions>
+						</Edge>
+					</presentationElements>
+				</NetDiagram>
+			</diagrams>
+		</ed:Operator>
+	</pragmas>
+</Operator>

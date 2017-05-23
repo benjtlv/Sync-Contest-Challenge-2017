@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Robot">
+			<declarations>
+				<Type name="wheelsTy">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="left">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4559/EB/19C4/57a2250a5c04"/>
+									</pragmas>
+								</Field>
+								<Field name="right">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4562/EB/19C4/57a225221225"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/4558/EB/19C4/57a2246f5ceb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>wheels' rotation speed</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="itiElement">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="action">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="actionTy"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/44dc/EB/19C4/57a203e727c3"/>
+									</pragmas>
+								</Field>
+								<Field name="param">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4a23/63E7/5AC/57bedf8e5e09"/>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="_h8eoME9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>itinerary element</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="itiElemArr">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="itiElement"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="ITISIZE"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="_h8eoMU9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>itinerary</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="actionTy">
+					<definition>
+						<Enum>
+							<values>
+								<Value name="go">
+									<pragmas>
+										<ed:Value oid="!ed/4a2d/63E7/5AC/57bedfcc346c"/>
+									</pragmas>
+								</Value>
+								<Value name="turn">
+									<pragmas>
+										<ed:Value oid="!ed/4a2e/63E7/5AC/57bedff524ff"/>
+									</pragmas>
+								</Value>
+								<Value name="stop">
+									<pragmas>
+										<ed:Value oid="!ed/4a2f/63E7/5AC/57bee0075972"/>
+									</pragmas>
+								</Value>
+							</values>
+						</Enum>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/4a2c/63E7/5AC/57bedfb33180" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>possible actions of a robot car</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Operator name="PhysicalModel" href="PhysicalModel.xscade"/>
+				<Operator name="IndividualRobotControl" href="IndividualRobotControl.xscade"/>
+				<Operator name="Driver" href="Driver.xscade"/>
+				<Operator name="readIti" href="readIti.xscade"/>
+				<Operator name="CarGeometry" href="CarGeometry.xscade"/>
+				<Operator name="undressItElem" href="Operator6.xscade"/>
+				<Operator name="actionOnWheels" href="Operator7.xscade"/>
+				<Operator name="actionArrayOnWheels" href="Operator8.xscade"/>
+				<Operator name="undressSensorTy" href="Operator9.xscade"/>
+				<Operator name="instrPlus" href="Operator111.xscade"/>
+				<Operator name="addOne" href="Operator13.xscade"/>
+				<Operator name="automatonGoPlus" href="Operator18.xscade"/>
+				<Operator name="isGreen" href="Operator12.xscade"/>
+				<Operator name="ComputeWheels" href="Operator181.xscade"/>
+				<Operator name="PIDControler" href="Operator201.xscade"/>
+				<Operator name="isRed" href="Operator171.xscade"/>
+				<Operator name="turnGetCount" href="Operator182.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/4b7a/455B/1268/57bf4354b4f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b7b/455B/1268/57bf43543d04" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b7c/455B/1268/57bf43541fc9" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/4b7d/455B/1268/57bf43542783" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

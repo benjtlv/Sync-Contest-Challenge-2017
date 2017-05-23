@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="467" defaultConfiguration="2">
+	<props>
+		<Prop id="3" name="@STUDIO:PRODUCT">
+			<value>SC</value>
+		</Prop>
+		<Prop id="4" name="@SCADE:SAVEVERSION">
+			<value>SCADE65</value>
+		</Prop>
+		<Prop id="16" name="@SCADE:NEWVARIABLESYMBOLS">
+			<value>true</value>
+		</Prop>
+		<Prop id="19" name="@SCSYSSYNC:PROJECT_FILE">
+			<value>EiDD_Challenge.etp</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="21" name="@SCSYSSYNC:TRANSLATED_ELEMENTS_NAMES">
+			<value>EiDD_Challenge_SW;EiDD_Challenge_SW::Robot;EiDD_Challenge_SW::Robot::PhysicalModel;EiDD_Challenge_SW::Robot::IndividualRobotControl;EiDD_Challenge_SW::Robot::Driver;EiDD_Challenge_SW::Robot::readIti;EiDD_Challenge_SW::Robot::wheelsTy;EiDD_Challenge_SW::Robot::itiElement;EiDD_Challenge_SW::Robot::itiElemArr;EiDD_Challenge_SW::Robot::actionTy;EiDD_Challenge_SW::City;EiDD_Challenge_SW::City::TraficLightsDetection;EiDD_Challenge_SW::City::TrafficLights;EiDD_Challenge_SW::City::Speed;EiDD_Challenge_SW::City::SmartCityControl;EiDD_Challenge_SW::City::RobotSensors;EiDD_Challenge_SW::City::ObstaclesDetection;EiDD_Challenge_SW::City::MapADT;EiDD_Challenge_SW::City::Light;EiDD_Challenge_SW::City::GroundColorDetection;EiDD_Challenge_SW::City::Exit;EiDD_Challenge_SW::City::EventDetection;EiDD_Challenge_SW::City::Collision;EiDD_Challenge_SW::City::AgregateSensors;EiDD_Challenge_SW::City::AgregateEvents;EiDD_Challenge_SW::City::ScoringA;EiDD_Challenge_SW::City::WrongDir;EiDD_Challenge_SW::City::mapDataTy;EiDD_Challenge_SW::City::paramTLTy;EiDD_Challenge_SW::City::paramTLArr;EiDD_Challenge_SW::ModelBasedDesignOfRobotChallenge;EiDD_Challenge_SW::ITISIZE;EiDD_Challenge_SW::TLNUMBER;EiDD_Challenge_SW::colorTy;EiDD_Challenge_SW::eventTy;EiDD_Challenge_SW::interTy;EiDD_Challenge_SW::phaseTy;EiDD_Challenge_SW::positionTy;EiDD_Challenge_SW::sensorsTy;EiDD_Challenge_SW::statusTy;EiDD_Challenge_SW::trafLTy;EiDD_Challenge_SW::sigTy;EiDD_Challenge_SW::colorTyQ</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="22" name="@SCSYSSYNC:TRANSLATED_ELEMENTS">
+			<value>!ed/MAIN/SUITE/MODEL;!ed/4b7a/455B/1268/57bf4354b4f;_h74yQE9HEeaSZYTsW8LJgQ;_uLCjcyf6Eeaxoac8p5lT7Q;_h7vBRE9HEeaSZYTsW8LJgQ;!ed/4fab/58B/1508/57d7c0e14541;!ed/4558/EB/19C4/57a2246f5ceb;_h8eoME9HEeaSZYTsW8LJgQ;_h8eoMU9HEeaSZYTsW8LJgQ;!ed/4a2c/63E7/5AC/57bedfb33180;!ed/5a93/455B/1268/57bf46521cb5;_h8eoLU9HEeaSZYTsW8LJgQ;_h8LtNk9HEeaSZYTsW8LJgQ;_h8U3MU9HEeaSZYTsW8LJgQ;_uLMUdyf6Eeaxoac8p5lT7Q;_h8LtM09HEeaSZYTsW8LJgQ;_h8eoKk9HEeaSZYTsW8LJgQ;_h8B8PE9HEeaSZYTsW8LJgQ;_h8U3LU9HEeaSZYTsW8LJgQ;_h8eoJ09HEeaSZYTsW8LJgQ;_h8U3KE9HEeaSZYTsW8LJgQ;_h8B8OE9HEeaSZYTsW8LJgQ;_h8U3JE9HEeaSZYTsW8LJgQ;_h8eoJE9HEeaSZYTsW8LJgQ;_h8U3IE9HEeaSZYTsW8LJgQ;!ed/4ec0/66CB/11D8/57c2bae62454;!ed/4f82/7F39/A1C/57c81d827635;!ed/462d/639A/19DC/57ad88f3410e;!ed/5014/6E6F/1AB4/57c97a756832;!ed/5015/6E6F/1AB4/57c97aa57069;_h7lQSE9HEeaSZYTsW8LJgQ;_h8oZIE9HEeaSZYTsW8LJgQ;!ed/4a00/63E7/5AC/57bebeec16bf;_h7SVU09HEeaSZYTsW8LJgQ;_80lGRE83Eea2CdrGRUuH_A;_KRH18jomEeadiM-R_A8OhQ;_80SLU083Eea2CdrGRUuH_A;_h7cGVk9HEeaSZYTsW8LJgQ;_KRH18DomEeadiM-R_A8OhQ;_80SLVk83Eea2CdrGRUuH_A;!ed/49ce/63E7/5AC/57bebcd43367;!ed/4a11/63E7/5AC/57bebf765349;!ed/50df/63E7/5AC/57bf02ff68d1</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="23" name="@STUDIO:TOOLCONF">
+			<value>Synchronization</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="43" name="@STUDIO:TOOLCONF">
+			<value>DiffAnalyzer</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="44" name="@STUDIO:TOOLCONF">
+			<value>Code Generator</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="45" name="@STUDIO:TOOLCONF">
+			<value>Instrumenter</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="46" name="@STUDIO:TOOLCONF">
+			<value>Reporter</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="47" name="@SCADE:CHECKED">
+			<value>false</value>
+		</Prop>
+		<Prop id="49" name="@GENERATOR:GENERATOR">
+			<value>C QUAL65</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="53" name="@GENERATOR:EXPAND_MODE">
+			<value>1</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="54" name="@GENERATOR:SEP_IO_MODE">
+			<value>6</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="56" name="@GENERATOR:GENERATOR">
+			<value>C QUAL65</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="59" name="@GENERATOR:EXPAND_MODE">
+			<value>1</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="60" name="@GENERATOR:SEP_IO_MODE">
+			<value>6</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="61" name="@GENERATOR:USER_CONFIG">
+			<value>$(TargetDir)\user_macros.h</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="208" name="@SCADE:NOTEFILE">
+			<value>$(SCADE)/lib/DefaultAty.aty</value>
+		</Prop>
+		<Prop id="239" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
+			<value>..\RP\specification.rgfx,Co-simulation</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="240" name="@GENERATOR:EXPANDED_NODES">
+			<value>mathext::HypotR</value>
+			<value>mathext::Square</value>
+			<value>mathext::Inv</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="272" name="@GENERATOR:USER_CONFIG">
+			<value>$(TargetDir)\user_macros.h</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="345" name="@STUDIO:TITLE">
+			<value>Sync Contest (virtual, without automatic driver)</value>
+		</Prop>
+		<Prop id="346" name="@STUDIO:SUBTITLE">
+			<value> to be distributed to competitors</value>
+		</Prop>
+		<Prop id="347" name="@STUDIO:DESCRIPTION">
+			<value>Full project:&#xA;- simulated City&#xA;- simulated Robot&#xA;- a stub driver</value>
+		</Prop>
+		<Prop id="348" name="@STUDIO:AUTHORS">
+			<value>Eugene Asarin and Mihaela Sighireanu</value>
+		</Prop>
+		<Prop id="349" name="@STUDIO:COMPAGNY">
+			<value>EIDD and University Paris Diderot</value>
+		</Prop>
+		<Prop id="350" name="@STUDIO:DATE">
+			<value>01/10/2016</value>
+		</Prop>
+		<Prop id="351" name="@SCADE:ASSTRING_TRIM">
+			<value></value>
+		</Prop>
+		<Prop id="353" name="@REPORTER:DOCUMENT">
+			<value>EiDD_Challenge_SW.htm</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="389" name="@GENERATOR:DISPLAY_ENABLED_PANELS">
+			<value>..\RP\specification.rgfx,Co-simulation</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="5" name="@SCADE:SEMFILE">
+			<value>EiDD_Challenge_SW.err</value>
+		</Prop>
+		<Prop id="15" name="@SCADE:DEFAULTFILE">
+			<value>EiDD_Challenge_SW.xscade</value>
+		</Prop>
+		<Prop id="399" name="@STUDIO:TOOLCONF">
+			<value>Timing and Stack Analysis Tools</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="400" name="@STUDIO:TOOLCONF">
+			<value>Dashboard</value>
+			<value>2</value>
+			<value>17</value>
+		</Prop>
+		<Prop id="451" name="@GENERATOR:DEBUG">
+			<value>true</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="452" name="@GENERATOR:GLOBAL_ROOT_CONTEXT">
+			<value>true</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="453" name="@GENERATOR:ENABLE_EXTENSIONS">
+			<value>false</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="454" name="@GENERATOR:TARGET_ADAPTOR">
+			<value></value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="455" name="@GENERATOR:SKIP_UNUSED">
+			<value>true</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="456" name="@GENERATOR:NO_BITWISE">
+			<value>true</value>
+			<configuration>2</configuration>
+		</Prop>
+		<Prop id="459" name="@GENERATOR:GLOBAL_ROOT_CONTEXT">
+			<value>true</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="460" name="@GENERATOR:NOT_OBSERVED_NODES">
+			<value>Robot::isGreen</value>
+			<value>Utilities::Integrator</value>
+			<value>Utilities::vec2pos</value>
+			<value>digital::FallingEdge</value>
+			<value>vect::VectAdd</value>
+			<value>mathext::HypotR</value>
+			<value>pwlinear::DeadBandUnSymmetrical</value>
+			<value>lut::Limiter</value>
+			<value>lut::Lut2DNoSat</value>
+			<value>City::ExitAux</value>
+			<value>Utilities::Variation</value>
+			<value>ModelBasedDesignOfRobotChallenge</value>
+			<value>linear::MeanCycle2</value>
+			<value>linear::HitCrossingRising</value>
+			<value>math::BoolToUint16</value>
+			<value>math::BoolToUint32</value>
+			<value>lut::Lut2D</value>
+			<value>City::SmartCityControl</value>
+			<value>Utilities::pos2vec</value>
+			<value>linear::MeanCycle3</value>
+			<value>linear::IntegrTrapez</value>
+			<value>linear::IntegrFwd</value>
+			<value>filters::FilterND</value>
+			<value>math::Round</value>
+			<value>pwlinear::LimiterUnSymmetrical</value>
+			<value>lut::Lut3DNoSat</value>
+			<value>filters::TransferFcnND</value>
+			<value>vect::MatSub</value>
+			<value>math::BoolToFloat32</value>
+			<value>math::InRangeOutIn</value>
+			<value>math::Mean</value>
+			<value>pwlinear::Counter</value>
+			<value>lut::Lut3D</value>
+			<value>digital::BoolVect2Int16</value>
+			<value>digital::BoolVect2Int32</value>
+			<value>filters::Filter0D</value>
+			<value>lut::Lut2DNearest</value>
+			<value>Robot::addOne</value>
+			<value>City::EventDetection</value>
+			<value>digital::Toggle</value>
+			<value>linear::Filter1stOrderLoop</value>
+			<value>linear::Memory</value>
+			<value>filters::TransferFcn0D</value>
+			<value>math::Max3</value>
+			<value>math::NumericToUint8</value>
+			<value>math::NumericToInt8</value>
+			<value>digital::FallingEdgeRetrigger</value>
+			<value>truthtables::TruthTableExh</value>
+			<value>vect::MatProd</value>
+			<value>mathext::Square</value>
+			<value>mathext::Inv</value>
+			<value>lut::Lut1DNearest</value>
+			<value>lut::Lut3DNearest</value>
+			<value>Robot::actionArrayOnWheels</value>
+			<value>Utilities::RotMatrix</value>
+			<value>digital::BoolVect2Uint64</value>
+			<value>math::BoolToInt16</value>
+			<value>math::RealToBool</value>
+			<value>math::BoolToInt32</value>
+			<value>City::Light</value>
+			<value>City::OneTL</value>
+			<value>vect::MatVectProd</value>
+			<value>vect::Det2x2</value>
+			<value>math::Max</value>
+			<value>math::RoundCeil</value>
+			<value>Robot::PhysicalModel</value>
+			<value>Robot::instrPlus</value>
+			<value>City::OneObstacle</value>
+			<value>truthtables::TruthTable</value>
+			<value>math::BoolToUint64</value>
+			<value>pwlinear::PreLoadSymmetrical</value>
+			<value>pwlinear::DeadBandSymmetrical</value>
+			<value>Robot::actionOnWheels</value>
+			<value>City::WrongDir</value>
+			<value>Utilities::CompareColors</value>
+			<value>testMap</value>
+			<value>digital::FlipFlopJK</value>
+			<value>linear::MemoryBasic</value>
+			<value>mathext::SinCosR</value>
+			<value>lut::Interp2DFloor</value>
+			<value>lut::PreLutDirect</value>
+			<value>Robot::undressSensorTy</value>
+			<value>Robot::TurnControlleur</value>
+			<value>City::WallClock</value>
+			<value>digital::FallingEdgeNoRetrigger</value>
+			<value>digital::Int2BoolVectElt</value>
+			<value>digital::Int2BoolVect</value>
+			<value>vect::VectSub</value>
+			<value>math::BoolToFloat64</value>
+			<value>lut::SearchIdxFloor</value>
+			<value>lut::SearchIdxCeil</value>
+			<value>Robot::ComputeWheels</value>
+			<value>City::TrafficLights</value>
+			<value>City::CollisionAux</value>
+			<value>Utilities::Normalize</value>
+			<value>Utilities::UpTime</value>
+			<value>digital::BoolVect2Int64</value>
+			<value>filters::FilterNN</value>
+			<value>lut::Interp1DFloor</value>
+			<value>lut::PreLutNoSat</value>
+			<value>Utilities::Bound</value>
+			<value>filters::Filter02Norm</value>
+			<value>vect::Det3x3</value>
+			<value>pwlinear::PreLoadUnSymmetrical</value>
+			<value>digital::BoolVect2IntElt</value>
+			<value>filters::Filter12Norm</value>
+			<value>math::InRangeInOut</value>
+			<value>math::Min</value>
+			<value>math::BoolToInt8</value>
+			<value>linear::Gain</value>
+			<value>linear::Derivative</value>
+			<value>math::InRangeOutOut</value>
+			<value>math::BoolToInt64</value>
+			<value>lut::Lut1DFloor</value>
+			<value>Robot::isRed</value>
+			<value>City::RobotSensors</value>
+			<value>linear::HitCrossingEither</value>
+			<value>filters::Filter01</value>
+			<value>vect::VectMatProd</value>
+			<value>filters::TransferFcn01</value>
+			<value>filters::Filter02</value>
+			<value>math::Min3</value>
+			<value>math::Sign</value>
+			<value>math::IntToBool</value>
+			<value>math::NumericToFloat32</value>
+			<value>pwlinear::RisingHysteresis</value>
+			<value>lut::Lut2DFloor</value>
+			<value>digital::EitherEdge</value>
+			<value>filters::Filter11</value>
+			<value>filters::TransferFcn02</value>
+			<value>vect::Inv2x2</value>
+			<value>vect::Det4x4</value>
+			<value>math::NumericToUint16</value>
+			<value>math::NumericToUint32</value>
+			<value>City::Collision</value>
+			<value>City::AgregateEvents</value>
+			<value>filters::Filter12</value>
+			<value>math::Abs</value>
+			<value>lut::SearchNearest</value>
+			<value>Robot::PIDControler</value>
+			<value>City::Exit</value>
+			<value>digital::BoolVect2Uint8</value>
+			<value>linear::HitCrossingFalling</value>
+			<value>filters::TransferFcn12</value>
+			<value>math::RoundFloor</value>
+			<value>math::NumericToInt16</value>
+			<value>math::NumericToInt32</value>
+			<value>lut::Proj</value>
+			<value>City::GroundColorDetection</value>
+			<value>City::OneObstacleDet</value>
+			<value>filters::FilterNDNorm</value>
+			<value>math::InRangeInIn</value>
+			<value>pwlinear::Quantizer</value>
+			<value>lut::InterpolateLinear</value>
+			<value>City::Speed</value>
+			<value>filters::Filter0DNorm</value>
+			<value>Robot::Driver</value>
+			<value>Robot::automatonGoPlus</value>
+			<value>Utilities::DecodeColor</value>
+			<value>Utilities::EncodeColor</value>
+			<value>vect::MatAdd</value>
+			<value>vect::Inv3x3</value>
+			<value>math::Mean3</value>
+			<value>math::ByteToUint8</value>
+			<value>math::BoolToUint8</value>
+			<value>City::AllObstacles</value>
+			<value>digital::count_down</value>
+			<value>filters::SumDelay</value>
+			<value>vect::ScalProd</value>
+			<value>lut::Lut1DCeil</value>
+			<value>Robot::CarGeometry</value>
+			<value>Robot::undressItElem</value>
+			<value>testIti</value>
+			<value>digital::FlipFlopReset</value>
+			<value>digital::RisingEdgeRetrigger</value>
+			<value>digital::BoolVect2Int8</value>
+			<value>truthtables::TruthTableElt</value>
+			<value>math::NumericToFloat64</value>
+			<value>lut::Lut2DCeil</value>
+			<value>lut::SearchIdx</value>
+			<value>Robot::IndividualRobotControl</value>
+			<value>City::TraficLightsDetection</value>
+			<value>City::ObstaclesDetection</value>
+			<value>truthtables::TruthTableLine</value>
+			<value>filters::FilterNNNorm</value>
+			<value>math::NumericToUint64</value>
+			<value>lut::Interp1D</value>
+			<value>lut::Limiter2</value>
+			<value>Utilities::AngleDist</value>
+			<value>digital::FlipFlopSet</value>
+			<value>filters::Filter01Norm</value>
+			<value>vect::Inv4x4</value>
+			<value>math::NumericToInt64</value>
+			<value>pwlinear::ClockCounter</value>
+			<value>pwlinear::LimiterSymmetrical</value>
+			<value>lut::Interp2D</value>
+			<value>lut::PreLut</value>
+			<value>City::ScoringA</value>
+			<value>digital::RisingEdge</value>
+			<value>truthtables::TruthTableIdx</value>
+			<value>filters::Filter11Norm</value>
+			<value>pwlinear::RateLimiter</value>
+			<value>pwlinear::FallingHysteresis</value>
+			<value>lut::Lut1DNoSat</value>
+			<value>City::AgregateSensors</value>
+			<value>City::ScoringB</value>
+			<value>digital::RisingEdgeNoRetrigger</value>
+			<value>digital::BoolVect2Uint16</value>
+			<value>digital::BoolVect2Uint32</value>
+			<value>truthtables::TruthTableLineIdx</value>
+			<value>lut::Lut1D</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="461" name="@GENERATOR:OBSERVE_MODE">
+			<value>5</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="462" name="@GENERATOR:ENABLE_EXTENSIONS">
+			<value>false</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="463" name="@GENERATOR:TARGET_ADAPTOR">
+			<value></value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="464" name="@GENERATOR:SKIP_UNUSED">
+			<value>true</value>
+			<configuration>17</configuration>
+		</Prop>
+		<Prop id="465" name="@GENERATOR:NO_BITWISE">
+			<value>true</value>
+			<configuration>17</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="6" extensions="xscade" name="Model Files">
+			<elements>
+				<Folder id="7" extensions="xscade" name="Separate Files">
+					<elements>
+						<FileRef id="206" persistAs="DecodeColor.xscade">
+							<props>
+								<Prop id="201" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="207" persistAs="CompareColors.xscade">
+							<props>
+								<Prop id="200" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="231" persistAs="readIti.xscade">
+							<props>
+								<Prop id="230" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="263" persistAs="CarGeometry.xscade">
+							<props>
+								<Prop id="262" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="274" persistAs="AgregateEvents.xscade">
+							<props>
+								<Prop id="273" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="276" persistAs="AgregateSensors.xscade">
+							<props>
+								<Prop id="275" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="278" persistAs="Collision.xscade">
+							<props>
+								<Prop id="277" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="280" persistAs="EventDetection.xscade">
+							<props>
+								<Prop id="279" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="282" persistAs="Exit.xscade">
+							<props>
+								<Prop id="281" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="284" persistAs="ExitAux.xscade">
+							<props>
+								<Prop id="283" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="286" persistAs="GroundColorDetection.xscade">
+							<props>
+								<Prop id="285" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="288" persistAs="Light.xscade">
+							<props>
+								<Prop id="287" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="290" persistAs="MapADT.xscade">
+							<props>
+								<Prop id="289" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="292" persistAs="ObstaclesDetection.xscade">
+							<props>
+								<Prop id="291" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="294" persistAs="OneTL.xscade">
+							<props>
+								<Prop id="293" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="296" persistAs="RobotSensors.xscade">
+							<props>
+								<Prop id="295" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="298" persistAs="ScoringA.xscade">
+							<props>
+								<Prop id="297" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="300" persistAs="ScoringB.xscade">
+							<props>
+								<Prop id="299" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="302" persistAs="SmartCityControl.xscade">
+							<props>
+								<Prop id="301" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="304" persistAs="Speed.xscade">
+							<props>
+								<Prop id="303" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="306" persistAs="TrafficLights.xscade">
+							<props>
+								<Prop id="305" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="308" persistAs="TraficLightsDetection.xscade">
+							<props>
+								<Prop id="307" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="310" persistAs="WrongDir.xscade">
+							<props>
+								<Prop id="309" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="312" persistAs="Driver.xscade">
+							<props>
+								<Prop id="311" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="318" persistAs="IndividualRobotControl.xscade">
+							<props>
+								<Prop id="317" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="320" persistAs="PhysicalModel.xscade">
+							<props>
+								<Prop id="319" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="324" persistAs="Bound.xscade">
+							<props>
+								<Prop id="323" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="326" persistAs="Integrator.xscade">
+							<props>
+								<Prop id="325" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="328" persistAs="Normalize.xscade">
+							<props>
+								<Prop id="327" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="330" persistAs="pos2vec.xscade">
+							<props>
+								<Prop id="329" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="332" persistAs="RotMatrix.xscade">
+							<props>
+								<Prop id="331" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="334" persistAs="UpTime.xscade">
+							<props>
+								<Prop id="333" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="336" persistAs="Variation.xscade">
+							<props>
+								<Prop id="335" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="338" persistAs="vec2pos.xscade">
+							<props>
+								<Prop id="337" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="344" persistAs="EncodeColor.xscade">
+							<props>
+								<Prop id="343" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="360" persistAs="OneObstacleDet.xscade">
+							<props>
+								<Prop id="359" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="364" persistAs="AngleDist.xscade">
+							<props>
+								<Prop id="363" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="374" persistAs="WallClock.xscade">
+							<props>
+								<Prop id="373" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="378" persistAs="OneObstacle.xscade">
+							<props>
+								<Prop id="377" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="382" persistAs="AllObstacles.xscade">
+							<props>
+								<Prop id="381" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="388" persistAs="CollisionAux.xscade">
+							<props>
+								<Prop id="387" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="395" persistAs="readObstacles.xscade">
+							<props>
+								<Prop id="394" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="404" persistAs="Operator6.xscade">
+							<props>
+								<Prop id="403" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="406" persistAs="Operator7.xscade">
+							<props>
+								<Prop id="405" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="408" persistAs="Operator8.xscade">
+							<props>
+								<Prop id="407" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="410" persistAs="Operator9.xscade">
+							<props>
+								<Prop id="409" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="416" persistAs="Operator111.xscade">
+							<props>
+								<Prop id="415" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="422" persistAs="Operator13.xscade">
+							<props>
+								<Prop id="421" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="432" persistAs="Operator18.xscade">
+							<props>
+								<Prop id="431" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="418" persistAs="Operator12.xscade">
+							<props>
+								<Prop id="417" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="440" persistAs="Operator181.xscade">
+							<props>
+								<Prop id="439" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="444" persistAs="Operator201.xscade">
+							<props>
+								<Prop id="443" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="458" persistAs="Operator171.xscade">
+							<props>
+								<Prop id="457" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+						<FileRef id="467" persistAs="Operator182.xscade">
+							<props>
+								<Prop id="466" name="@SCADE:NONROOT">
+									<value>true</value>
+								</Prop>
+							</props>
+						</FileRef>
+					</elements>
+				</Folder>
+				<FileRef id="24" persistAs="EiDD_Challenge_SW.xscade"/>
+				<FileRef id="78" persistAs="testMap.xscade"/>
+				<FileRef id="210" persistAs="ModelBasedDesignOfRobotChallenge.xscade"/>
+				<FileRef id="339" persistAs="PackageRobot.xscade"/>
+				<FileRef id="340" persistAs="PackageCity.xscade"/>
+				<FileRef id="341" persistAs="PackageUtilities.xscade"/>
+				<FileRef id="342" persistAs="testIti.xscade"/>
+			</elements>
+		</Folder>
+		<Folder id="8" extensions="vsp;etp" name="SCADE Libraries">
+			<elements>
+				<FileRef id="9" persistAs="$(SCADE)\libraries\SC65\libdigital\libdigital.etp"/>
+				<FileRef id="10" persistAs="$(SCADE)\libraries\SC65\liblinear\liblinear.etp"/>
+				<FileRef id="11" persistAs="$(SCADE)\libraries\SC65\libmath\libmath.etp"/>
+				<FileRef id="12" persistAs="$(SCADE)\libraries\SC65\libmathext\libmathext.etp"/>
+				<FileRef id="13" persistAs="$(SCADE)\libraries\SC65\libpwlinear\libpwlinear.etp"/>
+			</elements>
+		</Folder>
+		<Folder id="62" extensions="c;adb;ada" name="External Code">
+			<elements>
+				<FileRef id="213" persistAs="MapADT_City.c">
+					<props>
+						<Prop id="214" name="@SIMULATOR:FILEKIND">
+							<value>CS</value>
+						</Prop>
+						<Prop id="215" name="@SCADE:IMPORTED_NODES">
+							<value>City::MapADT</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="232" persistAs="readIti_Robot.c">
+					<props>
+						<Prop id="233" name="@SIMULATOR:FILEKIND">
+							<value>CS</value>
+						</Prop>
+						<Prop id="234" name="@SCADE:IMPORTED_NODES">
+							<value>Robot::readIti</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="246" persistAs="map.h"/>
+				<FileRef id="396" persistAs="readObstacles_City.c">
+					<props>
+						<Prop id="397" name="@SIMULATOR:FILEKIND">
+							<value>CS</value>
+						</Prop>
+						<Prop id="398" name="@SCADE:IMPORTED_NODES">
+							<value>City::readObstacles</value>
+						</Prop>
+					</props>
+				</FileRef>
+			</elements>
+		</Folder>
+		<Folder id="83" extensions="etp" name="Graphical Panels">
+			<elements>
+				<FileRef id="84" persistAs="..\RP\MonEcran.etp"/>
+			</elements>
+		</Folder>
+		<Folder id="85" extensions="sdy" name="Graphical Panels Mapping File">
+			<elements>
+				<FileRef id="86" persistAs="EiDD_Challenge_SW.sdy"/>
+			</elements>
+		</Folder>
+		<FileRef id="237" persistAs="inputs\itinerary.txt"/>
+	</roots>
+	<configurations>
+		<Configuration id="2" name="Default"/>
+		<Configuration id="17" name="ImportFromSystem"/>
+	</configurations>
+</Project>

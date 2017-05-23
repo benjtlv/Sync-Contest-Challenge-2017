@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#on#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/Robot__Driver_KCG66/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="Robot::undressItElem"/>
+    <Option name="no_observe" value="Robot::automatonGoPlus"/>
+    <Option name="no_observe" value="Robot::Driver"/>
+    <Option name="no_observe" value="Robot::PIDControler"/>
+    <Option name="no_observe" value="math::Abs"/>
+    <Option name="no_observe" value="Robot::isRed"/>
+    <Option name="no_observe" value="Robot::ComputeWheels"/>
+    <Option name="no_observe" value="Robot::undressSensorTy"/>
+    <Option name="no_observe" value="Robot::actionOnWheels"/>
+    <Option name="no_observe" value="Robot::instrPlus"/>
+    <Option name="no_observe" value="Robot::actionArrayOnWheels"/>
+    <Option name="no_observe" value="Robot::addOne"/>
+    <Option name="no_observe" value="Utilities::Integrator"/>
+    <Option name="no_observe" value="Robot::isGreen"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#on#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/Robot__Driver_KCG66"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="Robot::Driver"/>
+    <Option name="auth" value="#off#"/>
+    <Constant scadeName="BLUE" scadeType="colorTy" targetName="BLUE" targetType="colorTy"/>
+    <Constant macroDef="true" scadeName="KP" scadeType="float64" targetName="KP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C3" scadeType="float64" targetName="C3" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C2" scadeType="float64" targetName="C2" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C1" scadeType="float64" targetName="C1" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="TIMESTEP" scadeType="float64" targetName="TIMESTEP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="KI" scadeType="float64" targetName="KI" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="KD" scadeType="float64" targetName="KD" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="LIMSONAR" scadeType="int32" targetName="LIMSONAR" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="D" scadeType="float64" targetName="D" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="B" scadeType="float64" targetName="B" targetType="kcg_float64"/>
+    <Constant scadeName="STOP" scadeType="Robot::itiElement" targetName="STOP" targetType="itiElement_Robot"/>
+    <Constant macroDef="true" scadeName="MAXWHEEL" scadeType="float64" targetName="MAXWHEEL" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="ITISIZE" scadeType="int32" targetName="ITISIZE" targetType="kcg_int32"/>
+    <EnumType scadeName="statusTy" targetName="statusTy">
+      <EnumVal scadeName="Preparing" targetName="Preparing"/>
+      <EnumVal scadeName="Running" targetName="Running"/>
+      <EnumVal scadeName="Arrived" targetName="Arrived"/>
+      <EnumVal scadeName="Stopped" targetName="Stopped"/>
+    </EnumType>
+    <EnumType scadeName="interTy" targetName="interTy">
+      <EnumVal scadeName="waitVal" targetName="waitVal"/>
+      <EnumVal scadeName="haltVal" targetName="haltVal"/>
+      <EnumVal scadeName="okVal" targetName="okVal"/>
+    </EnumType>
+    <NamedType refType="colorTy" scadeName="colorTy" targetName="colorTy"/>
+    <NamedType refType="sensorsTy" scadeName="sensorsTy" targetName="sensorsTy"/>
+    <Package scadeName="Robot">
+      <NamedType refType="wheelsTy_Robot" scadeName="wheelsTy" targetName="wheelsTy_Robot"/>
+      <NamedType refType="itiElement_Robot" scadeName="itiElement" targetName="itiElement_Robot"/>
+      <EnumType scadeName="actionTy" targetName="actionTy_Robot">
+        <EnumVal scadeName="go" targetName="go_Robot"/>
+        <EnumVal scadeName="turn" targetName="turn_Robot"/>
+        <EnumVal scadeName="stop" targetName="stop_Robot"/>
+      </EnumType>
+      <NamedType refType="itiElemArr_Robot" scadeName="itiElemArr" targetName="itiElemArr_Robot"/>
+      <RootNode headerFile="Driver_Robot.h" scadeName="Driver" targetCycleFct="Driver_Robot" targetInitFct="Driver_reset_Robot" targetInitializationFct="Driver_init_Robot">
+        <MemCtxVar targetName="Ctxt_Driver_Robot"/>
+        <Input scadeName="top" scadeType="bool" targetName="top" targetType="kcg_bool"/>
+        <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Input scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Input scadeName="Itinerary" scadeType="Robot::itiElemArr" targetName="Itinerary" targetType="itiElemArr_Robot"/>
+        <Input scadeName="getCountA" scadeType="float64" targetName="getCountA" targetType="kcg_float64"/>
+        <Input scadeName="getCountB" scadeType="float64" targetName="getCountB" targetType="kcg_float64"/>
+        <Input scadeName="light" scadeType="int32" targetName="light" targetType="kcg_int32"/>
+        <Output scadeName="RotationalSpeed" scadeType="Robot::wheelsTy" targetName="RotationalSpeed" targetType="wheelsTy_Robot"/>
+        <Output scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+        <Output scadeName="indexOut" scadeType="int32" targetName="indexOut" targetType="kcg_int32"/>
+        <Output scadeName="angleMotor" scadeType="float64" targetName="angleMotor" targetType="kcg_float64"/>
+        <Automaton scadeName="Robot" targetStatesType="SSM_ST_Robot" targetTransitionsType="SSM_TR_Robot">
+          <State scadeName="Preparing" targetName="SSM_st_Preparing_Robot">
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Running" targetName="SSM_TR_Preparing_Running_1_Preparing_Robot"/>
+            </Fork>
+          </State>
+          <State scadeName="Running" targetName="SSM_st_Running_Robot">
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Stopped" targetName="SSM_TR_Running_Stopped_1_Running_Robot"/>
+            </Fork>
+            <Fork priority="2">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Arrived" targetName="SSM_TR_Running_Arrived_2_Running_Robot"/>
+            </Fork>
+          </State>
+          <State scadeName="Arrived" targetName="SSM_st_Arrived_Robot"/>
+          <State scadeName="Stopped" targetName="SSM_st_Stopped_Robot"/>
+          <NextState inCtx="true" mem="true" targetName="Robot_state_nxt"/>
+        </Automaton>
+        <NodeInlining instName="2" scadeName="Robot::actionArrayOnWheels">
+          <Input scadeName="ItiElemArrObj" scadeType="Robot::itiElemArr" targetName="Itinerary" targetType="itiElemArr_Robot"/>
+          <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+          <Input scadeName="getCountA" scadeType="float64" targetName="getCountA" targetType="kcg_float64"/>
+          <Input scadeName="getCountB" scadeType="float64" targetName="getCountB" targetType="kcg_float64"/>
+          <Input scadeName="light" scadeType="int32" targetName="light" targetType="kcg_int32"/>
+          <Output scadeName="indexOut" scadeType="int32" targetName="indexOut" targetType="kcg_int32"/>
+          <Output scadeName="angleMotor" scadeType="float64" targetName="angleMotor" targetType="kcg_float64"/>
+          <NodeInlining instName="3" scadeName="Robot::actionOnWheels">
+            <Input scadeName="getCountA" scadeType="float64" targetName="getCountA" targetType="kcg_float64"/>
+            <Input scadeName="getCountB" scadeType="float64" targetName="getCountB" targetType="kcg_float64"/>
+            <Input scadeName="light" scadeType="int32" targetName="light" targetType="kcg_int32"/>
+            <Output inCtx="true" scadeName="finTurn" scadeType="bool" targetName="_L93_actionArrayOnWheels_2" targetType="kcg_bool"/>
+            <Output scadeName="angleMotor" scadeType="float64" targetName="angleMotor" targetType="kcg_float64"/>
+            <NodeInlining instName="1" scadeName="Robot::undressItElem">
+              <Output inCtx="true" scadeName="action" scadeType="Robot::actionTy" targetName="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" targetType="actionTy_Robot"/>
+            </NodeInlining>
+            <ActivateWhen scadeName="WhenBlock1" targetWhenType="actionTy_Robot">
+              <Condition inCtx="true" targetName="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2"/>
+              <Match scadeName="Robot::go" targetName="go_Robot">
+                <NodeInlining instName="1" scadeName="Robot::automatonGoPlus">
+                  <Automaton scadeName="goPlus" targetStatesType="SSM_ST_goPlus" targetTransitionsType="SSM_TR_goPlus">
+                    <State scadeName="go" targetName="SSM_st_go_goPlus">
+                      <NodeInlining instName="3" scadeName="Robot::ComputeWheels">
+                        <NodeInlining instName="3" scadeName="Robot::PIDControler">
+                          <FbyOp instName="2">
+                            <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+                            <Memory inCtx="true" targetName="x_Integrator_1_PIDControler_3_ComputeWheels_3_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                          </FbyOp>
+                          <NodeInlining instName="1" scadeName="Utilities::Integrator">
+                            <Input inCtx="true" scadeName="x" scadeType="float64" targetName="x_Integrator_1_PIDControler_3_ComputeWheels_3_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                            <FbyOp instName="1">
+                              <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+                              <Memory inCtx="true" targetName="_L11_Integrator_1_PIDControler_3_ComputeWheels_3_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                            </FbyOp>
+                          </NodeInlining>
+                          <NodeInlining instName="1" scadeName="Robot::isGreen"/>
+                          <NodeInlining instName="1" scadeName="Robot::isRed"/>
+                        </NodeInlining>
+                        <ActivateIf scadeName="IfBlock1">
+                          <Else>
+                            <Else/>
+                            <Then/>
+                          </Else>
+                          <Then/>
+                        </ActivateIf>
+                      </NodeInlining>
+                      <Fork priority="1">
+                        <Condition/>
+                        <Transition kind="strong" scadeDest="stopCat" targetName="SSM_TR_go_stopCat_1_go_goPlus"/>
+                      </Fork>
+                      <Fork priority="2">
+                        <Condition/>
+                        <Transition kind="strong" scadeDest="stopLight" targetName="SSM_TR_go_stopLight_2_go_goPlus"/>
+                      </Fork>
+                    </State>
+                    <State scadeName="stopCat" targetName="SSM_st_stopCat_goPlus">
+                      <Fork priority="1">
+                        <Condition/>
+                        <Transition kind="strong" scadeDest="go" targetName="SSM_TR_stopCat_go_1_stopCat_goPlus"/>
+                      </Fork>
+                    </State>
+                    <State scadeName="stopLight" targetName="SSM_st_stopLight_goPlus">
+                      <Fork priority="1">
+                        <Condition/>
+                        <Transition kind="strong" scadeDest="go" targetName="SSM_TR_stopLight_go_1_stopLight_goPlus"/>
+                      </Fork>
+                    </State>
+                    <NextState inCtx="true" mem="true" targetName="goPlus_state_nxt_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2"/>
+                  </Automaton>
+                  <NodeInlining instName="1" scadeName="Robot::isRed"/>
+                </NodeInlining>
+              </Match>
+              <Match scadeName="Robot::turn" targetName="turn_Robot">
+                <NodeInlining instName="1" scadeName="Robot::turnGetCount">
+                  <Input inCtx="true" scadeName="turn" scadeType="float64" targetName="turn_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Input inCtx="true" scadeName="getCountA" scadeType="float64" targetName="getCountA_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Input inCtx="true" scadeName="getCountB" scadeType="float64" targetName="getCountB_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Output inCtx="true" scadeName="speed" scadeType="Robot::wheelsTy" targetName="speed_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="wheelsTy_Robot"/>
+                  <Output inCtx="true" scadeName="stop" scadeType="bool" targetName="stop_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Output inCtx="true" scadeName="angleMotorOut" scadeType="float64" targetName="angleMotorOut_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="coefRot" scadeType="float64" targetName="coefRot_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="angleMotor" scadeType="float64" targetName="angleMotor_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L14" scadeType="float64" targetName="_L14_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L24" scadeType="float64" targetName="_L24_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L27" scadeType="float64" targetName="_L27_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L28" scadeType="float64" targetName="_L28_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L32" scadeType="bool" targetName="_L32_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L34" scadeType="bool" targetName="_L34_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L35" scadeType="float64" targetName="_L35_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L38" scadeType="float64" targetName="_L38_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L42" scadeType="bool" targetName="_L42_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L43" scadeType="bool" targetName="_L43_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L44" scadeType="bool" targetName="_L44_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L45" scadeType="bool" targetName="_L45_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_bool"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L48" scadeType="float64" targetName="_L48_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L50" scadeType="float64" targetName="_L50_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L54" scadeType="float64" targetName="_L54_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" inCtx="true" scadeName="_L18" scadeType="Robot::wheelsTy" targetName="_L18_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="wheelsTy_Robot"/>
+                  <NodeInlining instName="1" scadeName="math::Abs">
+                    <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="getCountB_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                    <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="_L28_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  </NodeInlining>
+                  <NodeInlining instName="2" scadeName="math::Abs">
+                    <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="getCountA_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                    <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="_L35_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  </NodeInlining>
+                  <NodeInlining instName="3" scadeName="math::Abs">
+                    <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="angleMotorOut_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                    <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="_L38_turnGetCount_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+                  </NodeInlining>
+                </NodeInlining>
+              </Match>
+              <Match scadeName="Robot::stop" targetName="stop_Robot"/>
+            </ActivateWhen>
+          </NodeInlining>
+          <NodeInlining instName="1" scadeName="Robot::undressSensorTy">
+            <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+          </NodeInlining>
+          <FbyOp instName="1">
+            <Memory inCtx="true" targetName="_L78_actionArrayOnWheels_2" targetType="kcg_int32"/>
+          </FbyOp>
+          <NodeInlining instName="2" scadeName="Robot::instrPlus">
+            <Output scadeName="newIndex" scadeType="int32" targetName="indexOut" targetType="kcg_int32"/>
+            <NodeInlining instName="2" scadeName="Robot::addOne"/>
+            <FbyOp instName="1">
+              <Memory inCtx="true" targetName="_L38_instrPlus_2_actionArrayOnWheels_2" targetType="kcg_bool"/>
+            </FbyOp>
+            <NodeInlining instName="1" scadeName="Robot::isGreen"/>
+          </NodeInlining>
+          <FbyOp instName="3">
+            <Memory inCtx="true" targetName="_L93_actionArrayOnWheels_2" targetType="kcg_bool"/>
+          </FbyOp>
+        </NodeInlining>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L93_actionArrayOnWheels_2" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L78_actionArrayOnWheels_2" targetType="kcg_int32"/>
+        <Memory inCtx="true" targetName="_L38_instrPlus_2_actionArrayOnWheels_2" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L11_Integrator_1_PIDControler_3_ComputeWheels_3_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+        <Memory inCtx="true" targetName="x_Integrator_1_PIDControler_3_ComputeWheels_3_automatonGoPlus_1_actionOnWheels_3_actionArrayOnWheels_2" targetType="kcg_float64"/>
+        <Clock inCtx="true" targetName="WhenBlock1_clock_actionOnWheels_3_actionArrayOnWheels_2" targetType="actionTy_Robot"/>
+        <OutCtxType targetName="outC_Driver_Robot"/>
+      </RootNode>
+      <ExpNode scadeName="actionArrayOnWheels"/>
+      <ExpNode scadeName="actionOnWheels"/>
+      <ExpNode scadeName="undressItElem"/>
+      <ExpNode scadeName="automatonGoPlus"/>
+      <ExpNode scadeName="ComputeWheels"/>
+      <ExpNode scadeName="PIDControler"/>
+      <ExpNode scadeName="isGreen"/>
+      <ExpNode scadeName="isRed"/>
+      <ExpNode scadeName="turnGetCount"/>
+      <ExpNode scadeName="undressSensorTy"/>
+      <ExpNode scadeName="instrPlus"/>
+      <ExpNode scadeName="addOne"/>
+    </Package>
+    <Package scadeName="Utilities">
+      <ExpNode scadeName="Integrator"/>
+    </Package>
+    <Package scadeName="math">
+      <ExpNode scadeName="Abs"/>
+    </Package>
+    <StructType targetCompFct="kcg_comp_sensorsTy" targetCopyFct="kcg_copy_sensorsTy" targetName="sensorsTy">
+      <Field scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+      <Field scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+      <Field scadeName="sonar" scadeType="kcg_int32" targetName="sonar" targetType="kcg_int32"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_colorTy" targetCopyFct="kcg_copy_colorTy" targetName="colorTy">
+      <Field scadeName="red" scadeType="kcg_int16" targetName="red" targetType="kcg_int16"/>
+      <Field scadeName="green" scadeType="kcg_int16" targetName="green" targetType="kcg_int16"/>
+      <Field scadeName="blue" scadeType="kcg_int16" targetName="blue" targetType="kcg_int16"/>
+    </StructType>
+    <ArrayType cellType="itiElement_Robot" size="50" targetCompFct="kcg_comp_itiElemArr_Robot" targetCopyFct="kcg_copy_itiElemArr_Robot" targetName="itiElemArr_Robot"/>
+    <StructType targetCompFct="kcg_comp_itiElement_Robot" targetCopyFct="kcg_copy_itiElement_Robot" targetName="itiElement_Robot">
+      <Field scadeName="action" scadeType="actionTy_Robot" targetName="action" targetType="actionTy_Robot"/>
+      <Field scadeName="param" scadeType="kcg_float64" targetName="param" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_wheelsTy_Robot" targetCopyFct="kcg_copy_wheelsTy_Robot" targetName="wheelsTy_Robot">
+      <Field scadeName="left" scadeType="kcg_float64" targetName="left" targetType="kcg_float64"/>
+      <Field scadeName="right" scadeType="kcg_float64" targetName="right" targetType="kcg_float64"/>
+    </StructType>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

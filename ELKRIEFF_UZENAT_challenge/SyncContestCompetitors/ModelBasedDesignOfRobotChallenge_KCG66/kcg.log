@@ -1,0 +1,20 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/config.txt
+** Generation date: 2017-01-22T21:37:34
+*************************************************************$
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors\Operator171.xscade, line 2, character 230
+  at path Robot::isRed/
+ Node isRed has no internal state (it should probably be declared as a function)
+*** Code Generation Warning (WAR_604): Renaming interface identifier
+  at file C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge.xscade, line 4, character 29
+  at path ModelBasedDesignOfRobotChallenge/
+ Interface element ModelBasedDesignOfRobotChallenge has been renamed because it
+ is too long
+2 warnings were found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg.log
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$

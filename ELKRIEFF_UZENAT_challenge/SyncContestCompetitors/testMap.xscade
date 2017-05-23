@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="testMap">
+			<inputs>
+				<Variable name="pos">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="positionTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/476b/599B/1010/57b2e83045d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="id">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4f2b/684D/810/57e92bc31919"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="data">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="City::mapDataTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/476c/599B/1010/57b2e8352909"/>
+					</pragmas>
+				</Variable>
+				<Variable name="tl">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="City::paramTLArr"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/511b/6E6F/1AB4/57c980e05749"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="positionTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4780/599B/1010/57b2e88917f4"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="City::mapDataTy"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/478b/599B/1010/57b2e89231c2"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L3">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="City::paramTLArr"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/5103/6E6F/1AB4/57c9808e59d"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L4">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4f35/684D/810/57e92c25c56"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = pos; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="pos"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/477f/599B/1010/57b2e8893842"/>
+					</pragmas>
+				</Equation>
+				<!-- data = _L2; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="data"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L2"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4785/599B/1010/57b2e88c30b9"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2, _L3 = City::MapADT(_L1, _L4); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+						<VariableRef name="_L3"/>
+					</lefts>
+					<right>
+						<!-- City::MapADT(_L1, _L4) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="City::MapADT"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L1"/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L4"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/478a/599B/1010/57b2e892649a"/>
+					</pragmas>
+				</Equation>
+				<!-- tl = _L3; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="tl"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L3"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/5125/6E6F/1AB4/57c9810374d"/>
+					</pragmas>
+				</Equation>
+				<!-- _L4 = id; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L4"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="id"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4f34/684D/810/57e92c25a8a"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/4769/599B/1010/57b2e80142ed" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>A wrapper to test mapADT imported node</comment>
+					<diagrams>
+						<NetDiagram name="diagram_testMap_1" landscape="true" format="A4 (210 297)" oid="!ed/476a/599B/1010/57b2e8012d4c">
+							<presentationElements>
+								<EquationGE presentable="!ed/477f/599B/1010/57b2e8893842">
+									<position>
+										<Point x="3351" y="8220"/>
+									</position>
+									<size>
+										<Size width="247" height="511"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4785/599B/1010/57b2e88c30b9">
+									<position>
+										<Point x="9049" y="7990"/>
+									</position>
+									<size>
+										<Size width="335" height="512"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/478a/599B/1010/57b2e892649a">
+									<position>
+										<Point x="5265" y="7779"/>
+									</position>
+									<size>
+										<Size width="1782" height="1393"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/477f/599B/1010/57b2e8893842" dstEquation="!ed/478a/599B/1010/57b2e892649a">
+									<positions>
+										<Point x="3598" y="8493"/>
+										<Point x="4419" y="8493"/>
+										<Point x="4419" y="8493"/>
+										<Point x="5265" y="8493"/>
+									</positions>
+								</Edge>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/478a/599B/1010/57b2e892649a" dstEquation="!ed/4785/599B/1010/57b2e88c30b9">
+									<positions>
+										<Point x="7038" y="8255"/>
+										<Point x="8229" y="8255"/>
+										<Point x="8229" y="8255"/>
+										<Point x="9102" y="8255"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/5125/6E6F/1AB4/57c9810374d">
+									<position>
+										<Point x="9260" y="9313"/>
+									</position>
+									<size>
+										<Size width="318" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="2" rightExprIndex="1" srcEquation="!ed/478a/599B/1010/57b2e892649a" dstEquation="!ed/5125/6E6F/1AB4/57c9810374d">
+									<positions>
+										<Point x="7038" y="8705"/>
+										<Point x="8176" y="8705"/>
+										<Point x="8176" y="9578"/>
+										<Point x="9313" y="9578"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/4f34/684D/810/57e92c25a8a">
+									<position>
+										<Point x="4895" y="10319"/>
+									</position>
+									<size>
+										<Size width="264" height="502"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="2" srcEquation="!ed/4f34/684D/810/57e92c25a8a" dstEquation="!ed/478a/599B/1010/57b2e892649a">
+									<positions>
+										<Point x="5159" y="10583"/>
+										<Point x="6165" y="10583"/>
+										<Point x="6165" y="9181"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

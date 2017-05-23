@@ -1,0 +1,8 @@
+map oneway_line
+rd 1
+line 1 30 50. 50. 550. 250.
+wp 1
+0 550. 250.
+tl 0
+st 0
+end

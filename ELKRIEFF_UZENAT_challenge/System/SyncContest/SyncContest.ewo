@@ -1,0 +1,23 @@
+
+[STUDIO\TOOLS\CONFIGURATIONS\Reporter]
+
+"C:\\challenge\\System\\SyncContest\\SyncContest.etp"="HTML" 
+"C:\\Users\\belkri72\\Downloads\\challenge\\System\\SyncContest\\SyncContest.etp"="HTML" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\System Checker]
+
+"C:\\challenge\\System\\SyncContest\\SyncContest.etp"="BasicCheck" 
+"C:\\Users\\belkri72\\Downloads\\challenge\\System\\SyncContest\\SyncContest.etp"="BasicCheck" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
+
+"C:\\challenge\\System\\SyncContest\\SyncContest.etp"="Synchronization" 
+"C:\\Users\\belkri72\\Downloads\\challenge\\System\\SyncContest\\SyncContest.etp"="Synchronization" 
+
+[STUDIO\Workspace]
+
+"ActiveProject"="C:\\Users\\belkri72\\Downloads\\challenge\\System\\SyncContest\\SyncContest.etp" 
+
+[STUDIO\TOOLS\CONFIGURATIONS\System Configurator]
+
+"C:\\Users\\belkri72\\Downloads\\challenge\\System\\SyncContest\\SyncContest.etp"="Default" 

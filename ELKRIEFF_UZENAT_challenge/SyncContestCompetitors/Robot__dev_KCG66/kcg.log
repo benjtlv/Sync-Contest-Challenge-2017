@@ -1,0 +1,15 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/challenge/SyncContestCompetitors/Robot__dev_KCG66/config.txt
+** Generation date: 2017-01-18T22:10:01
+*************************************************************$
+*** Type Warning (WAR_151): Internal state expected
+  at file C:/Users/benja/Desktop/challenge/SyncContestCompetitors\Operator201.xscade, line 2, character 230
+  at path Robot::dev/
+ Node dev has no internal state (it should probably be declared as a function)
+1 warning was found
+No error was found
+No failure occurred
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg.log
+** Generation date: 2017-01-18T22:10:02
+*************************************************************$

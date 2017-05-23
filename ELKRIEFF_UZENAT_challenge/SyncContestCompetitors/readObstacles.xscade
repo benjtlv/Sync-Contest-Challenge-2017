@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" external="imported" name="readObstacles">
+	<outputs>
+		<Variable name="paramsObst">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="paramObstArr"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/53bb/6F99/113C/57f6480279a"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<pragmas>
+		<ed:Operator oid="!ed/53ba/6F99/113C/57f647e05bca"/>
+	</pragmas>
+</Operator>

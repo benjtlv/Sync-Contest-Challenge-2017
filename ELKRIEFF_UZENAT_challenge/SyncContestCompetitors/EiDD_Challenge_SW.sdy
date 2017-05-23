@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Robot::IndividualRobotControl" oid="_uLCjcyf6Eeaxoac8p5lT7Q">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Plug name="top" type="bool" oid="d3f25d50-0a77-44a1-a105-8c14a3e26e06" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="top" type="bool" oid="!ed/4876/2E0E/1390/57adce713d4c" instancepath="Robot::IndividualRobotControl/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="_uLCjcCf6Eeaxoac8p5lT7Q" instancepath="Robot::IndividualRobotControl/" subelement=".position.x"/>
+					</output>
+					<inputs>
+						<Plug name="x" type="float64" oid="9d3bf425-ce08-4978-a4a8-49fdb1eedc72" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="_uLCjcCf6Eeaxoac8p5lT7Q" instancepath="Robot::IndividualRobotControl/" subelement=".position.y"/>
+					</output>
+					<inputs>
+						<Plug name="y" type="float64" oid="8b8c5ca0-ddcc-4341-96d7-795652c5fd42" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="_uLCjcCf6Eeaxoac8p5lT7Q" instancepath="Robot::IndividualRobotControl/" subelement=".velocity"/>
+					</output>
+					<inputs>
+						<Plug name="v" type="float64" oid="5daa03e7-7ad0-4de3-98ec-1f2b81c91eb4" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="_uLCjcCf6Eeaxoac8p5lT7Q" instancepath="Robot::IndividualRobotControl/" subelement=".heading"/>
+					</output>
+					<inputs>
+						<Plug name="alpha" type="float64" oid="092300a6-10b0-4811-8d44-86dd3bd577ad" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="x_init" type="float64" oid="b4519804-c3a5-4ed9-bee2-b08f98cb7882" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="_DkxXsDnvEea2ZddT7pBOfg" instancepath="Robot::IndividualRobotControl/" subelement=".position.x"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="y_init" type="float64" oid="aca414e8-3a36-45fa-9f55-aa04ba2d26f2" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="_DkxXsDnvEea2ZddT7pBOfg" instancepath="Robot::IndividualRobotControl/" subelement=".position.y"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="alpha_init" type="float64" oid="640f1122-e735-4d43-b340-69a69f8da32e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="_DkxXsDnvEea2ZddT7pBOfg" instancepath="Robot::IndividualRobotControl/" subelement=".heading"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotStatus" type="enum {Preparing, Running, Arrived, Stopped}" oid="_80SLV083Eea2CdrGRUuH_A" instancepath="Robot::IndividualRobotControl/"/>
+					</output>
+					<inputs>
+						<Plug name="led" type="int" oid="61848400-0da7-4982-bab5-cb9036e83813" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="inter" type="int" oid="5173e686-9d97-4aa9-8826-10472a289917" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="Interrupt" type="enum {waitVal, haltVal, okVal}" oid="_uK5ZgSf6Eeaxoac8p5lT7Q" instancepath="Robot::IndividualRobotControl/"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="ModelBasedDesignOfRobotChallenge" oid="_h7lQSE9HEeaSZYTsW8LJgQ">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Plug name="x_init" type="float64" oid="b4519804-c3a5-4ed9-bee2-b08f98cb7882" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="!ed/45e6/7702/12D8/57ac19556f8b" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".position.x"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="y_init" type="float64" oid="aca414e8-3a36-45fa-9f55-aa04ba2d26f2" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="!ed/45e6/7702/12D8/57ac19556f8b" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".position.y"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="top" type="bool" oid="d3f25d50-0a77-44a1-a105-8c14a3e26e06" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="top" type="bool" oid="!ed/4886/2E0E/1390/57adcef145b9" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="!ed/45ed/7702/12D8/57ac197328ba" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".position.x"/>
+					</output>
+					<inputs>
+						<Plug name="x" type="float64" oid="9d3bf425-ce08-4978-a4a8-49fdb1eedc72" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="!ed/45ed/7702/12D8/57ac197328ba" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".position.y"/>
+					</output>
+					<inputs>
+						<Plug name="y" type="float64" oid="8b8c5ca0-ddcc-4341-96d7-795652c5fd42" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="!ed/45ed/7702/12D8/57ac197328ba" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".velocity"/>
+					</output>
+					<inputs>
+						<Plug name="v" type="float64" oid="5daa03e7-7ad0-4de3-98ec-1f2b81c91eb4" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotPhase" type="float64" oid="!ed/45ed/7702/12D8/57ac197328ba" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".heading"/>
+					</output>
+					<inputs>
+						<Plug name="alpha" type="float64" oid="092300a6-10b0-4811-8d44-86dd3bd577ad" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="RobotStatus" type="enum {Preparing, Running, Arrived, Stopped}" oid="!ed/45f4/7702/12D8/57ac197319d0" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</output>
+					<inputs>
+						<Plug name="led" type="int" oid="61848400-0da7-4982-bab5-cb9036e83813" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="alpha_init" type="float64" oid="640f1122-e735-4d43-b340-69a69f8da32e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="InitialPhase" type="float64" oid="!ed/45e6/7702/12D8/57ac19556f8b" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".heading"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Events" type="bool" oid="!ed/4604/7702/12D8/57ac19925113" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".lightRun"/>
+					</output>
+					<inputs>
+						<Plug name="ev0" type="bool" oid="fd5baab3-29f2-4ed8-85f2-7c956f5eb82e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Events" type="bool" oid="!ed/4604/7702/12D8/57ac19925113" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".speedExcess"/>
+					</output>
+					<inputs>
+						<Plug name="ev1" type="bool" oid="4cace087-cdee-4082-b088-95504c2ec419" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Events" type="bool" oid="!ed/4604/7702/12D8/57ac19925113" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".exitRoad"/>
+					</output>
+					<inputs>
+						<Plug name="ev2" type="bool" oid="364baeaf-be8f-4ef5-bd9a-82dfea50f359" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Events" type="bool" oid="!ed/4604/7702/12D8/57ac19925113" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".collisionEvent"/>
+					</output>
+					<inputs>
+						<Plug name="ev3" type="bool" oid="181a2b40-0693-4bd3-aee2-f1f698c32be1" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="scoreA" type="int32" oid="!ed/50b6/66CB/11D8/57c2ceb14cb7" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</output>
+					<inputs>
+						<Plug name="score_a" type="int" oid="d9158460-5366-4e87-b9d8-37a8fba5068b" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Events" type="bool" oid="!ed/4604/7702/12D8/57ac19925113" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".dirEvent"/>
+					</output>
+					<inputs>
+						<Plug name="ev4" type="bool" oid="afc8f7fc-2e98-4ab9-a38c-3b24be12b9ac" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="scoreB" type="int32" oid="!ed/51ef/1B07/6DC/57e8440fb" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</output>
+					<inputs>
+						<Plug name="score_b" type="int" oid="235a075d-6c9f-4ebf-8985-3a8f53c2a5e1" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="map_id" type="int" oid="5a4aaf97-9835-427b-b32a-54a3bfabad46" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="mapid" type="int32" oid="!ed/502e/684D/810/57e92f2ad41" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Plug name="iti_id" type="int" oid="08fdc0e3-dc7b-4514-a151-90a70561cee6" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</output>
+					<inputs>
+						<Variable name="itiid" type="int32" oid="!ed/502f/684D/810/57e92f334395" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[1].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="TLx0" type="float64" oid="c8623b7c-2219-47f4-872b-50752084ec26" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[1].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="TLy0" type="float64" oid="d0364eb5-77d6-4f6c-9503-4eb74b6221a8" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="enum {redQ, greenQ, amberQ, otherQ}" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[1].light"/>
+					</output>
+					<inputs>
+						<Plug name="TLlight0" type="int" oid="7eed7069-2d3f-4c65-bf6a-0475da1f3272" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[2].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="TLx1" type="float64" oid="4381293a-7d54-4d97-936c-c0a973de3bd2" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[2].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="TLy1" type="float64" oid="ade10990-bc38-4403-966e-a39f2da12abe" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="enum {redQ, greenQ, amberQ, otherQ}" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[2].light"/>
+					</output>
+					<inputs>
+						<Plug name="TLlight1" type="int" oid="f3dd6d10-d50e-488e-b7a1-dd0e0595c511" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[3].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="TLx2" type="float64" oid="6e45bb7b-0d2d-46fc-b339-1d73b985306f" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[3].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="TLy2" type="float64" oid="77c653bd-18c8-47bb-b51d-4cc70706262c" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="enum {redQ, greenQ, amberQ, otherQ}" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[3].light"/>
+					</output>
+					<inputs>
+						<Plug name="TLlight2" type="int" oid="21ff3957-54f7-407d-ae1d-bac82e64bedc" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[4].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="TLx3" type="float64" oid="e8c371d2-201c-46bf-8aba-c0a227b5445e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[4].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="TLy3" type="float64" oid="81432f09-d55a-452d-bd6d-bcf5d1b80d48" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="enum {redQ, greenQ, amberQ, otherQ}" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[4].light"/>
+					</output>
+					<inputs>
+						<Plug name="TLlight3" type="int" oid="6b7979ba-0637-4a5d-b413-791906851add" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[5].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="TLx4" type="float64" oid="10151ab3-3bc7-46f7-9448-f62334714517" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[5].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="TLy4" type="float64" oid="98513b18-0a81-409e-997c-ddb9f854cd31" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="enum {redQ, greenQ, amberQ, otherQ}" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".TLights[5].light"/>
+					</output>
+					<inputs>
+						<Plug name="TLlight4" type="int" oid="5e03f23c-c3c3-4b08-9c30-d6a58bfa948e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[1].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx0" type="float64" oid="38da51ca-7e22-4ea1-943f-6bb8e4358aec" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[1].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy0" type="float64" oid="2c0c8b57-b0bb-4bc4-8379-63b1efc3aa15" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[1].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres0" type="bool" oid="149ed0c3-f7ad-4443-b7dd-f356df7cfc15" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[2].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx1" type="float64" oid="94c4f083-bfbb-461e-806b-9f4da4466fb3" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[2].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy1" type="float64" oid="a09e0e2c-1cdd-4e39-a7fe-60266ce2a625" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[2].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres1" type="bool" oid="b137dcd9-10f5-4512-a708-dede6760e528" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[3].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx2" type="float64" oid="e1667630-9076-4d3c-8671-94b0c5e601db" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[3].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy2" type="float64" oid="fd677144-931b-4fe6-be20-c89df133d4ce" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[3].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres2" type="bool" oid="a4fc6e49-c085-4de1-9223-3807c6d9bf82" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[4].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx3" type="float64" oid="af2ad1a7-2568-4895-a026-4aac65f93b71" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[4].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy3" type="float64" oid="9ce5666d-6b19-49ca-8942-e303223903fb" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[4].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres3" type="bool" oid="ebc72ee5-406b-4407-833c-125218b85b80" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[5].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx4" type="float64" oid="3194e99b-c219-4e7e-b95a-7f8c01cdbb82" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[5].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy4" type="float64" oid="4c865f53-98be-4fce-8d83-456a00146911" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[5].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres4" type="bool" oid="543a408e-c877-4d21-9d5b-5301abc024f8" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[6].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx5" type="float64" oid="e29e407c-fbc6-42ce-8023-fe6b7093954a" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[6].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy5" type="float64" oid="cbaaf8bd-5725-4cf8-bc4f-01afae3efa12" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[6].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres5" type="bool" oid="58fff57f-3be7-4c49-b9ae-a7c7d5dfddaa" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[7].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx6" type="float64" oid="aae1bfab-8a04-491e-b628-1bad9371e81e" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[7].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy6" type="float64" oid="3fdfd25d-6612-4567-b6e0-e6582fe889d9" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[7].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres6" type="bool" oid="5c628040-5e35-4755-99ad-7fb92537e2e2" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[8].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx7" type="float64" oid="f2cc4324-82f7-4e8d-acad-99837ca68a43" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[8].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy7" type="float64" oid="caac8cbe-eeca-4766-ab11-0256e931bd3c" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[8].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres7" type="bool" oid="12c5176d-4b04-4d42-b65d-26357b4ea592" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[9].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx8" type="float64" oid="456c77ff-9f8a-48fd-b48f-d5744364e7ec" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[9].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy8" type="float64" oid="d7a34a28-0d6a-4e1b-be5d-e3b8821947ad" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[9].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres8" type="bool" oid="2ceeaa2b-1381-4de4-b2d4-5f1f46c3d066" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[10].position.x"/>
+					</output>
+					<inputs>
+						<Plug name="obsx9" type="float64" oid="69ee43d4-9ea0-4606-a7be-1f3b57d4193a" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="float64" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[10].position.y"/>
+					</output>
+					<inputs>
+						<Plug name="obsy9" type="float64" oid="516aaefb-7c81-40d3-b2d2-6bb121d94ee6" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Signalization" type="bool" oid="!ed/45fd/7702/12D8/57ac19925328" instancepath="ModelBasedDesignOfRobotChallenge/" subelement=".obstacles[10].present"/>
+					</output>
+					<inputs>
+						<Plug name="obspres9" type="bool" oid="707e4291-4879-4847-93c5-f35a7a600219" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="time" type="float64" oid="!ed/54a9/3648/1650/57f4c41d10b3" instancepath="ModelBasedDesignOfRobotChallenge/"/>
+					</output>
+					<inputs>
+						<Plug name="time" type="float64" oid="f2f502fa-289b-47c7-801c-0244856af975" pathname="..\RP\specification.rgfx" layer="control_panel"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

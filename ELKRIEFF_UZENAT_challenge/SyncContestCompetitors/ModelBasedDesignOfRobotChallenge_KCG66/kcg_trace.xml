@@ -1,0 +1,1996 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmathext/mathext.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/testIti.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/PackageUtilities.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/PackageCity.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/PackageRobot.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/testMap.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/EiDD_Challenge_SW.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="debug" value="#on#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="target_dir" value="C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="ModelBasedDesignOfRobotChallenge"/>
+    <Option name="auth" value="#off#"/>
+    <NamedType refType="colorTy" scadeName="colorTy" targetName="colorTy"/>
+    <NamedType refType="eventTy" scadeName="eventTy" targetName="eventTy"/>
+    <EnumType scadeName="interTy" targetName="interTy">
+      <EnumVal scadeName="waitVal" targetName="waitVal"/>
+      <EnumVal scadeName="haltVal" targetName="haltVal"/>
+      <EnumVal scadeName="okVal" targetName="okVal"/>
+    </EnumType>
+    <NamedType refType="phaseTy" scadeName="phaseTy" targetName="phaseTy"/>
+    <NamedType refType="positionTy" scadeName="positionTy" targetName="positionTy"/>
+    <NamedType refType="sensorsTy" scadeName="sensorsTy" targetName="sensorsTy"/>
+    <EnumType scadeName="statusTy" targetName="statusTy">
+      <EnumVal scadeName="Preparing" targetName="Preparing"/>
+      <EnumVal scadeName="Running" targetName="Running"/>
+      <EnumVal scadeName="Arrived" targetName="Arrived"/>
+      <EnumVal scadeName="Stopped" targetName="Stopped"/>
+    </EnumType>
+    <Constant macroDef="true" scadeName="ITISIZE" scadeType="int32" targetName="ITISIZE" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="TIMESTEP" scadeType="float64" targetName="TIMESTEP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="D" scadeType="float64" targetName="D" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="B" scadeType="float64" targetName="B" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="DELTA" scadeType="float64" targetName="DELTA" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="PI" scadeType="float64" targetName="PI" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SA" scadeType="float64" targetName="SA" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SB" scadeType="float64" targetName="SB" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SC" scadeType="float64" targetName="SC" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SD" scadeType="float64" targetName="SD" targetType="kcg_float64"/>
+    <Constant scadeName="RED" scadeType="colorTy" targetName="RED" targetType="colorTy"/>
+    <Constant scadeName="GREEN" scadeType="colorTy" targetName="GREEN" targetType="colorTy"/>
+    <Constant scadeName="BLUE" scadeType="colorTy" targetName="BLUE" targetType="colorTy"/>
+    <Constant scadeName="YELLOW" scadeType="colorTy" targetName="YELLOW" targetType="colorTy"/>
+    <Constant scadeName="MAGENTA" scadeType="colorTy" targetName="MAGENTA" targetType="colorTy"/>
+    <Constant scadeName="CYAN" scadeType="colorTy" targetName="CYAN" targetType="colorTy"/>
+    <Constant scadeName="GRAY" scadeType="colorTy" targetName="GRAY" targetType="colorTy"/>
+    <NamedType refType="trafLTy" scadeName="trafLTy" targetName="trafLTy"/>
+    <Constant macroDef="true" scadeName="TLNUMBER" scadeType="int32" targetName="TLNUMBER" targetType="kcg_int32"/>
+    <NamedType refType="sigTy" scadeName="sigTy" targetName="sigTy"/>
+    <Constant macroDef="true" scadeName="MAXSPEED" scadeType="float64" targetName="MAXSPEED" targetType="kcg_float64"/>
+    <EnumType scadeName="colorTyQ" targetName="colorTyQ">
+      <EnumVal scadeName="redQ" targetName="redQ"/>
+      <EnumVal scadeName="greenQ" targetName="greenQ"/>
+      <EnumVal scadeName="amberQ" targetName="amberQ"/>
+      <EnumVal scadeName="otherQ" targetName="otherQ"/>
+    </EnumType>
+    <Constant scadeName="AMBER" scadeType="colorTy" targetName="AMBER" targetType="colorTy"/>
+    <Constant macroDef="true" scadeName="MAPNUM" scadeType="int32" targetName="MAPNUM" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="MAXWHEEL" scadeType="float64" targetName="MAXWHEEL" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="OBSTNUM" scadeType="int32" targetName="OBSTNUM" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="SONARFAR" scadeType="int32" targetName="SONARFAR" targetType="kcg_int32"/>
+    <NamedType refType="obstTy" scadeName="obstTy" targetName="obstTy"/>
+    <NamedType refType="trafLArr" scadeName="trafLArr" targetName="trafLArr"/>
+    <NamedType refType="obstArr" scadeName="obstArr" targetName="obstArr"/>
+    <Constant macroDef="true" scadeName="ROBST" scadeType="float64" targetName="ROBST" targetType="kcg_float64"/>
+    <Constant scadeName="DIR_INPUTS" scadeType="char^(7)" targetName="DIR_INPUTS" targetType="array_char_7"/>
+    <Constant scadeName="STOP" scadeType="Robot::itiElement" targetName="STOP" targetType="itiElement_Robot"/>
+    <Constant macroDef="true" scadeName="KD" scadeType="float64" targetName="KD" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C1" scadeType="float64" targetName="C1" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C2" scadeType="float64" targetName="C2" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C3" scadeType="float64" targetName="C3" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="KP" scadeType="float64" targetName="KP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="LIMSONAR" scadeType="int32" targetName="LIMSONAR" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="KI" scadeType="float64" targetName="KI" targetType="kcg_float64"/>
+    <RootNode headerFile="ModelBasedDesignOfRobotCh.h" scadeName="ModelBasedDesignOfRobotChallenge" targetCycleFct="ModelBasedDesignOfRobotCh" targetInitFct="ModelBasedDesignOfRobotCh_reset" targetInitializationFct="ModelBasedDesignOfRobotCh_init">
+      <Input inCtx="true" scadeName="InitialPhase" scadeType="phaseTy" targetName="InitialPhase" targetType="phaseTy"/>
+      <Input inCtx="true" scadeName="top" scadeType="bool" targetName="top" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+      <Input inCtx="true" scadeName="itiid" scadeType="int32" targetName="itiid" targetType="kcg_int32"/>
+      <Output inCtx="true" scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+      <Output inCtx="true" scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+      <Output inCtx="true" scadeName="Signalization" scadeType="sigTy" targetName="Signalization" targetType="sigTy"/>
+      <Output inCtx="true" scadeName="Events" scadeType="eventTy" targetName="Events" targetType="eventTy"/>
+      <Output inCtx="true" scadeName="scoreA" scadeType="int32" targetName="scoreA" targetType="kcg_int32"/>
+      <Output inCtx="true" scadeName="scoreB" scadeType="int32" targetName="scoreB" targetType="kcg_int32"/>
+      <Output inCtx="true" scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+      <Local inCtx="true" scadeName="_L7" scadeType="phaseTy" targetName="_L7" targetType="phaseTy"/>
+      <Local inCtx="true" scadeName="_L12" scadeType="statusTy" targetName="_L12" targetType="statusTy"/>
+      <Local inCtx="true" scadeName="_L11" scadeType="phaseTy" targetName="_L11" targetType="phaseTy"/>
+      <Local inCtx="true" scadeName="_L16" scadeType="eventTy" targetName="_L16" targetType="eventTy"/>
+      <Local inCtx="true" scadeName="_L15" scadeType="sensorsTy" targetName="_L15" targetType="sensorsTy"/>
+      <Local inCtx="true" scadeName="_L14" scadeType="interTy" targetName="_L14" targetType="interTy"/>
+      <Local inCtx="true" scadeName="_L13" scadeType="sigTy" targetName="_L13" targetType="sigTy"/>
+      <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L21" scadeType="Robot::itiElemArr" targetName="_L21" targetType="itiElemArr_Robot"/>
+      <Local inCtx="true" scadeName="_L22" scadeType="int32" targetName="_L22" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L19" scadeType="int32" targetName="_L19" targetType="kcg_int32"/>
+      <Local inCtx="true" scadeName="_L23" scadeType="float64" targetName="_L23" targetType="kcg_float64"/>
+      <Local inCtx="true" scadeName="_L25" scadeType="interTy" targetName="_L25" targetType="interTy"/>
+      <Local inCtx="true" scadeName="_L26" scadeType="sensorsTy" targetName="_L26" targetType="sensorsTy"/>
+      <NodeInstance instName="1" refName="IndividualRobotControl_Robot" scadeName="Robot::IndividualRobotControl">
+        <OutCtxVar targetName="Context_IndividualRobotControl_1"/>
+      </NodeInstance>
+      <NodeInstance instName="1" refName="SmartCityControl_City" scadeName="City::SmartCityControl">
+        <OutCtxVar targetName="Context_SmartCityControl_1"/>
+      </NodeInstance>
+      <NodeInstance instName="1" refName="readIti_Robot" scadeName="Robot::readIti">
+        <OutCtxVar targetName="Context_readIti_1"/>
+      </NodeInstance>
+      <NodeInstance instName="1" refName="ScoringB_City" scadeName="City::ScoringB">
+        <OutCtxVar targetName="Context_ScoringB_1"/>
+      </NodeInstance>
+      <NodeInstance instName="1" refName="ScoringA_City" scadeName="City::ScoringA">
+        <OutCtxVar targetName="Context_ScoringA_1"/>
+      </NodeInstance>
+      <NodeInstance instName="1" refName="WallClock_City" scadeName="City::WallClock">
+        <OutCtxVar targetName="Context_WallClock_1"/>
+      </NodeInstance>
+      <FbyOp instName="4">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L14" targetType="interTy"/>
+      </FbyOp>
+      <FbyOp instName="5">
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L15" targetType="sensorsTy"/>
+      </FbyOp>
+      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L15" targetType="sensorsTy"/>
+      <Memory inCtx="true" targetName="_L14" targetType="interTy"/>
+      <OutCtxType targetName="outC_ModelBasedDesignOfRobotCh"/>
+      <InCtxType targetName="inC_ModelBasedDesignOfRobotCh"/>
+    </RootNode>
+    <Package scadeName="Robot">
+      <NamedType refType="wheelsTy_Robot" scadeName="wheelsTy" targetName="wheelsTy_Robot"/>
+      <NamedType refType="itiElement_Robot" scadeName="itiElement" targetName="itiElement_Robot"/>
+      <NamedType refType="itiElemArr_Robot" scadeName="itiElemArr" targetName="itiElemArr_Robot"/>
+      <EnumType scadeName="actionTy" targetName="actionTy_Robot">
+        <EnumVal scadeName="go" targetName="go_Robot"/>
+        <EnumVal scadeName="turn" targetName="turn_Robot"/>
+        <EnumVal scadeName="stop" targetName="stop_Robot"/>
+      </EnumType>
+      <NoExpNode headerFile="PhysicalModel_Robot.h" scadeName="PhysicalModel" targetCycleFct="PhysicalModel_Robot" targetInitFct="PhysicalModel_reset_Robot" targetInitializationFct="PhysicalModel_init_Robot">
+        <Input scadeName="top" scadeType="bool" targetName="top" targetType="kcg_bool"/>
+        <Input scadeName="RotationalSpeed" scadeType="Robot::wheelsTy" targetName="RotationalSpeed" targetType="wheelsTy_Robot"/>
+        <Input scadeName="InitialPhase" scadeType="phaseTy" targetName="InitialPhase" targetType="phaseTy"/>
+        <Output inCtx="true" scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="y0" scadeType="float64" targetName="y0" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="x0" scadeType="float64" targetName="x0" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="alpha0" scadeType="float64" targetName="alpha0" targetType="kcg_float64"/>
+        <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+          <State scadeName="positionning" targetName="SSM_st_positionning_SM1">
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L61" scadeType="positionTy" targetName="_L61_positionning_SM1" targetType="positionTy"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L62" scadeType="float64" targetName="_L62_positionning_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L63" scadeType="float64" targetName="_L63_positionning_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L55" scadeType="phaseTy" targetName="_L55_positionning_SM1" targetType="phaseTy"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L66" scadeType="phaseTy" targetName="_L66_positionning_SM1" targetType="phaseTy"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L67" scadeType="float64" targetName="_L67_positionning_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L68" scadeType="positionTy" targetName="_L68_positionning_SM1" targetType="positionTy"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L70" scadeType="float64" targetName="_L70_positionning_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L69" scadeType="float64" targetName="_L69_positionning_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L71" scadeType="phaseTy" targetName="_L71_positionning_SM1" targetType="phaseTy"/>
+            <NodeInstance clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" instName="1" refName="CarGeometry_Robot" scadeName="Robot::CarGeometry">
+              <OutCtxVar clockVal="SSM_st_positionning_SM1" clockVar="SM1_state_act" targetName="Context_CarGeometry_1"/>
+            </NodeInstance>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="on" targetName="SSM_TR_positionning_on_1_positionning_SM1"/>
+            </Fork>
+          </State>
+          <State scadeName="on" targetName="SSM_st_on_SM1">
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="alpha" scadeType="float64" targetName="alpha_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="v" scadeType="float64" targetName="v_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="co" scadeType="float64" targetName="co_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="si" scadeType="float64" targetName="si_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="vLeft" scadeType="float64" targetName="vLeft_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="vRight" scadeType="float64" targetName="vRight_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="positionTy" targetName="_L6_on_SM1" targetType="positionTy"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L26" scadeType="float64" targetName="_L26_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L27" scadeType="float64" targetName="_L27_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L28" scadeType="float64" targetName="_L28_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L36" scadeType="float64" targetName="_L36_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L35" scadeType="Robot::wheelsTy" targetName="_L35_on_SM1" targetType="wheelsTy_Robot"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L34" scadeType="float64" targetName="_L34_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L33" scadeType="float64" targetName="_L33_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L32" scadeType="float64" targetName="_L32_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L30" scadeType="float64" targetName="_L30_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L31" scadeType="float64" targetName="_L31_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L29" scadeType="float64" targetName="_L29_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L45" scadeType="phaseTy" targetName="_L45_on_SM1" targetType="phaseTy"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L46" scadeType="float64" targetName="_L46_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L47" scadeType="float64" targetName="_L47_on_SM1" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L48" scadeType="positionTy" targetName="_L48_on_SM1" targetType="positionTy"/>
+            <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L49" scadeType="phaseTy" targetName="_L49_on_SM1" targetType="phaseTy"/>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="5" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Integrator_5"/>
+            </NodeInstance>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="4" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Integrator_4"/>
+            </NodeInstance>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="3" refName="Normalize_Utilities" scadeName="Utilities::Normalize">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Normalize_3"/>
+            </NodeInstance>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="7" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Integrator_7"/>
+            </NodeInstance>
+            <NodeInlining instName="16" scadeName="mathext::SinCosR">
+              <Input inCtx="true" scadeName="Input1" scadeType="float64" targetName="Input1_SinCosR_16_float64" targetType="kcg_float64"/>
+              <Output inCtx="true" scadeName="Output1" scadeType="float64" targetName="Output1_SinCosR_16_float64" targetType="kcg_float64"/>
+              <Output inCtx="true" scadeName="Output2" scadeType="float64" targetName="Output2_SinCosR_16_float64" targetType="kcg_float64"/>
+              <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_SinCosR_16_float64" targetType="kcg_float64"/>
+              <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_SinCosR_16_float64" targetType="kcg_float64"/>
+              <Local clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_SinCosR_16_float64" targetType="kcg_float64"/>
+              <NodeInstance instName="1" refName="SinR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::SinR64"/>
+              <NodeInstance instName="1" refName="CosR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::CosR64"/>
+            </NodeInlining>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="4" refName="Bound_Utilities" scadeName="Utilities::Bound">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Bound_4"/>
+            </NodeInstance>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="3" refName="Bound_Utilities" scadeName="Utilities::Bound">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_Bound_3"/>
+            </NodeInstance>
+            <NodeInstance clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" instName="2" refName="CarGeometry_Robot" scadeName="Robot::CarGeometry">
+              <OutCtxVar clockVal="SSM_st_on_SM1" clockVar="SM1_state_act" targetName="Context_CarGeometry_2"/>
+            </NodeInstance>
+          </State>
+          <ActiveState inCtx="true" targetName="SM1_state_act"/>
+          <SelectedState inCtx="true" targetName="SM1_state_sel"/>
+          <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+          <ResetActiveState inCtx="true" mem="true" targetName="SM1_reset_act"/>
+          <ResetNextState inCtx="true" mem="true" targetName="SM1_reset_nxt"/>
+          <StrongTransition inCtx="true" targetName="SM1_fired_strong"/>
+          <WeakTransition inCtx="true" targetName="SM1_fired"/>
+        </Automaton>
+        <Memory inCtx="true" targetName="y0" targetType="kcg_float64"/>
+        <Memory inCtx="true" targetName="x0" targetType="kcg_float64"/>
+        <Memory inCtx="true" targetName="alpha0" targetType="kcg_float64"/>
+        <Clock inCtx="true" targetName="SM1_state_act" targetType="SSM_ST_SM1"/>
+        <OutCtxType targetName="outC_PhysicalModel_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="IndividualRobotControl_Robot.h" scadeName="IndividualRobotControl" targetCycleFct="IndividualRobotControl_Robot" targetInitFct="IndividualRobotControl_reset_Robot" targetInitializationFct="IndividualRobotControl_init_Robot">
+        <Input scadeName="Itinerary" scadeType="Robot::itiElemArr" targetName="Itinerary" targetType="itiElemArr_Robot"/>
+        <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Input scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Input scadeName="InitialPhase" scadeType="phaseTy" targetName="InitialPhase" targetType="phaseTy"/>
+        <Input scadeName="top" scadeType="bool" targetName="top" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Output inCtx="true" scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="phaseTy" targetName="_L6" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="Robot::wheelsTy" targetName="_L4" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="statusTy" targetName="_L5" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="sensorsTy" targetName="_L7" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="interTy" targetName="_L8" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="phaseTy" targetName="_L9" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="Robot::itiElemArr" targetName="_L11" targetType="itiElemArr_Robot"/>
+        <NodeInstance instName="1" refName="Driver_Robot" scadeName="Robot::Driver">
+          <OutCtxVar targetName="Context_Driver_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="PhysicalModel_Robot" scadeName="Robot::PhysicalModel">
+          <OutCtxVar targetName="Context_PhysicalModel_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_IndividualRobotControl_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Driver_Robot.h" scadeName="Driver" targetCycleFct="Driver_Robot" targetInitFct="Driver_reset_Robot" targetInitializationFct="Driver_init_Robot">
+        <Input scadeName="top" scadeType="bool" targetName="top" targetType="kcg_bool"/>
+        <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Input scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Input scadeName="Itinerary" scadeType="Robot::itiElemArr" targetName="Itinerary" targetType="itiElemArr_Robot"/>
+        <Output inCtx="true" scadeName="RotationalSpeed" scadeType="Robot::wheelsTy" targetName="RotationalSpeed" targetType="wheelsTy_Robot"/>
+        <Output inCtx="true" scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="zero" scadeType="Robot::wheelsTy" targetName="zero" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="Robot::wheelsTy" targetName="_L11" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="Robot::itiElemArr" targetName="_L12" targetType="itiElemArr_Robot"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="sensorsTy" targetName="_L13" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Automaton scadeName="Robot" targetStatesType="SSM_ST_Robot" targetTransitionsType="SSM_TR_Robot">
+          <State scadeName="Preparing" targetName="SSM_st_Preparing_Robot">
+            <Local clockVal="SSM_st_Preparing_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L1" scadeType="statusTy" targetName="_L1_Preparing_Robot" targetType="statusTy"/>
+            <Local clockVal="SSM_st_Preparing_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L11" scadeType="Robot::wheelsTy" targetName="_L11_Preparing_Robot" targetType="wheelsTy_Robot"/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Running" targetName="SSM_TR_Preparing_Running_1_Preparing_Robot"/>
+            </Fork>
+          </State>
+          <State scadeName="Running" targetName="SSM_st_Running_Robot">
+            <Local clockVal="SSM_st_Running_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="arriving" scadeType="bool" targetName="arriving_Running_Robot" targetType="kcg_bool"/>
+            <Local clockVal="SSM_st_Running_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L3" scadeType="statusTy" targetName="_L3_Running_Robot" targetType="statusTy"/>
+            <Local clockVal="SSM_st_Running_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8_Running_Robot" targetType="kcg_bool"/>
+            <Local clockVal="SSM_st_Running_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L9" scadeType="Robot::wheelsTy" targetName="_L9_Running_Robot" targetType="wheelsTy_Robot"/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Stopped" targetName="SSM_TR_Running_Stopped_1_Running_Robot"/>
+            </Fork>
+            <Fork priority="2">
+              <Condition/>
+              <Transition kind="weak" scadeDest="Arrived" targetName="SSM_TR_Running_Arrived_2_Running_Robot"/>
+            </Fork>
+          </State>
+          <State scadeName="Arrived" targetName="SSM_st_Arrived_Robot">
+            <Local clockVal="SSM_st_Arrived_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L1" scadeType="statusTy" targetName="_L1_Arrived_Robot" targetType="statusTy"/>
+            <Local clockVal="SSM_st_Arrived_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L11" scadeType="Robot::wheelsTy" targetName="_L11_Arrived_Robot" targetType="wheelsTy_Robot"/>
+          </State>
+          <State scadeName="Stopped" targetName="SSM_st_Stopped_Robot">
+            <Local clockVal="SSM_st_Stopped_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L1" scadeType="statusTy" targetName="_L1_Stopped_Robot" targetType="statusTy"/>
+            <Local clockVal="SSM_st_Stopped_Robot" clockVar="Robot_state_act" inCtx="true" scadeName="_L5" scadeType="Robot::wheelsTy" targetName="_L5_Stopped_Robot" targetType="wheelsTy_Robot"/>
+          </State>
+          <ActiveState inCtx="true" targetName="Robot_state_act"/>
+          <SelectedState inCtx="true" targetName="Robot_state_sel"/>
+          <NextState inCtx="true" mem="true" targetName="Robot_state_nxt"/>
+          <ResetActiveState inCtx="true" mem="true" targetName="Robot_reset_act"/>
+          <ResetNextState inCtx="true" mem="true" targetName="Robot_reset_nxt"/>
+          <StrongTransition inCtx="true" targetName="Robot_fired_strong"/>
+          <WeakTransition inCtx="true" targetName="Robot_fired"/>
+        </Automaton>
+        <NodeInstance instName="2" refName="actionArrayOnWheels_Robot" scadeName="Robot::actionArrayOnWheels">
+          <OutCtxVar targetName="Context_actionArrayOnWheels_2"/>
+        </NodeInstance>
+        <Clock inCtx="true" targetName="Robot_state_act" targetType="SSM_ST_Robot"/>
+        <OutCtxType targetName="outC_Driver_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="readIti_Robot.h" imported="true" scadeName="readIti" targetCycleFct="readIti_Robot" targetInitFct="readIti_reset_Robot" targetInitializationFct="readIti_init_Robot">
+        <Input scadeName="id" scadeType="int32" targetName="id" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="itinerary" scadeType="Robot::itiElemArr" targetName="itinerary" targetType="itiElemArr_Robot"/>
+        <OutCtxType targetName="outC_readIti_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="CarGeometry_Robot.h" scadeName="CarGeometry" targetCycleFct="CarGeometry_Robot" targetInitFct="CarGeometry_reset_Robot" targetInitializationFct="CarGeometry_init_Robot">
+        <Input scadeName="phase" scadeType="phaseTy" targetName="phase" targetType="phaseTy"/>
+        <Input scadeName="vec" scadeType="float64^(2)" targetName="vec" targetType="array_float64_2"/>
+        <Output inCtx="true" scadeName="newpos" scadeType="positionTy" targetName="newpos" targetType="positionTy"/>
+        <Output inCtx="true" scadeName="newphase" scadeType="phaseTy" targetName="newphase" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="positionTy" targetName="_L18" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="float64^(2)^(2)" targetName="_L22" targetType="array_float64_2_2"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="float64^(2)" targetName="_L24" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="float64^(2)" targetName="_L25" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="float64^(2)" targetName="_L26" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="positionTy" targetName="_L27" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="float64^(2)" targetName="_L43" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="phaseTy" targetName="_L45" targetType="phaseTy"/>
+        <NodeInstance instName="1" refName="RotMatrix_Utilities" scadeName="Utilities::RotMatrix">
+          <OutCtxVar targetName="Context_RotMatrix_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="MatVectProd_vect_float64_2_2" scadeName="vect::MatVectProd">
+          <OutCtxVar targetName="Context_MatVectProd_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="VectAdd_vect_float64_2" scadeName="vect::VectAdd">
+          <OutCtxVar targetName="Context_VectAdd_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="pos2vec_Utilities" scadeName="Utilities::pos2vec">
+          <OutCtxVar targetName="Context_pos2vec_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="vec2pos_Utilities" scadeName="Utilities::vec2pos">
+          <OutCtxVar targetName="Context_vec2pos_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_CarGeometry_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="undressItElem_Robot.h" scadeName="undressItElem" targetCycleFct="undressItElem_Robot" targetInitFct="undressItElem_reset_Robot" targetInitializationFct="undressItElem_init_Robot">
+        <Input scadeName="itElemObj" scadeType="Robot::itiElement" targetName="itElemObj" targetType="itiElement_Robot"/>
+        <Output inCtx="true" scadeName="action" scadeType="Robot::actionTy" targetName="action" targetType="actionTy_Robot"/>
+        <Output inCtx="true" scadeName="value" scadeType="float64" targetName="value" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="Robot::itiElement" targetName="_L1" targetType="itiElement_Robot"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="Robot::actionTy" targetName="_L8" targetType="actionTy_Robot"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_undressItElem_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="actionOnWheels_Robot.h" scadeName="actionOnWheels" targetCycleFct="actionOnWheels_Robot" targetInitFct="actionOnWheels_reset_Robot" targetInitializationFct="actionOnWheels_init_Robot">
+        <Input scadeName="itElemObj" scadeType="Robot::itiElement" targetName="itElemObj" targetType="itiElement_Robot"/>
+        <Input scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Input scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+        <Input scadeName="sonar" scadeType="int32" targetName="sonar" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="speedL" scadeType="float64" targetName="speedL" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="speedR" scadeType="float64" targetName="speedR" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="finTurn" scadeType="bool" targetName="finTurn" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="val" scadeType="float64" targetName="val" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="act" scadeType="Robot::actionTy" targetName="act" targetType="actionTy_Robot"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="Robot::itiElement" targetName="_L1" targetType="itiElement_Robot"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="Robot::actionTy" targetName="_L2" targetType="actionTy_Robot"/>
+        <NodeInstance instName="1" refName="undressItElem_Robot" scadeName="Robot::undressItElem">
+          <OutCtxVar targetName="Context_undressItElem_1"/>
+        </NodeInstance>
+        <ActivateWhen scadeName="WhenBlock1" targetWhenType="actionTy_Robot">
+          <Condition inCtx="true" targetName="WhenBlock1_clock"/>
+          <Match scadeName="Robot::go" targetName="go_Robot">
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_go_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_go_WhenBlock1" targetType="kcg_bool"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L15" scadeType="colorTy" targetName="_L15_go_WhenBlock1" targetType="colorTy"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19_go_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18_go_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L20" scadeType="colorTy" targetName="_L20_go_WhenBlock1" targetType="colorTy"/>
+            <Local clockVal="go_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L21" scadeType="int32" targetName="_L21_go_WhenBlock1" targetType="kcg_int32"/>
+            <NodeInstance clockVal="go_Robot" clockVar="WhenBlock1_clock" instName="1" refName="automatonGoPlus_Robot" scadeName="Robot::automatonGoPlus">
+              <OutCtxVar clockVal="go_Robot" clockVar="WhenBlock1_clock" targetName="Context_automatonGoPlus_1"/>
+            </NodeInstance>
+          </Match>
+          <Match scadeName="Robot::turn" targetName="turn_Robot">
+            <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_turn_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17_turn_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16_turn_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L21" scadeType="Robot::wheelsTy" targetName="_L21_turn_WhenBlock1" targetType="wheelsTy_Robot"/>
+            <Local clockVal="turn_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L20" scadeType="bool" targetName="_L20_turn_WhenBlock1" targetType="kcg_bool"/>
+            <NodeInstance clockVal="turn_Robot" clockVar="WhenBlock1_clock" instName="2" refName="TurnControlleur_Robot" scadeName="Robot::TurnControlleur">
+              <OutCtxVar clockVal="turn_Robot" clockVar="WhenBlock1_clock" targetName="Context_TurnControlleur_2"/>
+            </NodeInstance>
+          </Match>
+          <Match scadeName="Robot::stop" targetName="stop_Robot">
+            <Local clockVal="stop_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_stop_WhenBlock1" targetType="kcg_float64"/>
+            <Local clockVal="stop_Robot" clockVar="WhenBlock1_clock" inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_stop_WhenBlock1" targetType="kcg_bool"/>
+          </Match>
+        </ActivateWhen>
+        <Clock inCtx="true" targetName="WhenBlock1_clock" targetType="actionTy_Robot"/>
+        <OutCtxType targetName="outC_actionOnWheels_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="actionArrayOnWheels_Robot.h" scadeName="actionArrayOnWheels" targetCycleFct="actionArrayOnWheels_Robot" targetInitFct="actionArrayOnWheels_reset_Robot" targetInitializationFct="actionArrayOnWheels_init_Robot">
+        <Input scadeName="ItiElemArrObj" scadeType="Robot::itiElemArr" targetName="ItiElemArrObj" targetType="itiElemArr_Robot"/>
+        <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Output inCtx="true" scadeName="speedL" scadeType="float64" targetName="speedL" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="speedR" scadeType="float64" targetName="speedR" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="index" scadeType="int32" targetName="index" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="Robot::itiElemArr" targetName="_L1" targetType="itiElemArr_Robot"/>
+        <Local inCtx="true" scadeName="_L65" scadeType="sensorsTy" targetName="_L65" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L72" scadeType="int32" targetName="_L72" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L71" scadeType="colorTy" targetName="_L71" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L70" scadeType="colorTy" targetName="_L70" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L73" scadeType="int32" targetName="_L73" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L78" scadeType="int32" targetName="_L78" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L79" scadeType="Robot::itiElement" targetName="_L79" targetType="itiElement_Robot"/>
+        <Local inCtx="true" scadeName="_L82" scadeType="Robot::itiElement" targetName="_L82" targetType="itiElement_Robot"/>
+        <Local inCtx="true" scadeName="_L89" scadeType="int32" targetName="_L89" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L69" scadeType="float64" targetName="_L69" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L68" scadeType="float64" targetName="_L68" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L93" scadeType="bool" targetName="_L93" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L94" scadeType="bool" targetName="_L94" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L98" scadeType="float64" targetName="_L98" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L99" scadeType="float64" targetName="_L99" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L100" scadeType="float64" targetName="_L100" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L101" scadeType="float64" targetName="_L101" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L102" scadeType="float64" targetName="_L102" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L103" scadeType="float64" targetName="_L103" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L104" scadeType="float64" targetName="_L104" targetType="kcg_float64"/>
+        <NodeInstance instName="3" refName="actionOnWheels_Robot" scadeName="Robot::actionOnWheels">
+          <OutCtxVar targetName="Context_actionOnWheels_3"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="undressSensorTy_Robot" scadeName="Robot::undressSensorTy">
+          <OutCtxVar targetName="Context_undressSensorTy_1"/>
+        </NodeInstance>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L78" targetType="kcg_int32"/>
+        </FbyOp>
+        <NodeInstance instName="2" refName="instrPlus_Robot" scadeName="Robot::instrPlus">
+          <OutCtxVar targetName="Context_instrPlus_2"/>
+        </NodeInstance>
+        <FbyOp instName="3">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L93" targetType="kcg_bool"/>
+        </FbyOp>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L78" targetType="kcg_int32"/>
+        <Memory inCtx="true" targetName="_L93" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_actionArrayOnWheels_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="undressSensorTy_Robot.h" scadeName="undressSensorTy" targetCycleFct="undressSensorTy_Robot" targetInitFct="undressSensorTy_reset_Robot" targetInitializationFct="undressSensorTy_init_Robot">
+        <Input scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Output inCtx="true" scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="sonar" scadeType="int32" targetName="sonar" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="sensorsTy" targetName="_L1" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="colorTy" targetName="_L4" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="colorTy" targetName="_L3" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="int32" targetName="_L2" targetType="kcg_int32"/>
+        <OutCtxType targetName="outC_undressSensorTy_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="instrPlus_Robot.h" scadeName="instrPlus" targetCycleFct="instrPlus_Robot" targetInitFct="instrPlus_reset_Robot" targetInitializationFct="instrPlus_init_Robot">
+        <Input scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Input scadeName="index" scadeType="int32" targetName="index" targetType="kcg_int32"/>
+        <Input scadeName="finTurn" scadeType="bool" targetName="finTurn" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="newIndex" scadeType="int32" targetName="newIndex" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="cond" scadeType="bool" targetName="cond" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="colorTy" targetName="_L11" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="int32" targetName="_L12" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="int32" targetName="_L15" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="bool" targetName="_L35" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L36" scadeType="bool" targetName="_L36" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="bool" targetName="_L38" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L39" scadeType="bool" targetName="_L39" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L40" scadeType="bool" targetName="_L40" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L42" scadeType="bool" targetName="_L42" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="int32" targetName="_L45" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L46" scadeType="bool" targetName="_L46" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="bool" targetName="_L47" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="int32" targetName="_L44" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L50" scadeType="bool" targetName="_L50" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="bool" targetName="_L51" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="bool" targetName="_L30" targetType="kcg_bool"/>
+        <NodeInstance instName="2" refName="addOne_Robot" scadeName="Robot::addOne">
+          <OutCtxVar targetName="Context_addOne_2"/>
+        </NodeInstance>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L38" targetType="kcg_bool"/>
+        </FbyOp>
+        <NodeInstance instName="1" refName="isGreen_Robot" scadeName="Robot::isGreen">
+          <OutCtxVar targetName="Context_isGreen_1"/>
+        </NodeInstance>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L38" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_instrPlus_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="addOne_Robot.h" scadeName="addOne" targetCycleFct="addOne_Robot" targetInitFct="addOne_reset_Robot" targetInitializationFct="addOne_init_Robot">
+        <Input scadeName="index" scadeType="int32" targetName="index" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="newIndex" scadeType="int32" targetName="newIndex" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="int32" targetName="_L2" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="int32" targetName="_L1" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="int32" targetName="_L3" targetType="kcg_int32"/>
+        <OutCtxType targetName="outC_addOne_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="automatonGoPlus_Robot.h" scadeName="automatonGoPlus" targetCycleFct="automatonGoPlus_Robot" targetInitFct="automatonGoPlus_reset_Robot" targetInitializationFct="automatonGoPlus_init_Robot">
+        <Input scadeName="val" scadeType="float64" targetName="val" targetType="kcg_float64"/>
+        <Input scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Input scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+        <Input scadeName="sonar" scadeType="int32" targetName="sonar" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="speedL" scadeType="float64" targetName="speedL" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="speedR" scadeType="float64" targetName="speedR" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="isGreen" scadeType="bool" targetName="isGreen" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="isRed" scadeType="bool" targetName="isRed" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="colorTy" targetName="_L2" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="colorTy" targetName="_L3" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
+        <Automaton scadeName="goPlus" targetStatesType="SSM_ST_goPlus" targetTransitionsType="SSM_TR_goPlus">
+          <State scadeName="go" targetName="SSM_st_go_goPlus">
+            <Local clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_go_goPlus" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L2" scadeType="colorTy" targetName="_L2_go_goPlus" targetType="colorTy"/>
+            <Local clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16_go_goPlus" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15_go_goPlus" targetType="kcg_float64"/>
+            <Local clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L18" scadeType="Robot::wheelsTy" targetName="_L18_go_goPlus" targetType="wheelsTy_Robot"/>
+            <NodeInstance clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" instName="3" refName="ComputeWheels_Robot" scadeName="Robot::ComputeWheels">
+              <OutCtxVar clockVal="SSM_st_go_goPlus" clockVar="goPlus_state_act" targetName="Context_ComputeWheels_3"/>
+            </NodeInstance>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="strong" scadeDest="stopCat" targetName="SSM_TR_go_stopCat_1_go_goPlus"/>
+            </Fork>
+            <Fork priority="2">
+              <Condition/>
+              <Transition kind="strong" scadeDest="stopLight" targetName="SSM_TR_go_stopLight_2_go_goPlus"/>
+            </Fork>
+          </State>
+          <State scadeName="stopCat" targetName="SSM_st_stopCat_goPlus">
+            <Local clockVal="SSM_st_stopCat_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_stopCat_goPlus" targetType="kcg_float64"/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="strong" scadeDest="go" targetName="SSM_TR_stopCat_go_1_stopCat_goPlus"/>
+            </Fork>
+          </State>
+          <State scadeName="stopLight" targetName="SSM_st_stopLight_goPlus">
+            <Local clockVal="SSM_st_stopLight_goPlus" clockVar="goPlus_state_act" inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_stopLight_goPlus" targetType="kcg_float64"/>
+            <Fork priority="1">
+              <Condition/>
+              <Transition kind="strong" scadeDest="go" targetName="SSM_TR_stopLight_go_1_stopLight_goPlus"/>
+            </Fork>
+          </State>
+          <ActiveState inCtx="true" targetName="goPlus_state_act"/>
+          <SelectedState inCtx="true" targetName="goPlus_state_sel"/>
+          <NextState inCtx="true" mem="true" targetName="goPlus_state_nxt"/>
+          <ResetActiveState inCtx="true" mem="true" targetName="goPlus_reset_act"/>
+          <ResetNextState inCtx="true" mem="true" targetName="goPlus_reset_nxt"/>
+          <StrongTransition inCtx="true" targetName="goPlus_fired_strong"/>
+          <WeakTransition inCtx="true" targetName="goPlus_fired"/>
+        </Automaton>
+        <NodeInstance instName="2" refName="isGreen_Robot" scadeName="Robot::isGreen">
+          <OutCtxVar targetName="Context_isGreen_2"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="isRed_Robot" scadeName="Robot::isRed">
+          <OutCtxVar targetName="Context_isRed_1"/>
+        </NodeInstance>
+        <Clock inCtx="true" targetName="goPlus_state_act" targetType="SSM_ST_goPlus"/>
+        <OutCtxType targetName="outC_automatonGoPlus_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="isGreen_Robot.h" scadeName="isGreen" targetCycleFct="isGreen_Robot" targetInitFct="isGreen_reset_Robot" targetInitializationFct="isGreen_init_Robot">
+        <Input scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="is_green" scadeType="bool" targetName="is_green" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="colorTy" targetName="_L1" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="uint8" targetName="_L6" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="uint8" targetName="_L5" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="uint8" targetName="_L4" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="colorTy" targetName="_L9" targetType="colorTy"/>
+        <OutCtxType targetName="outC_isGreen_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="ComputeWheels_Robot.h" scadeName="ComputeWheels" targetCycleFct="ComputeWheels_Robot" targetInitFct="ComputeWheels_reset_Robot" targetInitializationFct="ComputeWheels_init_Robot">
+        <Input scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+        <Input scadeName="speed" scadeType="float64" targetName="speed" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="wheels" scadeType="Robot::wheelsTy" targetName="wheels" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="epsilon" scadeType="float64" targetName="epsilon" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="localSpeed" scadeType="float64" targetName="localSpeed" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="localWheels" scadeType="Robot::wheelsTy" targetName="localWheels" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L159" scadeType="float64" targetName="_L159" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L161" scadeType="colorTy" targetName="_L161" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L163" scadeType="Robot::wheelsTy" targetName="_L163" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L164" scadeType="float64" targetName="_L164" targetType="kcg_float64"/>
+        <NodeInstance instName="3" refName="PIDControler_Robot" scadeName="Robot::PIDControler">
+          <OutCtxVar targetName="Context_PIDControler_3"/>
+        </NodeInstance>
+        <ActivateIf scadeName="IfBlock1">
+          <Condition inCtx="true" targetName="IfBlock1_clock"/>
+          <Else>
+            <Condition inCtx="true" targetName="else_clock_IfBlock1"/>
+            <Else>
+              <Local clockVal="kcg_false" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L1" scadeType="Robot::wheelsTy" targetName="_L1_else_else_IfBlock1" targetType="wheelsTy_Robot"/>
+              <Local clockVal="kcg_false" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_else_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_false" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_else_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_false" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_else_else_IfBlock1" targetType="kcg_float64"/>
+            </Else>
+            <Then>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L10" scadeType="Robot::wheelsTy" targetName="_L10_then_else_IfBlock1" targetType="wheelsTy_Robot"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17_then_else_IfBlock1" targetType="kcg_float64"/>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18_then_else_IfBlock1" targetType="kcg_float64"/>
+            </Then>
+          </Else>
+          <Then>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L15" scadeType="Robot::wheelsTy" targetName="_L15_then_IfBlock1" targetType="wheelsTy_Robot"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L10" scadeType="float64" targetName="_L10_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20_then_IfBlock1" targetType="kcg_float64"/>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21_then_IfBlock1" targetType="kcg_float64"/>
+          </Then>
+        </ActivateIf>
+        <Clock clockVal="kcg_false" clockVar="IfBlock1_clock" inCtx="true" targetName="else_clock_IfBlock1" targetType="kcg_bool"/>
+        <Clock inCtx="true" targetName="IfBlock1_clock" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_ComputeWheels_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="TurnControlleur_Robot.h" scadeName="TurnControlleur" targetCycleFct="TurnControlleur_Robot" targetInitFct="TurnControlleur_reset_Robot" targetInitializationFct="TurnControlleur_init_Robot">
+        <Input scadeName="turn" scadeType="float64" targetName="turn" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="stop" scadeType="bool" targetName="stop" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="speed" scadeType="Robot::wheelsTy" targetName="speed" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="dureeRotation" scadeType="float64" targetName="dureeRotation" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="coefRot" scadeType="float64" targetName="coefRot" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="float64" targetName="_L26" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="Robot::wheelsTy" targetName="_L19" targetType="wheelsTy_Robot"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="float64" targetName="_L27" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="float64" targetName="_L28" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="float64" targetName="_L29" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="bool" targetName="_L30" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="float64" targetName="_L31" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="float64" targetName="_L32" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="float64" targetName="_L34" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="float64" targetName="_L35" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="float64" targetName="_L37" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="float64" targetName="_L38" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L39" scadeType="bool" targetName="_L39" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L40" scadeType="float64" targetName="_L40" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="float64" targetName="_L41" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="float64" targetName="_L43" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="float64" targetName="_L44" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="float64" targetName="_L45" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L46" scadeType="float64" targetName="_L46" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="float64" targetName="_L47" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L48" scadeType="float64" targetName="_L48" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L49" scadeType="float64" targetName="_L49" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L50" scadeType="bool" targetName="_L50" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="float64" targetName="_L51" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L55" scadeType="float64" targetName="_L55" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L56" scadeType="bool" targetName="_L56" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L57" scadeType="float64" targetName="_L57" targetType="kcg_float64"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L57" targetType="kcg_float64"/>
+        </FbyOp>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L57" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_TurnControlleur_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="PIDControler_Robot.h" scadeName="PIDControler" targetCycleFct="PIDControler_Robot" targetInitFct="PIDControler_reset_Robot" targetInitializationFct="PIDControler_init_Robot">
+        <Input scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="epsilon" scadeType="float64" targetName="epsilon" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="dev" scadeType="float64" targetName="dev" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="errorColor" scadeType="colorTy" targetName="errorColor" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="colorTy" targetName="_L24" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="colorTy" targetName="_L23" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="colorTy" targetName="_L21" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="colorTy" targetName="_L19" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="bool" targetName="_L18" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="float64" targetName="_L44" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="float64" targetName="_L43" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L42" scadeType="float64" targetName="_L42" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="float64" targetName="_L41" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L40" scadeType="float64" targetName="_L40" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="float64" targetName="_L37" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L61" scadeType="float64" targetName="_L61" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L60" scadeType="float64" targetName="_L60" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L59" scadeType="float64" targetName="_L59" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L58" scadeType="float64" targetName="_L58" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L57" scadeType="float64" targetName="_L57" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L56" scadeType="float64" targetName="_L56" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L55" scadeType="colorTy" targetName="_L55" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L54" scadeType="float64" targetName="_L54" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L53" scadeType="float64" targetName="_L53" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L50" scadeType="uint8" targetName="_L50" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="uint8" targetName="_L51" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L52" scadeType="uint8" targetName="_L52" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L49" scadeType="float64" targetName="_L49" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L48" scadeType="float64" targetName="_L48" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="float64" targetName="_L47" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L62" scadeType="float64" targetName="_L62" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L63" scadeType="float64" targetName="_L63" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L64" scadeType="float64" targetName="_L64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L65" scadeType="float64" targetName="_L65" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L67" scadeType="float64" targetName="_L67" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L69" scadeType="float64" targetName="_L69" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L70" scadeType="float64" targetName="_L70" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L71" scadeType="float64" targetName="_L71" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L72" scadeType="bool" targetName="_L72" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L73" scadeType="bool" targetName="_L73" targetType="kcg_bool"/>
+        <FbyOp instName="2">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L62" targetType="kcg_float64"/>
+        </FbyOp>
+        <NodeInstance instName="1" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+          <OutCtxVar targetName="Context_Integrator_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="isGreen_Robot" scadeName="Robot::isGreen">
+          <OutCtxVar targetName="Context_isGreen_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="isRed_Robot" scadeName="Robot::isRed">
+          <OutCtxVar targetName="Context_isRed_1"/>
+        </NodeInstance>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L62" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_PIDControler_Robot"/>
+      </NoExpNode>
+      <NoExpNode headerFile="isRed_Robot.h" scadeName="isRed" targetCycleFct="isRed_Robot" targetInitFct="isRed_reset_Robot" targetInitializationFct="isRed_init_Robot">
+        <Input scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="is_red" scadeType="bool" targetName="is_red" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="colorTy" targetName="_L6" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="uint8" targetName="_L3" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="uint8" targetName="_L4" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="uint8" targetName="_L5" targetType="kcg_uint8"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="colorTy" targetName="_L2" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_isRed_Robot"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="City">
+      <NamedType refType="mapDataTy_City" scadeName="mapDataTy" targetName="mapDataTy_City"/>
+      <NamedType refType="paramTLTy_City" scadeName="paramTLTy" targetName="paramTLTy_City"/>
+      <NamedType refType="paramTLArr_City" scadeName="paramTLArr" targetName="paramTLArr_City"/>
+      <NamedType refType="paramObstTy_City" scadeName="paramObstTy" targetName="paramObstTy_City"/>
+      <NamedType refType="paramObstArr_City" scadeName="paramObstArr" targetName="paramObstArr_City"/>
+      <NoExpNode headerFile="TraficLightsDetection_City.h" scadeName="TraficLightsDetection" targetCycleFct="TraficLightsDetection_City" targetInitFct="TraficLightsDetection_reset_City" targetInitializationFct="TraficLightsDetection_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="TLights" scadeType="trafLArr" targetName="TLights" targetType="trafLArr"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="lightsColor" scadeType="colorTy" targetName="lightsColor" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="trafLArr" targetName="_L2" targetType="trafLArr"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="colorTy" targetName="_L23" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="int32" targetName="_L25" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="int32" targetName="_L26" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="bool" targetName="_L27" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="City::mapDataTy" targetName="_L22" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="phaseTy" targetName="_L21" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="positionTy" targetName="_L18" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="{position: {x: float64, y: float64}, light: colorTyQ}" targetName="_L28" targetType="trafLTy"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="positionTy" targetName="_L30" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="colorTy" targetName="_L32" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="float64" targetName="_L33" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="float64" targetName="_L34" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="City::paramTLArr" targetName="_L35" targetType="paramTLArr_City"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="colorTyQ" targetName="_L37" targetType="colorTyQ"/>
+        <NodeInstance instName="2" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_2"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="EncodeColor_Utilities" scadeName="Utilities::EncodeColor">
+          <OutCtxVar targetName="Context_EncodeColor_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_TraficLightsDetection_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="TrafficLights_City.h" scadeName="TrafficLights" targetCycleFct="TrafficLights_City" targetInitFct="TrafficLights_reset_City" targetInitializationFct="TrafficLights_init_City">
+        <Input scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="allLights" scadeType="trafLArr" targetName="allLights" targetType="trafLArr"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="trafLTy^(5)" targetName="_L11" targetType="trafLArr"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="City::paramTLArr" targetName="_L27" targetType="paramTLArr_City"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="City::mapDataTy" targetName="_L26" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="positionTy" targetName="_L28" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="float64" targetName="_L29" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="float64" targetName="_L30" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="float64^(5)" targetName="_L31" targetType="array_float64_5"/>
+        <Iterator iteratorKind="map" scadeSize="5" targetSize="5">
+          <NodeInstance instName="1" refName="OneTL_City" scadeName="City::OneTL">
+            <OutCtxVar targetName="Context_OneTL_1"/>
+          </NodeInstance>
+        </Iterator>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_TrafficLights_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Speed_City.h" scadeName="Speed" targetCycleFct="Speed_City" targetInitFct="Speed_reset_City" targetInitializationFct="Speed_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="speedExcess" scadeType="bool" targetName="speedExcess" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="positionTy" targetName="_L4" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="City::mapDataTy" targetName="_L5" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="colorTy" targetName="_L13" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="int32" targetName="_L11" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="int32" targetName="_L14" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="City::paramTLArr" targetName="_L18" targetType="paramTLArr_City"/>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_Speed_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="SmartCityControl_City.h" scadeName="SmartCityControl" targetCycleFct="SmartCityControl_City" targetInitFct="SmartCityControl_reset_City" targetInitializationFct="SmartCityControl_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="Signalization" scadeType="sigTy" targetName="Signalization" targetType="sigTy"/>
+        <Output inCtx="true" scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Output inCtx="true" scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Output inCtx="true" scadeName="Events" scadeType="eventTy" targetName="Events" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="eventTy" targetName="_L3" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="interTy" targetName="_L2" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="sensorsTy" targetName="_L4" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="trafLArr" targetName="_L11" targetType="trafLArr"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="obstTy^(10)" targetName="_L16" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="sigTy" targetName="_L17" targetType="sigTy"/>
+        <NodeInstance instName="1" refName="EventDetection_City" scadeName="City::EventDetection">
+          <OutCtxVar targetName="Context_EventDetection_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="RobotSensors_City" scadeName="City::RobotSensors">
+          <OutCtxVar targetName="Context_RobotSensors_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="TrafficLights_City" scadeName="City::TrafficLights">
+          <OutCtxVar targetName="Context_TrafficLights_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="AllObstacles_City" scadeName="City::AllObstacles">
+          <OutCtxVar targetName="Context_AllObstacles_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_SmartCityControl_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="RobotSensors_City.h" scadeName="RobotSensors" targetCycleFct="RobotSensors_City" targetInitFct="RobotSensors_reset_City" targetInitializationFct="RobotSensors_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="Signalization" scadeType="sigTy" targetName="Signalization" targetType="sigTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="sensorsTy" targetName="_L1" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="phaseTy" targetName="_L2" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="sigTy" targetName="_L3" targetType="sigTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="colorTy" targetName="_L4" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="int32" targetName="_L5" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="colorTy" targetName="_L6" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="obstArr" targetName="_L8" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="trafLArr" targetName="_L7" targetType="trafLArr"/>
+        <NodeInstance instName="1" refName="AgregateSensors_City" scadeName="City::AgregateSensors">
+          <OutCtxVar targetName="Context_AgregateSensors_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="GroundColorDetection_City" scadeName="City::GroundColorDetection">
+          <OutCtxVar targetName="Context_GroundColorDetection_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="ObstaclesDetection_City" scadeName="City::ObstaclesDetection">
+          <OutCtxVar targetName="Context_ObstaclesDetection_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="TraficLightsDetection_City" scadeName="City::TraficLightsDetection">
+          <OutCtxVar targetName="Context_TraficLightsDetection_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_RobotSensors_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="ObstaclesDetection_City.h" scadeName="ObstaclesDetection" targetCycleFct="ObstaclesDetection_City" targetInitFct="ObstaclesDetection_reset_City" targetInitializationFct="ObstaclesDetection_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="obstacles" scadeType="obstTy^(10)" targetName="obstacles" targetType="obstArr"/>
+        <Output inCtx="true" scadeName="sonar" scadeType="int32" targetName="sonar" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="phaseTy" targetName="_L2" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="phaseTy^(10)" targetName="_L6" targetType="array"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="int32" targetName="_L10" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="obstTy^(10)" targetName="_L13" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="int32" targetName="_L16" targetType="kcg_int32"/>
+        <Iterator iteratorKind="fold" scadeSize="10" targetSize="10">
+          <NodeInstance instName="3" refName="OneObstacleDet_City" scadeName="City::OneObstacleDet">
+            <OutCtxVar targetName="Context_OneObstacleDet_3"/>
+          </NodeInstance>
+        </Iterator>
+        <OutCtxType targetName="outC_ObstaclesDetection_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="MapADT_City.h" imported="true" scadeName="MapADT" targetCycleFct="MapADT_City" targetInitFct="MapADT_reset_City" targetInitializationFct="MapADT_init_City">
+        <Input scadeName="RobotPos" scadeType="positionTy" targetName="RobotPos" targetType="positionTy"/>
+        <Input scadeName="id" scadeType="int32" targetName="id" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="MapData" scadeType="City::mapDataTy" targetName="MapData" targetType="mapDataTy_City"/>
+        <Output inCtx="true" scadeName="ParamsTL" scadeType="City::paramTLArr" targetName="ParamsTL" targetType="paramTLArr_City"/>
+        <OutCtxType targetName="outC_MapADT_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Light_City.h" scadeName="Light" targetCycleFct="Light_City" targetInitFct="Light_reset_City" targetInitializationFct="Light_init_City">
+        <Input scadeName="trafLights" scadeType="trafLArr" targetName="trafLights" targetType="trafLArr"/>
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="lightRun" scadeType="bool" targetName="lightRun" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="colorTy" targetName="_L15" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="bool" targetName="_L16" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="int32" targetName="_L17" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="int32" targetName="_L18" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="bool" targetName="_L19" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="positionTy" targetName="_L13" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="positionTy" targetName="_L10" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="trafLArr" targetName="_L8" targetType="trafLArr"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="phaseTy" targetName="_L6" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="City::mapDataTy" targetName="_L5" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="{position: {x: float64, y: float64}, light: colorTyQ}" targetName="_L4" targetType="trafLTy"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="bool" targetName="_L20" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="colorTyQ" targetName="_L21" targetType="colorTyQ"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="bool" targetName="_L22" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="bool" targetName="_L23" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="float64" targetName="_L24" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="float64" targetName="_L26" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="City::paramTLArr" targetName="_L27" targetType="paramTLArr_City"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="colorTyQ" targetName="_L29" targetType="colorTyQ"/>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_Light_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="GroundColorDetection_City.h" scadeName="GroundColorDetection" targetCycleFct="GroundColorDetection_City" targetInitFct="GroundColorDetection_reset_City" targetInitializationFct="GroundColorDetection_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="positionTy" targetName="_L4" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="City::mapDataTy" targetName="_L5" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="colorTy" targetName="_L8" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="bool" targetName="_L7" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="int32" targetName="_L6" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="int32" targetName="_L9" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="City::paramTLArr" targetName="_L13" targetType="paramTLArr_City"/>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_GroundColorDetection_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="ExitAux_City.h" scadeName="ExitAux" targetCycleFct="ExitAux_City" targetInitFct="ExitAux_reset_City" targetInitializationFct="ExitAux_init_City">
+        <Input scadeName="acc" scadeType="bool" targetName="acc" targetType="kcg_bool"/>
+        <Input scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="res" scadeType="bool" targetName="res" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="City::mapDataTy" targetName="_L5" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="colorTy" targetName="_L13" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="int32" targetName="_L11" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="int32" targetName="_L14" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="City::paramTLArr" targetName="_L19" targetType="paramTLArr_City"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="positionTy" targetName="_L20" targetType="positionTy"/>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_ExitAux_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Exit_City.h" scadeName="Exit" targetCycleFct="Exit_City" targetInitFct="Exit_reset_City" targetInitializationFct="Exit_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="exitRoad" scadeType="bool" targetName="exitRoad" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="bool" targetName="_L16" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="int32^(2)" targetName="_L22" targetType="array_int32_2"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="phaseTy" targetName="_L23" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="positionTy^(2)" targetName="_L24" targetType="_3_array"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="phaseTy^(2)" targetName="_L27" targetType="_2_array"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="float64^(2)^(2)" targetName="_L28" targetType="array_float64_2_2"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="phaseTy^(2)" targetName="_L29" targetType="_2_array"/>
+        <Iterator iteratorKind="fold" scadeSize="2" targetSize="2">
+          <NodeInstance instName="1" refName="ExitAux_City" scadeName="City::ExitAux">
+            <OutCtxVar targetName="Context_ExitAux_1"/>
+          </NodeInstance>
+        </Iterator>
+        <Iterator iteratorKind="map" scadeSize="2" targetSize="2">
+          <NodeInstance instName="1" refName="CarGeometry_Robot" scadeName="Robot::CarGeometry">
+            <OutCtxVar targetName="Context_CarGeometry_1"/>
+          </NodeInstance>
+        </Iterator>
+        <OutCtxType targetName="outC_Exit_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="EventDetection_City.h" scadeName="EventDetection" targetCycleFct="EventDetection_City" targetInitFct="EventDetection_reset_City" targetInitializationFct="EventDetection_init_City">
+        <Input scadeName="Signalization" scadeType="sigTy" targetName="Signalization" targetType="sigTy"/>
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Output inCtx="true" scadeName="Events" scadeType="eventTy" targetName="Events" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="sigTy" targetName="_L1" targetType="sigTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="phaseTy" targetName="_L2" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="interTy" targetName="_L4" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="eventTy" targetName="_L3" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="bool" targetName="_L7" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="obstArr" targetName="_L11" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="trafLArr" targetName="_L10" targetType="trafLArr"/>
+        <NodeInstance instName="1" refName="AgregateEvents_City" scadeName="City::AgregateEvents">
+          <OutCtxVar targetName="Context_AgregateEvents_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Collision_City" scadeName="City::Collision">
+          <OutCtxVar targetName="Context_Collision_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Exit_City" scadeName="City::Exit">
+          <OutCtxVar targetName="Context_Exit_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Speed_City" scadeName="City::Speed">
+          <OutCtxVar targetName="Context_Speed_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Light_City" scadeName="City::Light">
+          <OutCtxVar targetName="Context_Light_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="WrongDir_City" scadeName="City::WrongDir">
+          <OutCtxVar targetName="Context_WrongDir_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_EventDetection_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Collision_City.h" scadeName="Collision" targetCycleFct="Collision_City" targetInitFct="Collision_reset_City" targetInitializationFct="Collision_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="obstacles" scadeType="obstArr" targetName="obstacles" targetType="obstArr"/>
+        <Output inCtx="true" scadeName="collisionEvent" scadeType="bool" targetName="collisionEvent" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="obstArr" targetName="_L3" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="phaseTy^(10)" targetName="_L5" targetType="array"/>
+        <Iterator iteratorKind="fold" scadeSize="10" targetSize="10">
+          <NodeInstance instName="1" refName="CollisionAux_City" scadeName="City::CollisionAux">
+            <OutCtxVar targetName="Context_CollisionAux_1"/>
+          </NodeInstance>
+        </Iterator>
+        <OutCtxType targetName="outC_Collision_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="AgregateSensors_City.h" scadeName="AgregateSensors" targetCycleFct="AgregateSensors_City" targetInitFct="AgregateSensors_reset_City" targetInitializationFct="AgregateSensors_init_City">
+        <Input scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+        <Input scadeName="lightsColor" scadeType="colorTy" targetName="lightsColor" targetType="colorTy"/>
+        <Input scadeName="sonar" scadeType="int32" targetName="sonar" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="SensorsData" scadeType="sensorsTy" targetName="SensorsData" targetType="sensorsTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="colorTy" targetName="_L1" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="colorTy" targetName="_L2" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="int32" targetName="_L3" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="sensorsTy" targetName="_L5" targetType="sensorsTy"/>
+        <OutCtxType targetName="outC_AgregateSensors_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="AgregateEvents_City.h" scadeName="AgregateEvents" targetCycleFct="AgregateEvents_City" targetInitFct="AgregateEvents_reset_City" targetInitializationFct="AgregateEvents_init_City">
+        <Input scadeName="lightRun" scadeType="bool" targetName="lightRun" targetType="kcg_bool"/>
+        <Input scadeName="speedExcess" scadeType="bool" targetName="speedExcess" targetType="kcg_bool"/>
+        <Input scadeName="exitRoad" scadeType="bool" targetName="exitRoad" targetType="kcg_bool"/>
+        <Input scadeName="collision" scadeType="bool" targetName="collision" targetType="kcg_bool"/>
+        <Input scadeName="wrong" scadeType="bool" targetName="wrong" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="events" scadeType="eventTy" targetName="events" targetType="eventTy"/>
+        <Output inCtx="true" scadeName="Interrupt" scadeType="interTy" targetName="Interrupt" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="eventTy" targetName="_L1" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="interTy" targetName="_L10" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="interTy" targetName="_L11" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="interTy" targetName="_L12" targetType="interTy"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="bool" targetName="_L13" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_AgregateEvents_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="OneTL_City.h" scadeName="OneTL" targetCycleFct="OneTL_City" targetInitFct="OneTL_reset_City" targetInitializationFct="OneTL_init_City">
+        <Input scadeName="param" scadeType="City::paramTLTy" targetName="param" targetType="paramTLTy_City"/>
+        <Input scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="trafL" scadeType="trafLTy" targetName="trafL" targetType="trafLTy"/>
+        <Local inCtx="true" scadeName="cpt" scadeType="int32" targetName="cpt" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="period" scadeType="int32" targetName="period" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="light" scadeType="colorTyQ" targetName="light" targetType="colorTyQ"/>
+        <Local inCtx="true" scadeName="tGreen" scadeType="int32" targetName="tGreen" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="tAmber" scadeType="int32" targetName="tAmber" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="tRed" scadeType="int32" targetName="tRed" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="tPhase" scadeType="int32" targetName="tPhase" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="trafLTy" targetName="_L25" targetType="trafLTy"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="colorTyQ" targetName="_L28" targetType="colorTyQ"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="City::paramTLTy" targetName="_L30" targetType="paramTLTy_City"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="int32" targetName="_L35" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="int32" targetName="_L34" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="int32" targetName="_L33" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="int32" targetName="_L32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="positionTy" targetName="_L31" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="int32" targetName="_L4" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="int32" targetName="_L44" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="int32" targetName="_L45" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="int32" targetName="_L47" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L50" scadeType="int32" targetName="_L50" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="int32" targetName="_L51" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L54" scadeType="int32" targetName="_L54" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L55" scadeType="int32" targetName="_L55" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L57" scadeType="float64" targetName="_L57" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L58" scadeType="int32" targetName="_L58" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L59" scadeType="int32" targetName="_L59" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L60" scadeType="int32" targetName="_L60" targetType="kcg_int32"/>
+        <ActivateIf scadeName="IfBlock1">
+          <Condition inCtx="true" targetName="IfBlock1_clock"/>
+          <Else>
+            <Condition inCtx="true" targetName="else_clock_IfBlock1"/>
+            <Else>
+              <Local clockVal="kcg_false" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L1" scadeType="colorTyQ" targetName="_L1_else_else_IfBlock1" targetType="colorTyQ"/>
+            </Else>
+            <Then>
+              <Local clockVal="kcg_true" clockVar="else_clock_IfBlock1" inCtx="true" scadeName="_L2" scadeType="colorTyQ" targetName="_L2_then_else_IfBlock1" targetType="colorTyQ"/>
+            </Then>
+          </Else>
+          <Then>
+            <Local clockVal="kcg_true" clockVar="IfBlock1_clock" inCtx="true" scadeName="_L1" scadeType="colorTyQ" targetName="_L1_then_IfBlock1" targetType="colorTyQ"/>
+          </Then>
+        </ActivateIf>
+        <NodeInlining instName="1" scadeName="math::Max">
+          <Input inCtx="true" scadeName="I1" scadeType="int32" targetName="I1_Max_1_int32" targetType="kcg_int32"/>
+          <Input inCtx="true" scadeName="I2" scadeType="int32" targetName="I2_Max_1_int32" targetType="kcg_int32"/>
+          <Output inCtx="true" scadeName="Ma_Output" scadeType="int32" targetName="Ma_Output_Max_1_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="int32" targetName="_L1_Max_1_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="int32" targetName="_L2_Max_1_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_Max_1_int32" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L4" scadeType="int32" targetName="_L4_Max_1_int32" targetType="kcg_int32"/>
+        </NodeInlining>
+        <Clock clockVal="kcg_false" clockVar="IfBlock1_clock" inCtx="true" targetName="else_clock_IfBlock1" targetType="kcg_bool"/>
+        <Clock inCtx="true" targetName="IfBlock1_clock" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_OneTL_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="ScoringA_City.h" scadeName="ScoringA" targetCycleFct="ScoringA_City" targetInitFct="ScoringA_reset_City" targetInitializationFct="ScoringA_init_City">
+        <Input scadeName="Events" scadeType="eventTy" targetName="Events" targetType="eventTy"/>
+        <Input scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+        <Output inCtx="true" scadeName="score" scadeType="int32" targetName="score" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="statusTy" targetName="_L3" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="eventTy" targetName="_L4" targetType="eventTy"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="bool" targetName="_L7" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="int32" targetName="_L10" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="int32" targetName="_L11" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="int32" targetName="_L12" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="int32" targetName="_L15" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="int32" targetName="_L16" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="int32" targetName="_L17" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="int32" targetName="_L18" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="int32" targetName="_L19" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="int32" targetName="_L20" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="bool" targetName="_L22" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="int32" targetName="_L23" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="int32" targetName="_L24" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="int32" targetName="_L25" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="bool" targetName="_L26" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="statusTy" targetName="_L27" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="int32" targetName="_L28" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="int32" targetName="_L30" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="bool" targetName="_L31" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="bool" targetName="_L32" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="statusTy" targetName="_L33" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="int32" targetName="_L34" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L36" scadeType="int32" targetName="_L36" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="int32" targetName="_L37" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="int32" targetName="_L38" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L39" scadeType="bool" targetName="_L39" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="int32" targetName="_L41" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L42" scadeType="int32" targetName="_L42" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="int32" targetName="_L43" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L44" scadeType="int32" targetName="_L44" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="int32" targetName="_L45" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L46" scadeType="int32" targetName="_L46" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="int32" targetName="_L47" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="int32" targetName="_L35" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L48" scadeType="bool" targetName="_L48" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L51" scadeType="int32" targetName="_L51" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L50" scadeType="int32" targetName="_L50" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L52" scadeType="int32" targetName="_L52" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L53" scadeType="int32" targetName="_L53" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L54" scadeType="int32" targetName="_L54" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L55" scadeType="bool" targetName="_L55" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L56" scadeType="bool" targetName="_L56" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L57" scadeType="bool" targetName="_L57" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L58" scadeType="int32" targetName="_L58" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L59" scadeType="int32" targetName="_L59" targetType="kcg_int32"/>
+        <NodeInstance instName="1" refName="RisingEdge_digital" scadeName="digital::RisingEdge">
+          <OutCtxVar targetName="Context_RisingEdge_1"/>
+        </NodeInstance>
+        <NodeInstance instName="3" refName="RisingEdge_digital" scadeName="digital::RisingEdge">
+          <OutCtxVar targetName="Context_RisingEdge_3"/>
+        </NodeInstance>
+        <NodeInstance instName="4" refName="RisingEdge_digital" scadeName="digital::RisingEdge">
+          <OutCtxVar targetName="Context_RisingEdge_4"/>
+        </NodeInstance>
+        <NodeInstance instName="5" refName="RisingEdge_digital" scadeName="digital::RisingEdge">
+          <OutCtxVar targetName="Context_RisingEdge_5"/>
+        </NodeInstance>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L38" targetType="kcg_int32"/>
+        </FbyOp>
+        <NodeInstance instName="7" refName="RisingEdge_digital" scadeName="digital::RisingEdge">
+          <OutCtxVar targetName="Context_RisingEdge_7"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="count_down_digital_int32" scadeName="digital::count_down">
+          <OutCtxVar targetName="Context_count_down_1"/>
+        </NodeInstance>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L38" targetType="kcg_int32"/>
+        <OutCtxType targetName="outC_ScoringA_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="WrongDir_City.h" scadeName="WrongDir" targetCycleFct="WrongDir_City" targetInitFct="WrongDir_reset_City" targetInitializationFct="WrongDir_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="mapid" scadeType="int32" targetName="mapid" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="wrong" scadeType="bool" targetName="wrong" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="City::mapDataTy" targetName="_L12" targetType="mapDataTy_City"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="phaseTy" targetName="_L11" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="positionTy" targetName="_L8" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="float64" targetName="_L10" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="colorTy" targetName="_L1" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="bool" targetName="_L2" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="int32" targetName="_L3" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="int32" targetName="_L4" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="float64" targetName="_L14" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="bool" targetName="_L20" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="float64" targetName="_L22" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="City::paramTLArr" targetName="_L23" targetType="paramTLArr_City"/>
+        <NodeInstance instName="1" refName="MapADT_City" scadeName="City::MapADT">
+          <OutCtxVar targetName="Context_MapADT_1"/>
+        </NodeInstance>
+        <NodeInlining instName="1" scadeName="mathext::SinCosR">
+          <Input inCtx="true" scadeName="Input1" scadeType="float64" targetName="Input1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output1" scadeType="float64" targetName="Output1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output2" scadeType="float64" targetName="Output2_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_SinCosR_1_float64" targetType="kcg_float64"/>
+          <NodeInstance instName="1" refName="SinR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::SinR64"/>
+          <NodeInstance instName="1" refName="CosR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::CosR64"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_WrongDir_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="ScoringB_City.h" scadeName="ScoringB" targetCycleFct="ScoringB_City" targetInitFct="ScoringB_reset_City" targetInitializationFct="ScoringB_init_City">
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Output inCtx="true" scadeName="score" scadeType="int32" targetName="score" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="positionTy" targetName="_L2" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L22" scadeType="int32" targetName="_L22" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="float64" targetName="_L23" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="UpTime_Utilities" scadeName="Utilities::UpTime">
+          <OutCtxVar targetName="Context_UpTime_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Variation_Utilities" scadeName="Utilities::Variation">
+          <OutCtxVar targetName="Context_Variation_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_ScoringB_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="OneObstacleDet_City.h" scadeName="OneObstacleDet" targetCycleFct="OneObstacleDet_City" targetInitFct="OneObstacleDet_reset_City" targetInitializationFct="OneObstacleDet_init_City">
+        <Input scadeName="acc" scadeType="int32" targetName="acc" targetType="kcg_int32"/>
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="obstacle" scadeType="obstTy" targetName="obstacle" targetType="obstTy"/>
+        <Output inCtx="true" scadeName="accnew" scadeType="int32" targetName="accnew" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="positionTy" targetName="_L3" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="float64" targetName="_L23" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="bool" targetName="_L28" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="bool" targetName="_L29" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="int32" targetName="_L30" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="int32" targetName="_L32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="phaseTy" targetName="_L1" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="int32" targetName="_L33" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L36" scadeType="obstTy" targetName="_L36" targetType="obstTy"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="bool" targetName="_L38" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="positionTy" targetName="_L37" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L46" scadeType="int32" targetName="_L46" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L45" scadeType="int32" targetName="_L45" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L47" scadeType="float64" targetName="_L47" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L48" scadeType="float64" targetName="_L48" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="AngleDist_Utilities" scadeName="Utilities::AngleDist">
+          <OutCtxVar targetName="Context_AngleDist_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Normalize_Utilities" scadeName="Utilities::Normalize">
+          <OutCtxVar targetName="Context_Normalize_1"/>
+        </NodeInstance>
+        <NodeInlining instName="1" scadeName="math::Abs">
+          <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="A_Input_Abs_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="A_Output_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Abs_1_float64" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8_Abs_1_float64" targetType="kcg_float64"/>
+        </NodeInlining>
+        <NodeInlining instName="3" scadeName="math::Min">
+          <Input inCtx="true" scadeName="I1" scadeType="int32" targetName="I1_Min_3_int32" targetType="kcg_int32"/>
+          <Input inCtx="true" scadeName="I2" scadeType="int32" targetName="I2_Min_3_int32" targetType="kcg_int32"/>
+          <Output inCtx="true" scadeName="Mi_Output" scadeType="int32" targetName="Mi_Output_Min_3_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L21" scadeType="int32" targetName="_L21_Min_3_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L22" scadeType="int32" targetName="_L22_Min_3_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L24" scadeType="int32" targetName="_L24_Min_3_int32" targetType="kcg_int32"/>
+          <Local inCtx="true" scadeName="_L25" scadeType="bool" targetName="_L25_Min_3_int32" targetType="kcg_bool"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_OneObstacleDet_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="WallClock_City.h" scadeName="WallClock" targetCycleFct="WallClock_City" targetInitFct="WallClock_reset_City" targetInitializationFct="WallClock_init_City">
+        <Input scadeName="RobotStatus" scadeType="statusTy" targetName="RobotStatus" targetType="statusTy"/>
+        <Output inCtx="true" scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="int32" targetName="_L7" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="statusTy" targetName="_L4" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="statusTy" targetName="_L1" targetType="statusTy"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="int32" targetName="_L10" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="int32" targetName="_L11" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="int32" targetName="_L12" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="int32" targetName="_L13" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="float64" targetName="_L14" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L13" targetType="kcg_int32"/>
+        </FbyOp>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L13" targetType="kcg_int32"/>
+        <OutCtxType targetName="outC_WallClock_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="OneObstacle_City.h" scadeName="OneObstacle" targetCycleFct="OneObstacle_City" targetInitFct="OneObstacle_reset_City" targetInitializationFct="OneObstacle_init_City">
+        <Input scadeName="param" scadeType="City::paramObstTy" targetName="param" targetType="paramObstTy_City"/>
+        <Input scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="obstacle" scadeType="obstTy" targetName="obstacle" targetType="obstTy"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="float64" targetName="_L10" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="positionTy" targetName="_L9" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="bool" targetName="_L25" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="bool" targetName="_L26" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="float64" targetName="_L27" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="City::paramObstTy" targetName="_L2" targetType="paramObstTy_City"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="obstTy" targetName="_L29" targetType="obstTy"/>
+        <OutCtxType targetName="outC_OneObstacle_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="AllObstacles_City.h" scadeName="AllObstacles" targetCycleFct="AllObstacles_City" targetInitFct="AllObstacles_reset_City" targetInitializationFct="AllObstacles_init_City">
+        <Input scadeName="time" scadeType="float64" targetName="time" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="obstacles" scadeType="obstTy^(10)" targetName="obstacles" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="float64^(10)" targetName="_L5" targetType="array_float64_10"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="obstTy^(10)" targetName="_L6" targetType="obstArr"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="City::paramObstArr" targetName="_L7" targetType="paramObstArr_City"/>
+        <Iterator iteratorKind="map" scadeSize="10" targetSize="10">
+          <NodeInstance instName="1" refName="OneObstacle_City" scadeName="City::OneObstacle">
+            <OutCtxVar targetName="Context_OneObstacle_1"/>
+          </NodeInstance>
+        </Iterator>
+        <NodeInstance instName="1" refName="readObstacles_City" scadeName="City::readObstacles">
+          <OutCtxVar targetName="Context_readObstacles_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_AllObstacles_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="CollisionAux_City.h" scadeName="CollisionAux" targetCycleFct="CollisionAux_City" targetInitFct="CollisionAux_reset_City" targetInitializationFct="CollisionAux_init_City">
+        <Input scadeName="acc" scadeType="bool" targetName="acc" targetType="kcg_bool"/>
+        <Input scadeName="RobotPhase" scadeType="phaseTy" targetName="RobotPhase" targetType="phaseTy"/>
+        <Input scadeName="obstacle" scadeType="obstTy" targetName="obstacle" targetType="obstTy"/>
+        <Output inCtx="true" scadeName="accnew" scadeType="bool" targetName="accnew" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="angle" scadeType="float64" targetName="angle" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="dist" scadeType="float64" targetName="dist" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="phaseTy" targetName="_L2" targetType="phaseTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="obstTy" targetName="_L3" targetType="obstTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="bool" targetName="_L4" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="positionTy" targetName="_L5" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="bool" targetName="_L12" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="positionTy" targetName="_L11" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L23" scadeType="float64" targetName="_L23" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="bool" targetName="_L26" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L28" scadeType="float64" targetName="_L28" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L27" scadeType="float64" targetName="_L27" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L29" scadeType="float64" targetName="_L29" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="float64" targetName="_L30" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="float64" targetName="_L32" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="float64" targetName="_L31" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="float64" targetName="_L33" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L34" scadeType="float64" targetName="_L34" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L35" scadeType="bool" targetName="_L35" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L36" scadeType="float64" targetName="_L36" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L37" scadeType="bool" targetName="_L37" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="float64" targetName="_L38" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L39" scadeType="bool" targetName="_L39" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L40" scadeType="float64" targetName="_L40" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="bool" targetName="_L41" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L42" scadeType="float64" targetName="_L42" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="float64" targetName="_L43" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="AngleDist_Utilities" scadeName="Utilities::AngleDist">
+          <OutCtxVar targetName="Context_AngleDist_1"/>
+        </NodeInstance>
+        <NodeInlining instName="1" scadeName="math::Abs">
+          <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="A_Input_Abs_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="A_Output_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Abs_1_float64" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8_Abs_1_float64" targetType="kcg_float64"/>
+        </NodeInlining>
+        <NodeInstance instName="1" refName="Normalize_Utilities" scadeName="Utilities::Normalize">
+          <OutCtxVar targetName="Context_Normalize_1"/>
+        </NodeInstance>
+        <NodeInlining instName="1" scadeName="mathext::SinCosR">
+          <Input inCtx="true" scadeName="Input1" scadeType="float64" targetName="Input1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output1" scadeType="float64" targetName="Output1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output2" scadeType="float64" targetName="Output2_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_SinCosR_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_SinCosR_1_float64" targetType="kcg_float64"/>
+          <NodeInstance instName="1" refName="SinR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::SinR64"/>
+          <NodeInstance instName="1" refName="CosR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::CosR64"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_CollisionAux_City"/>
+      </NoExpNode>
+      <NoExpNode headerFile="readObstacles_City.h" imported="true" scadeName="readObstacles" targetCycleFct="readObstacles_City" targetInitFct="readObstacles_reset_City" targetInitializationFct="readObstacles_init_City">
+        <Output inCtx="true" scadeName="paramsObst" scadeType="City::paramObstArr" targetName="paramsObst" targetType="paramObstArr_City"/>
+        <OutCtxType targetName="outC_readObstacles_City"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="Utilities">
+      <NoExpNode headerFile="Normalize_Utilities.h" scadeName="Normalize" targetCycleFct="Normalize_Utilities" targetInitFct="Normalize_reset_Utilities" targetInitializationFct="Normalize_init_Utilities">
+        <Input scadeName="angle" scadeType="float64" targetName="angle" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="normal" scadeType="float64" targetName="normal" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="int32" targetName="_L5" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="float64" targetName="_L10" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="RoundFloor_math_float64" scadeName="math::RoundFloor">
+          <OutCtxVar targetName="Context_RoundFloor_1"/>
+        </NodeInstance>
+        <OutCtxType targetName="outC_Normalize_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Integrator_Utilities.h" scadeName="Integrator" targetCycleFct="Integrator_Utilities" targetInitFct="Integrator_reset_Utilities" targetInitializationFct="Integrator_init_Utilities">
+        <Input scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+        <Input scadeName="step" scadeType="float64" targetName="step" targetType="kcg_float64"/>
+        <Input scadeName="init" scadeType="float64" targetName="init" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="result" scadeType="float64" targetName="result" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="s" scadeType="float64" targetName="s" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64" targetName="_L19" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L20" scadeType="float64" targetName="_L20" targetType="kcg_float64"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L11" targetType="kcg_float64"/>
+        </FbyOp>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L11" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_Integrator_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="EncodeColor_Utilities.h" scadeName="EncodeColor" targetCycleFct="EncodeColor_Utilities" targetInitFct="EncodeColor_reset_Utilities" targetInitializationFct="EncodeColor_init_Utilities">
+        <Input scadeName="colorQual" scadeType="colorTyQ" targetName="colorQual" targetType="colorTyQ"/>
+        <Output inCtx="true" scadeName="colorRGB" scadeType="colorTy" targetName="colorRGB" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="colorTyQ" targetName="_L2" targetType="colorTyQ"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="colorTy" targetName="_L3" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="colorTy" targetName="_L4" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="colorTy" targetName="_L5" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="colorTy" targetName="_L6" targetType="colorTy"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="colorTy" targetName="_L7" targetType="colorTy"/>
+        <OutCtxType targetName="outC_EncodeColor_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Bound_Utilities.h" scadeName="Bound" targetCycleFct="Bound_Utilities" targetInitFct="Bound_reset_Utilities" targetInitializationFct="Bound_init_Utilities">
+        <Input scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+        <Input scadeName="ceiling" scadeType="float64" targetName="ceiling" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="xb" scadeType="float64" targetName="xb" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <NodeInlining instName="1" scadeName="math::Max">
+          <Input inCtx="true" scadeName="I1" scadeType="float64" targetName="I1_Max_1_float64" targetType="kcg_float64"/>
+          <Input inCtx="true" scadeName="I2" scadeType="float64" targetName="I2_Max_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Ma_Output" scadeType="float64" targetName="Ma_Output_Max_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_Max_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_Max_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_Max_1_float64" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_Max_1_float64" targetType="kcg_float64"/>
+        </NodeInlining>
+        <NodeInlining instName="1" scadeName="math::Min">
+          <Input inCtx="true" scadeName="I1" scadeType="float64" targetName="I1_Min_1_float64" targetType="kcg_float64"/>
+          <Input inCtx="true" scadeName="I2" scadeType="float64" targetName="I2_Min_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Mi_Output" scadeType="float64" targetName="Mi_Output_Min_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L21" scadeType="float64" targetName="_L21_Min_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L22" scadeType="float64" targetName="_L22_Min_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L24" scadeType="float64" targetName="_L24_Min_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L25" scadeType="bool" targetName="_L25_Min_1_float64" targetType="kcg_bool"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_Bound_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="Variation_Utilities.h" scadeName="Variation" targetCycleFct="Variation_Utilities" targetInitFct="Variation_reset_Utilities" targetInitializationFct="Variation_init_Utilities">
+        <Input scadeName="enabled" scadeType="bool" targetName="enabled" targetType="kcg_bool"/>
+        <Input scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+        <Input scadeName="step" scadeType="float64" targetName="step" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="varX" scadeType="float64" targetName="varX" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <ActivateEveryInitialDefault instName="1">
+          <Condition inCtx="true" targetName="every"/>
+          <Memory inCtx="true" targetName="_L1" targetType="kcg_float64"/>
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <NodeInstance clockVal="kcg_true" clockVar="every" instName="1" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+            <OutCtxVar clockVal="kcg_true" clockVar="every" targetName="Context_Integrator_1"/>
+          </NodeInstance>
+          <Default/>
+        </ActivateEveryInitialDefault>
+        <NodeInlining instName="1" scadeName="math::Abs">
+          <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="A_Input_Abs_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="A_Output_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Abs_1_float64" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8_Abs_1_float64" targetType="kcg_float64"/>
+        </NodeInlining>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L7" targetType="kcg_float64"/>
+        </FbyOp>
+        <NodeInstance instName="1" refName="Normalize_Utilities" scadeName="Utilities::Normalize">
+          <OutCtxVar targetName="Context_Normalize_1"/>
+        </NodeInstance>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L1" targetType="kcg_float64"/>
+        <Memory inCtx="true" targetName="_L7" targetType="kcg_float64"/>
+        <Clock inCtx="true" targetName="every" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_Variation_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="UpTime_Utilities.h" scadeName="UpTime" targetCycleFct="UpTime_Utilities" targetInitFct="UpTime_reset_Utilities" targetInitializationFct="UpTime_init_Utilities">
+        <Input scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+        <Input scadeName="step" scadeType="float64" targetName="step" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="t" scadeType="float64" targetName="t" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="bool" targetName="_L5" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="float64" targetName="_L9" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="Integrator_Utilities" scadeName="Utilities::Integrator">
+          <OutCtxVar targetName="Context_Integrator_1"/>
+        </NodeInstance>
+        <NodeInlining instName="1" scadeName="math::Abs">
+          <Input inCtx="true" scadeName="A_Input" scadeType="float64" targetName="A_Input_Abs_1_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="A_Output" scadeType="float64" targetName="A_Output_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_Abs_1_float64" targetType="kcg_bool"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_Abs_1_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8_Abs_1_float64" targetType="kcg_float64"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_UpTime_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="RotMatrix_Utilities.h" scadeName="RotMatrix" targetCycleFct="RotMatrix_Utilities" targetInitFct="RotMatrix_reset_Utilities" targetInitializationFct="RotMatrix_init_Utilities">
+        <Input scadeName="alpha" scadeType="float64" targetName="alpha" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="res" scadeType="float64^(2)^(2)" targetName="res" targetType="array_float64_2_2"/>
+        <Local inCtx="true" scadeName="si" scadeType="float64" targetName="si" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="co" scadeType="float64" targetName="co" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L17" scadeType="float64" targetName="_L17" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="float64" targetName="_L14" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L18" scadeType="float64" targetName="_L18" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L19" scadeType="float64^(2)^(2)" targetName="_L19" targetType="array_float64_2_2"/>
+        <NodeInlining instName="2" scadeName="mathext::SinCosR">
+          <Input inCtx="true" scadeName="Input1" scadeType="float64" targetName="Input1_SinCosR_2_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output1" scadeType="float64" targetName="Output1_SinCosR_2_float64" targetType="kcg_float64"/>
+          <Output inCtx="true" scadeName="Output2" scadeType="float64" targetName="Output2_SinCosR_2_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_SinCosR_2_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_SinCosR_2_float64" targetType="kcg_float64"/>
+          <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_SinCosR_2_float64" targetType="kcg_float64"/>
+          <NodeInstance instName="1" refName="SinR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::SinR64"/>
+          <NodeInstance instName="1" refName="CosR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::CosR64"/>
+        </NodeInlining>
+        <OutCtxType targetName="outC_RotMatrix_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="pos2vec_Utilities.h" scadeName="pos2vec" targetCycleFct="pos2vec_Utilities" targetInitFct="pos2vec_reset_Utilities" targetInitializationFct="pos2vec_init_Utilities">
+        <Input scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+        <Output inCtx="true" scadeName="vec" scadeType="float64^(2)" targetName="vec" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="positionTy" targetName="_L1" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64^(2)" targetName="_L6" targetType="array_float64_2"/>
+        <OutCtxType targetName="outC_pos2vec_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="vec2pos_Utilities.h" scadeName="vec2pos" targetCycleFct="vec2pos_Utilities" targetInitFct="vec2pos_reset_Utilities" targetInitializationFct="vec2pos_init_Utilities">
+        <Input scadeName="vec" scadeType="float64^(2)" targetName="vec" targetType="array_float64_2"/>
+        <Output inCtx="true" scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="positionTy" targetName="_L2" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_vec2pos_Utilities"/>
+      </NoExpNode>
+      <NoExpNode headerFile="AngleDist_Utilities.h" scadeName="AngleDist" targetCycleFct="AngleDist_Utilities" targetInitFct="AngleDist_reset_Utilities" targetInitializationFct="AngleDist_init_Utilities">
+        <Input scadeName="from" scadeType="positionTy" targetName="from" targetType="positionTy"/>
+        <Input scadeName="to" scadeType="positionTy" targetName="to" targetType="positionTy"/>
+        <Output inCtx="true" scadeName="angle" scadeType="float64" targetName="angle" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="dist" scadeType="float64" targetName="dist" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="positionTy" targetName="_L1" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="positionTy" targetName="_L2" targetType="positionTy"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="float64" targetName="_L8" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64" targetName="_L7" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L11" scadeType="float64" targetName="_L11" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L12" scadeType="float64" targetName="_L12" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="float64" targetName="_L13" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L14" scadeType="float64" targetName="_L14" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L15" scadeType="float64" targetName="_L15" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L16" scadeType="float64" targetName="_L16" targetType="kcg_float64"/>
+        <NodeInstance instName="1" refName="HypotR_mathext_float64" scadeName="mathext::HypotR">
+          <OutCtxVar targetName="Context_HypotR_1"/>
+        </NodeInstance>
+        <NodeInstance instName="1" refName="Atan2R64_mathext_mathextimpl" scadeName="mathext::mathextimpl::Atan2R64"/>
+        <OutCtxType targetName="outC_AngleDist_Utilities"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="digital">
+      <NoExpNode headerFile="RisingEdge_digital.h" scadeName="RisingEdge" targetCycleFct="RisingEdge_digital" targetInitFct="RisingEdge_reset_digital" targetInitializationFct="RisingEdge_init_digital">
+        <Input scadeName="RE_Input" scadeType="bool" targetName="RE_Input" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="RE_Output" scadeType="bool" targetName="RE_Output" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="bool" targetName="_L8" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L9" scadeType="bool" targetName="_L9" targetType="kcg_bool"/>
+        <FbyOp instName="1">
+          <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+          <Memory inCtx="true" targetName="_L1" targetType="kcg_bool"/>
+        </FbyOp>
+        <InitOp instName="1"/>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L1" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_RisingEdge_digital"/>
+      </NoExpNode>
+      <NoExpNode headerFile="count_down_digital_int32.h" scadeName="count_down" targetCycleFct="count_down_digital_int32" targetInitFct="count_down_reset_digital_int32" targetInitializationFct="count_down_init_digital_int32">
+        <Input scadeName="Reset" scadeType="bool" targetName="Reset_int32" targetType="kcg_bool"/>
+        <Input scadeName="N" scadeType="int32" targetName="N_int32" targetType="kcg_int32"/>
+        <Output inCtx="true" scadeName="cpt" scadeType="int32" targetName="cpt_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="bool" targetName="_L1_int32" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="int32" targetName="_L2_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="int32" targetName="_L3_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="int32" targetName="_L4_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="int32" targetName="_L7_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L8" scadeType="int32" targetName="_L8_int32" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L13" scadeType="int32" targetName="_L13_int32" targetType="kcg_int32"/>
+        <InitOp instName="5"/>
+        <PreOp instName="8"/>
+        <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L4_int32" targetType="kcg_int32"/>
+        <OutCtxType targetName="outC_count_down_digital_int32"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="truthtables">
+      <EnumType scadeName="TruthTableValues" targetName="TruthTableValues_truthtables">
+        <EnumVal scadeName="T" targetName="T_truthtables"/>
+        <EnumVal scadeName="F" targetName="F_truthtables"/>
+        <EnumVal scadeName="X" targetName="X_truthtables"/>
+      </EnumType>
+    </Package>
+    <Package scadeName="linear"/>
+    <Package scadeName="filters"/>
+    <Package scadeName="vect">
+      <ExpNode scadeName="ScalProd"/>
+      <NoExpNode headerFile="MatVectProd_vect_float64_2_2.h" scadeName="MatVectProd" targetCycleFct="MatVectProd_vect_float64_2_2" targetInitFct="MatVectProd_reset_vect_float64_2_2" targetInitializationFct="MatVectProd_init_vect_float64_2_2">
+        <Input scadeName="A" scadeType="float64^(2)^(2)" targetName="A_float64_2_2" targetType="array_float64_2_2"/>
+        <Input scadeName="V" scadeType="float64^(2)" targetName="V_float64_2_2" targetType="array_float64_2"/>
+        <Output inCtx="true" scadeName="R" scadeType="float64^(2)" targetName="R_float64_2_2" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64^(2)^(2)" targetName="_L1_float64_2_2" targetType="array_float64_2_2"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64^(2)" targetName="_L2_float64_2_2" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64^(2)^(2)" targetName="_L4_float64_2_2" targetType="array_float64_2_2"/>
+        <Local inCtx="true" scadeName="_L7" scadeType="float64^(2)" targetName="_L7_float64_2_2" targetType="array_float64_2"/>
+        <Iterator iteratorKind="map" scadeSize="2" targetSize="2">
+          <NodeInlining instName="1" scadeName="vect::ScalProd">
+            <Local inCtx="true" scadeName="_L2" scadeType="float64^(2)" targetName="_L2_ScalProd_1_float64_2" targetType="array_float64_2_2"/>
+            <Local inCtx="true" scadeName="_L3" scadeType="float64^(2)" targetName="_L3_ScalProd_1_float64_2" targetType="array_float64_2_2"/>
+            <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_ScalProd_1_float64_2" targetType="array_float64_2"/>
+            <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_ScalProd_1_float64_2" targetType="array_float64_2"/>
+            <Local inCtx="true" scadeName="_L7" scadeType="float64^(2)" targetName="_L7_ScalProd_1_float64_2" targetType="array_float64_2_2"/>
+          </NodeInlining>
+        </Iterator>
+        <OutCtxType targetName="outC_MatVectProd_vect_float64_2_2"/>
+      </NoExpNode>
+      <NoExpNode headerFile="VectAdd_vect_float64_2.h" scadeName="VectAdd" targetCycleFct="VectAdd_vect_float64_2" targetInitFct="VectAdd_reset_vect_float64_2" targetInitializationFct="VectAdd_init_vect_float64_2">
+        <Input scadeName="U" scadeType="float64^(2)" targetName="U_float64_2" targetType="array_float64_2"/>
+        <Input scadeName="V" scadeType="float64^(2)" targetName="V_float64_2" targetType="array_float64_2"/>
+        <Output inCtx="true" scadeName="W" scadeType="float64^(2)" targetName="W_float64_2" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64^(2)" targetName="_L1_float64_2" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64^(2)" targetName="_L2_float64_2" targetType="array_float64_2"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64^(2)" targetName="_L3_float64_2" targetType="array_float64_2"/>
+        <OutCtxType targetName="outC_VectAdd_vect_float64_2"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="math">
+      <ExpNode scadeName="Abs"/>
+      <ExpNode scadeName="Max"/>
+      <ExpNode scadeName="Min"/>
+      <NoExpNode headerFile="RoundFloor_math_float64.h" scadeName="RoundFloor" targetCycleFct="RoundFloor_math_float64" targetInitFct="RoundFloor_reset_math_float64" targetInitializationFct="RoundFloor_init_math_float64">
+        <Input scadeName="RF_Input" scadeType="float64" targetName="RF_Input_float64" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="RF_Output" scadeType="int32" targetName="RF_Output_float64" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L24" scadeType="bool" targetName="_L24_float64" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L25" scadeType="float64" targetName="_L25_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L26" scadeType="int32" targetName="_L26_float64" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L30" scadeType="float64" targetName="_L30_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L31" scadeType="float64" targetName="_L31_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L32" scadeType="int32" targetName="_L32_float64" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L33" scadeType="int32" targetName="_L33_float64" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L38" scadeType="int32" targetName="_L38_float64" targetType="kcg_int32"/>
+        <Local inCtx="true" scadeName="_L41" scadeType="float64" targetName="_L41_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L43" scadeType="bool" targetName="_L43_float64" targetType="kcg_bool"/>
+        <OutCtxType targetName="outC_RoundFloor_math_float64"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="mathext">
+      <Package scadeName="mathextimpl">
+        <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="Atan2R64" targetCycleFct="Atan2R64_mathext_mathextimpl">
+          <Input scadeName="y" scadeType="float64" targetName="y" targetType="kcg_float64"/>
+          <Input scadeName="x" scadeType="float64" targetName="x" targetType="kcg_float64"/>
+          <Output scadeName="o" scadeType="float64" targetName="o" targetType="kcg_float64"/>
+        </NoExpNode>
+        <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="CosR64" targetCycleFct="CosR64_mathext_mathextimpl">
+          <Input scadeName="i" scadeType="float64" targetName="i" targetType="kcg_float64"/>
+          <Output scadeName="o" scadeType="float64" targetName="o" targetType="kcg_float64"/>
+        </NoExpNode>
+        <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="SinR64" targetCycleFct="SinR64_mathext_mathextimpl">
+          <Input scadeName="i" scadeType="float64" targetName="i" targetType="kcg_float64"/>
+          <Output scadeName="o" scadeType="float64" targetName="o" targetType="kcg_float64"/>
+        </NoExpNode>
+        <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="SqrtR64" targetCycleFct="SqrtR64_mathext_mathextimpl">
+          <Input scadeName="i" scadeType="float64" targetName="i" targetType="kcg_float64"/>
+          <Output scadeName="o" scadeType="float64" targetName="o" targetType="kcg_float64"/>
+        </NoExpNode>
+      </Package>
+      <ExpNode scadeName="SinCosR"/>
+      <NoExpNode headerFile="HypotR_mathext_float64.h" scadeName="HypotR" targetCycleFct="HypotR_mathext_float64" targetInitFct="HypotR_reset_mathext_float64" targetInitializationFct="HypotR_init_mathext_float64">
+        <Input scadeName="HypotR_I1" scadeType="float64" targetName="HypotR_I1_float64" targetType="kcg_float64"/>
+        <Input scadeName="HypotR_I2" scadeType="float64" targetName="HypotR_I2_float64" targetType="kcg_float64"/>
+        <Output inCtx="true" scadeName="HypotR_O" scadeType="float64" targetName="HypotR_O_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L1" scadeType="float64" targetName="_L1_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L2" scadeType="float64" targetName="_L2_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="float64" targetName="_L3_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L4" scadeType="float64" targetName="_L4_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L5" scadeType="float64" targetName="_L5_float64" targetType="kcg_float64"/>
+        <Local inCtx="true" scadeName="_L6" scadeType="float64" targetName="_L6_float64" targetType="kcg_float64"/>
+        <NodeInstance instName="4" refName="SqrtR64_mathext_mathextimpl" scadeName="mathext::mathextimpl::SqrtR64"/>
+        <OutCtxType targetName="outC_HypotR_mathext_float64"/>
+      </NoExpNode>
+    </Package>
+    <Package scadeName="pwlinear"/>
+    <Package scadeName="lut"/>
+    <ArrayType cellType="paramTLTy_City" size="5" targetCompFct="kcg_comp_paramTLArr_City" targetCopyFct="kcg_copy_paramTLArr_City" targetName="paramTLArr_City"/>
+    <StructType targetCompFct="kcg_comp_paramTLTy_City" targetCopyFct="kcg_copy_paramTLTy_City" targetName="paramTLTy_City">
+      <Field scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+      <Field scadeName="tGreen" scadeType="kcg_int32" targetName="tGreen" targetType="kcg_int32"/>
+      <Field scadeName="tAmber" scadeType="kcg_int32" targetName="tAmber" targetType="kcg_int32"/>
+      <Field scadeName="tRed" scadeType="kcg_int32" targetName="tRed" targetType="kcg_int32"/>
+      <Field scadeName="tPhase" scadeType="kcg_int32" targetName="tPhase" targetType="kcg_int32"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_sensorsTy" targetCopyFct="kcg_copy_sensorsTy" targetName="sensorsTy">
+      <Field scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+      <Field scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+      <Field scadeName="sonar" scadeType="kcg_int32" targetName="sonar" targetType="kcg_int32"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_mapDataTy_City" targetCopyFct="kcg_copy_mapDataTy_City" targetName="mapDataTy_City">
+      <Field scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+      <Field scadeName="onRoad" scadeType="kcg_bool" targetName="onRoad" targetType="kcg_bool"/>
+      <Field scadeName="maxSpeed" scadeType="kcg_int32" targetName="maxSpeed" targetType="kcg_int32"/>
+      <Field scadeName="TLnumber" scadeType="kcg_int32" targetName="TLnumber" targetType="kcg_int32"/>
+      <Field scadeName="TLrequired" scadeType="kcg_bool" targetName="TLrequired" targetType="kcg_bool"/>
+      <Field scadeName="dirx" scadeType="kcg_float64" targetName="dirx" targetType="kcg_float64"/>
+      <Field scadeName="diry" scadeType="kcg_float64" targetName="diry" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="kcg_int32" size="2" targetCompFct="kcg_comp_array_int32_2" targetCopyFct="kcg_copy_array_int32_2" targetName="array_int32_2"/>
+    <StructType targetCompFct="kcg_comp_colorTy" targetCopyFct="kcg_copy_colorTy" targetName="colorTy">
+      <Field scadeName="red" scadeType="kcg_uint8" targetName="red" targetType="kcg_uint8"/>
+      <Field scadeName="green" scadeType="kcg_uint8" targetName="green" targetType="kcg_uint8"/>
+      <Field scadeName="blue" scadeType="kcg_uint8" targetName="blue" targetType="kcg_uint8"/>
+    </StructType>
+    <ArrayType cellType="phaseTy" size="10" targetCompFct="kcg_comp_array" targetCopyFct="kcg_copy_array" targetName="array"/>
+    <ArrayType cellType="phaseTy" size="2" targetCompFct="kcg_comp__2_array" targetCopyFct="kcg_copy__2_array" targetName="_2_array"/>
+    <StructType targetCompFct="kcg_comp_phaseTy" targetCopyFct="kcg_copy_phaseTy" targetName="phaseTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="velocity" scadeType="kcg_float64" targetName="velocity" targetType="kcg_float64"/>
+      <Field scadeName="heading" scadeType="kcg_float64" targetName="heading" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="itiElement_Robot" size="50" targetCompFct="kcg_comp_itiElemArr_Robot" targetCopyFct="kcg_copy_itiElemArr_Robot" targetName="itiElemArr_Robot"/>
+    <StructType targetCompFct="kcg_comp_itiElement_Robot" targetCopyFct="kcg_copy_itiElement_Robot" targetName="itiElement_Robot">
+      <Field scadeName="action" scadeType="actionTy_Robot" targetName="action" targetType="actionTy_Robot"/>
+      <Field scadeName="param" scadeType="kcg_float64" targetName="param" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_sigTy" targetCopyFct="kcg_copy_sigTy" targetName="sigTy">
+      <Field scadeName="TLights" scadeType="trafLArr" targetName="TLights" targetType="trafLArr"/>
+      <Field scadeName="obstacles" scadeType="obstArr" targetName="obstacles" targetType="obstArr"/>
+    </StructType>
+    <ArrayType cellType="obstTy" size="10" targetCompFct="kcg_comp_obstArr" targetCopyFct="kcg_copy_obstArr" targetName="obstArr"/>
+    <StructType targetCompFct="kcg_comp_obstTy" targetCopyFct="kcg_copy_obstTy" targetName="obstTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="present" scadeType="kcg_bool" targetName="present" targetType="kcg_bool"/>
+    </StructType>
+    <ArrayType cellType="positionTy" size="2" targetCompFct="kcg_comp__3_array" targetCopyFct="kcg_copy__3_array" targetName="_3_array"/>
+    <ArrayType cellType="paramObstTy_City" size="10" targetCompFct="kcg_comp_paramObstArr_City" targetCopyFct="kcg_copy_paramObstArr_City" targetName="paramObstArr_City"/>
+    <StructType targetCompFct="kcg_comp_paramObstTy_City" targetCopyFct="kcg_copy_paramObstTy_City" targetName="paramObstTy_City">
+      <Field scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+      <Field scadeName="since" scadeType="kcg_float64" targetName="since" targetType="kcg_float64"/>
+      <Field scadeName="till" scadeType="kcg_float64" targetName="till" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="trafLTy" size="5" targetCompFct="kcg_comp_trafLArr" targetCopyFct="kcg_copy_trafLArr" targetName="trafLArr"/>
+    <StructType targetCompFct="kcg_comp_trafLTy" targetCopyFct="kcg_copy_trafLTy" targetName="trafLTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="light" scadeType="colorTyQ" targetName="light" targetType="colorTyQ"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_positionTy" targetCopyFct="kcg_copy_positionTy" targetName="positionTy">
+      <Field scadeName="x" scadeType="kcg_float64" targetName="x" targetType="kcg_float64"/>
+      <Field scadeName="y" scadeType="kcg_float64" targetName="y" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_wheelsTy_Robot" targetCopyFct="kcg_copy_wheelsTy_Robot" targetName="wheelsTy_Robot">
+      <Field scadeName="left" scadeType="kcg_float64" targetName="left" targetType="kcg_float64"/>
+      <Field scadeName="right" scadeType="kcg_float64" targetName="right" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="kcg_float64" size="5" targetCompFct="kcg_comp_array_float64_5" targetCopyFct="kcg_copy_array_float64_5" targetName="array_float64_5"/>
+    <ArrayType cellType="array_float64_2" size="2" targetCompFct="kcg_comp_array_float64_2_2" targetCopyFct="kcg_copy_array_float64_2_2" targetName="array_float64_2_2"/>
+    <ArrayType cellType="kcg_float64" size="2" targetCompFct="kcg_comp_array_float64_2" targetCopyFct="kcg_copy_array_float64_2" targetName="array_float64_2"/>
+    <ArrayType cellType="kcg_float64" size="10" targetCompFct="kcg_comp_array_float64_10" targetCopyFct="kcg_copy_array_float64_10" targetName="array_float64_10"/>
+    <StructType targetCompFct="kcg_comp_eventTy" targetCopyFct="kcg_copy_eventTy" targetName="eventTy">
+      <Field scadeName="lightRun" scadeType="kcg_bool" targetName="lightRun" targetType="kcg_bool"/>
+      <Field scadeName="speedExcess" scadeType="kcg_bool" targetName="speedExcess" targetType="kcg_bool"/>
+      <Field scadeName="exitRoad" scadeType="kcg_bool" targetName="exitRoad" targetType="kcg_bool"/>
+      <Field scadeName="collisionEvent" scadeType="kcg_bool" targetName="collisionEvent" targetType="kcg_bool"/>
+      <Field scadeName="dirEvent" scadeType="kcg_bool" targetName="dirEvent" targetType="kcg_bool"/>
+    </StructType>
+    <ArrayType cellType="kcg_char" size="7" targetCompFct="kcg_comp_array_char_7" targetCopyFct="kcg_copy_array_char_7" targetName="array_char_7"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

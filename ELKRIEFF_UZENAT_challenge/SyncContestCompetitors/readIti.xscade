@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" external="imported" name="readIti">
+	<inputs>
+		<Variable name="id">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4f13/684D/810/57e92b245185" hidden="true"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="itinerary">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="itiElemArr"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4fac/58B/1508/57d7c0f21b10"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<pragmas>
+		<ed:Operator oid="!ed/4fab/58B/1508/57d7c0e14541" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<comment>imported C opertaor</comment>
+			<comment>-reads inputs/itinerary.txt</comment>
+			<comment>- outputs an itinerary (as an array)</comment>
+		</ed:Operator>
+	</pragmas>
+</Operator>

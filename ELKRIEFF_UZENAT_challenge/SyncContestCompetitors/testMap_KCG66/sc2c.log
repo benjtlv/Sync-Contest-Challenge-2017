@@ -1,0 +1,9 @@
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-14T12:27:23
+** Command: scade -code "C:\Users\benja\Desktop\challenge\SyncContestCompetitors\EiDD_Challenge_SW.etp" -root testMap -conf Default -build
+*************************************************************$
+*** System Error (PERROR): Errors occur proccess execution: "C:\Program Files (x86)\Esterel Technologies\SCADE R17.2\SCADE\bin\kcg66.exe"  -config "C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testMap_KCG66/config.txt".
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-14T12:27:25
+** sc2c.log
+*************************************************************$

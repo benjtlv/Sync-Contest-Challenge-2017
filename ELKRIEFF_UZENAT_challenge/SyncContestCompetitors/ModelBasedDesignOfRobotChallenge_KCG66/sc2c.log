@@ -1,0 +1,309 @@
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-22T21:37:33
+** Command: scade -code "C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\EiDD_Challenge_SW.etp" -root ModelBasedDesignOfRobotChallenge -conf ImportFromSystem -build
+*************************************************************$
+*** Generated Files Information (GENFIL): KCG- Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\mapping.xml, line 0, character 0
+ ~mapping.xml
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_metrics.txt, line 0, character 0
+ ~kcg_metrics.txt
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotCh.c, line 0, character 0
+ ~ModelBasedDesignOfRobotCh.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\WallClock_City.c, line 0, character 0
+ ~WallClock_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ScoringA_City.c, line 0, character 0
+ ~ScoringA_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\count_down_digital_int32.c, line 0, character 0
+ ~count_down_digital_int32.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RisingEdge_digital.c, line 0, character 0
+ ~RisingEdge_digital.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ScoringB_City.c, line 0, character 0
+ ~ScoringB_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Variation_Utilities.c, line 0, character 0
+ ~Variation_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\UpTime_Utilities.c, line 0, character 0
+ ~UpTime_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\readIti_Robot.dc, line 0, character 0
+ ~readIti_Robot.dc
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\SmartCityControl_City.c, line 0, character 0
+ ~SmartCityControl_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AllObstacles_City.c, line 0, character 0
+ ~AllObstacles_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\readObstacles_City.dc, line 0, character 0
+ ~readObstacles_City.dc
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneObstacle_City.c, line 0, character 0
+ ~OneObstacle_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TrafficLights_City.c, line 0, character 0
+ ~TrafficLights_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneTL_City.c, line 0, character 0
+ ~OneTL_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RobotSensors_City.c, line 0, character 0
+ ~RobotSensors_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TraficLightsDetection_City.c, line 0, character 0
+ ~TraficLightsDetection_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EncodeColor_Utilities.c, line 0, character 0
+ ~EncodeColor_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ObstaclesDetection_City.c, line 0, character 0
+ ~ObstaclesDetection_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneObstacleDet_City.c, line 0, character 0
+ ~OneObstacleDet_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\GroundColorDetection_City.c, line 0, character 0
+ ~GroundColorDetection_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AgregateSensors_City.c, line 0, character 0
+ ~AgregateSensors_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EventDetection_City.c, line 0, character 0
+ ~EventDetection_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\WrongDir_City.c, line 0, character 0
+ ~WrongDir_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Light_City.c, line 0, character 0
+ ~Light_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Speed_City.c, line 0, character 0
+ ~Speed_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Exit_City.c, line 0, character 0
+ ~Exit_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ExitAux_City.c, line 0, character 0
+ ~ExitAux_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\MapADT_City.dc, line 0, character 0
+ ~MapADT_City.dc
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Collision_City.c, line 0, character 0
+ ~Collision_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\CollisionAux_City.c, line 0, character 0
+ ~CollisionAux_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AngleDist_Utilities.c, line 0, character 0
+ ~AngleDist_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\HypotR_mathext_float64.c, line 0, character 0
+ ~HypotR_mathext_float64.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AgregateEvents_City.c, line 0, character 0
+ ~AgregateEvents_City.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\IndividualRobotControl_Robot.c, line 0, character 0
+ ~IndividualRobotControl_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\PhysicalModel_Robot.c, line 0, character 0
+ ~PhysicalModel_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Bound_Utilities.c, line 0, character 0
+ ~Bound_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Normalize_Utilities.c, line 0, character 0
+ ~Normalize_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RoundFloor_math_float64.c, line 0, character 0
+ ~RoundFloor_math_float64.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\CarGeometry_Robot.c, line 0, character 0
+ ~CarGeometry_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\vec2pos_Utilities.c, line 0, character 0
+ ~vec2pos_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\pos2vec_Utilities.c, line 0, character 0
+ ~pos2vec_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\VectAdd_vect_float64_2.c, line 0, character 0
+ ~VectAdd_vect_float64_2.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\MatVectProd_vect_float64_2_2.c, line 0, character 0
+ ~MatVectProd_vect_float64_2_2.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RotMatrix_Utilities.c, line 0, character 0
+ ~RotMatrix_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Driver_Robot.c, line 0, character 0
+ ~Driver_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\actionArrayOnWheels_Robot.c, line 0, character 0
+ ~actionArrayOnWheels_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\instrPlus_Robot.c, line 0, character 0
+ ~instrPlus_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\addOne_Robot.c, line 0, character 0
+ ~addOne_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\undressSensorTy_Robot.c, line 0, character 0
+ ~undressSensorTy_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\actionOnWheels_Robot.c, line 0, character 0
+ ~actionOnWheels_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TurnControlleur_Robot.c, line 0, character 0
+ ~TurnControlleur_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\automatonGoPlus_Robot.c, line 0, character 0
+ ~automatonGoPlus_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ComputeWheels_Robot.c, line 0, character 0
+ ~ComputeWheels_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\PIDControler_Robot.c, line 0, character 0
+ ~PIDControler_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\isRed_Robot.c, line 0, character 0
+ ~isRed_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\isGreen_Robot.c, line 0, character 0
+ ~isGreen_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Integrator_Utilities.c, line 0, character 0
+ ~Integrator_Utilities.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\undressItElem_Robot.c, line 0, character 0
+ ~undressItElem_Robot.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotCh.h, line 0, character 0
+ ~ModelBasedDesignOfRobotCh.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\WallClock_City.h, line 0, character 0
+ ~WallClock_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ScoringA_City.h, line 0, character 0
+ ~ScoringA_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\count_down_digital_int32.h, line 0, character 0
+ ~count_down_digital_int32.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RisingEdge_digital.h, line 0, character 0
+ ~RisingEdge_digital.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ScoringB_City.h, line 0, character 0
+ ~ScoringB_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Variation_Utilities.h, line 0, character 0
+ ~Variation_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\UpTime_Utilities.h, line 0, character 0
+ ~UpTime_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\readIti_Robot.dh, line 0, character 0
+ ~readIti_Robot.dh
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\SmartCityControl_City.h, line 0, character 0
+ ~SmartCityControl_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AllObstacles_City.h, line 0, character 0
+ ~AllObstacles_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\readObstacles_City.dh, line 0, character 0
+ ~readObstacles_City.dh
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneObstacle_City.h, line 0, character 0
+ ~OneObstacle_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TrafficLights_City.h, line 0, character 0
+ ~TrafficLights_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneTL_City.h, line 0, character 0
+ ~OneTL_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RobotSensors_City.h, line 0, character 0
+ ~RobotSensors_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TraficLightsDetection_City.h, line 0, character 0
+ ~TraficLightsDetection_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EncodeColor_Utilities.h, line 0, character 0
+ ~EncodeColor_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ObstaclesDetection_City.h, line 0, character 0
+ ~ObstaclesDetection_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\OneObstacleDet_City.h, line 0, character 0
+ ~OneObstacleDet_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\GroundColorDetection_City.h, line 0, character 0
+ ~GroundColorDetection_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AgregateSensors_City.h, line 0, character 0
+ ~AgregateSensors_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EventDetection_City.h, line 0, character 0
+ ~EventDetection_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\WrongDir_City.h, line 0, character 0
+ ~WrongDir_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Light_City.h, line 0, character 0
+ ~Light_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Speed_City.h, line 0, character 0
+ ~Speed_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Exit_City.h, line 0, character 0
+ ~Exit_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ExitAux_City.h, line 0, character 0
+ ~ExitAux_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\MapADT_City.dh, line 0, character 0
+ ~MapADT_City.dh
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Collision_City.h, line 0, character 0
+ ~Collision_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\CollisionAux_City.h, line 0, character 0
+ ~CollisionAux_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AngleDist_Utilities.h, line 0, character 0
+ ~AngleDist_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\HypotR_mathext_float64.h, line 0, character 0
+ ~HypotR_mathext_float64.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\AgregateEvents_City.h, line 0, character 0
+ ~AgregateEvents_City.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\IndividualRobotControl_Robot.h, line 0, character 0
+ ~IndividualRobotControl_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\PhysicalModel_Robot.h, line 0, character 0
+ ~PhysicalModel_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Bound_Utilities.h, line 0, character 0
+ ~Bound_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Normalize_Utilities.h, line 0, character 0
+ ~Normalize_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RoundFloor_math_float64.h, line 0, character 0
+ ~RoundFloor_math_float64.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\CarGeometry_Robot.h, line 0, character 0
+ ~CarGeometry_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\vec2pos_Utilities.h, line 0, character 0
+ ~vec2pos_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\pos2vec_Utilities.h, line 0, character 0
+ ~pos2vec_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\VectAdd_vect_float64_2.h, line 0, character 0
+ ~VectAdd_vect_float64_2.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\MatVectProd_vect_float64_2_2.h, line 0, character 0
+ ~MatVectProd_vect_float64_2_2.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\RotMatrix_Utilities.h, line 0, character 0
+ ~RotMatrix_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Driver_Robot.h, line 0, character 0
+ ~Driver_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\actionArrayOnWheels_Robot.h, line 0, character 0
+ ~actionArrayOnWheels_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\instrPlus_Robot.h, line 0, character 0
+ ~instrPlus_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\addOne_Robot.h, line 0, character 0
+ ~addOne_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\undressSensorTy_Robot.h, line 0, character 0
+ ~undressSensorTy_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\actionOnWheels_Robot.h, line 0, character 0
+ ~actionOnWheels_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\TurnControlleur_Robot.h, line 0, character 0
+ ~TurnControlleur_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\automatonGoPlus_Robot.h, line 0, character 0
+ ~automatonGoPlus_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ComputeWheels_Robot.h, line 0, character 0
+ ~ComputeWheels_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\PIDControler_Robot.h, line 0, character 0
+ ~PIDControler_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\isRed_Robot.h, line 0, character 0
+ ~isRed_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\isGreen_Robot.h, line 0, character 0
+ ~isGreen_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Integrator_Utilities.h, line 0, character 0
+ ~Integrator_Utilities.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\undressItElem_Robot.h, line 0, character 0
+ ~undressItElem_Robot.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_types.h, line 0, character 0
+ ~kcg_types.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_consts.h, line 0, character 0
+ ~kcg_consts.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_sensors.h, line 0, character 0
+ ~kcg_sensors.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_imported_functions.h, line 0, character 0
+ ~kcg_imported_functions.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_init.h, line 0, character 0
+ ~kcg_init.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_types.c, line 0, character 0
+ ~kcg_types.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_consts.c, line 0, character 0
+ ~kcg_consts.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_xml_filter_out.scade, line 0, character 0
+ ~kcg_xml_filter_out.scade
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\config.txt, line 0, character 0
+ ~config.txt
+*** Generated Files Information (GENFIL): Code Generator Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\user_macros.h, line 0, character 0
+ ~user_macros.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\kcg_imported_types.h, line 0, character 0
+ ~kcg_imported_types.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\sc2c.log, line 0, character 0
+ ~sc2c.log
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\sc2c_integration_files.txt, line 0, character 0
+ ~sc2c_integration_files.txt
+*** Generated Files Information (GENFIL): Simulator Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotCh_cosim.c, line 0, character 0
+ ~ModelBasedDesignOfRobotCh_cosim.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_interface.h, line 0, character 0
+ ~EiDD_Challenge_SW_interface.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_interface.c, line 0, character 0
+ ~EiDD_Challenge_SW_interface.c
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotCh_dll.c, line 0, character 0
+ ~ModelBasedDesignOfRobotCh_dll.c
+*** Generated Files Information (GENFIL): Type Utils Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_type.h, line 0, character 0
+ ~EiDD_Challenge_SW_type.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_type.c, line 0, character 0
+ ~EiDD_Challenge_SW_type.c
+*** Generated Files Information (GENFIL): Mapping Utils Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_mapping.h, line 0, character 0
+ ~EiDD_Challenge_SW_mapping.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\EiDD_Challenge_SW_mapping.c, line 0, character 0
+ ~EiDD_Challenge_SW_mapping.c
+*** Generated Files Information (GENFIL): Graphical Panels Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\SDY1_specification.h, line 0, character 0
+ ~C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/SDY1_specification.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\SDY1_specification_control_panel.h, line 0, character 0
+ ~C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/SDY1_specification_control_panel.h
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\SDY1_specification.dll, line 0, character 0
+ ~C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/SDY1_specification.dll
+*** Generated Files Information (GENFIL): Build Generated files
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\Makefile, line 0, character 0
+ ~Makefile
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotChallenge.dll, line 0, character 0
+ ~ModelBasedDesignOfRobotChallenge.dll
+  at file C:\Users\benja\Desktop\ELKRIEFF_UZENAT_challenge\SyncContestCompetitors\ModelBasedDesignOfRobotChallenge_KCG66\ModelBasedDesignOfRobotChallenge.exe, line 0, character 0
+ ~ModelBasedDesignOfRobotChallenge.exe
+$**************  SCADETOC Version R17.2 (build i10) **************
+** Generation date: 2017-01-22T21:38:12
+** sc2c.log
+*************************************************************$

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Operator xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3" kind="node" external="imported" name="MapADT">
+	<inputs>
+		<Variable name="RobotPos">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="positionTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8B8Ok9HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+		<Variable name="id">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="int32"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/4f0a/684D/810/57e92aeb201b" hidden="true"/>
+			</pragmas>
+		</Variable>
+	</inputs>
+	<outputs>
+		<Variable name="MapData">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="mapDataTy"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="_h8B8O09HEeaSZYTsW8LJgQ"/>
+			</pragmas>
+		</Variable>
+		<Variable name="ParamsTL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="paramTLArr"/>
+					</type>
+				</NamedType>
+			</type>
+			<pragmas>
+				<ed:Variable oid="!ed/5102/6E6F/1AB4/57c9808e1a57"/>
+			</pragmas>
+		</Variable>
+	</outputs>
+	<pragmas>
+		<ed:Operator oid="_h8B8PE9HEeaSZYTsW8LJgQ" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+			<comment>imported operator (programmed in C) </comment>
+			<comment>- reads configuratoin file. </comment>
+			<comment>- gives map data for a given robot phase</comment>
+			<comment>- gives information on traffic lights.</comment>
+		</ed:Operator>
+	</pragmas>
+</Operator>

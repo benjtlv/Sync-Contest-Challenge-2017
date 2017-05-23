@@ -1,0 +1,44 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/config.txt
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+#ifndef _MapADT_City_H_
+#define _MapADT_City_H_
+
+#include "kcg_types.h"
+
+/* =====================  no input structure  ====================== */
+
+/* =====================  no output structure  ====================== */
+
+/* ========================  context type  ========================= */
+typedef struct {
+  /* ---------------------------  outputs  --------------------------- */
+  mapDataTy_City /* MapData/ */ MapData;
+  paramTLArr_City /* ParamsTL/ */ ParamsTL;
+  /* -------------  insert eventual inits and memories  -------------- */
+} outC_MapADT_City;
+
+/* ===========  node initialization and cycle functions  =========== */
+/* City::MapADT/ */
+extern void MapADT_City(
+  /* RobotPos/ */
+  positionTy *RobotPos,
+  /* id/ */
+  kcg_int32 id,
+  outC_MapADT_City *outC);
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+extern void MapADT_reset_City(outC_MapADT_City *outC);
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+extern void MapADT_init_City(outC_MapADT_City *outC);
+
+
+
+#endif /* _MapADT_City_H_ */
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** MapADT_City.dh
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+

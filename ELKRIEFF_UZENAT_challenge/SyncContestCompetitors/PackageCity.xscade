@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="City">
+			<declarations>
+				<Type name="mapDataTy">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="color">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="colorTy"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/462e/639A/19DC/57ad89214f7a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>road color</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="onRoad">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4638/639A/19DC/57ad89523941" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>is it on road?</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="maxSpeed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4641/639A/19DC/57ad89b9153a" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>maximal allowed speed</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="TLnumber">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4bfe/2E0D/1270/57c036945327" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>which traffic light is visible?</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="TLrequired">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="bool"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4c0b/2E0D/1270/57c036b76327" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>should we stop when this light is red?</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="dirx">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4fa5/7F39/A1C/57c81e9c58a2" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>directing vector absciss</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="diry">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/4fb3/7F39/A1C/57c81eaa774f" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>directing vector ordinate</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/462d/639A/19DC/57ad88f3410e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>information on one point on the map</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="paramTLTy">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="pos">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="positionTy"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5030/6E6F/1AB4/57c97b237809" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>its positions</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="tGreen">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/503b/6E6F/1AB4/57c97b4f7a6b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>time on green (in seconds)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="tAmber">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/503c/6E6F/1AB4/57c97b672eb" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>time on amber</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="tRed">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/503d/6E6F/1AB4/57c97b704592" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>time on red</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="tPhase">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="int32"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/503e/6E6F/1AB4/57c97b7f7c17" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>initial phase (in seconds)</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5014/6E6F/1AB4/57c97a756832" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>parameters of one traffic light</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="paramTLArr">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="paramTLTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="TLNUMBER"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/5015/6E6F/1AB4/57c97aa57069" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>parameters of all traffic lights</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="paramObstTy">
+					<definition>
+						<Struct>
+							<fields>
+								<Field name="pos">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="positionTy"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/508b/2034/1A8C/57f40346584e" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>its position</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="since">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5095/2034/1A8C/57f403772778" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>start time</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+								<Field name="till">
+									<type>
+										<NamedType>
+											<type>
+												<TypeRef name="float64"/>
+											</type>
+										</NamedType>
+									</type>
+									<pragmas>
+										<ed:Field oid="!ed/5096/2034/1A8C/57f403833109" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+											<comment>end time</comment>
+										</ed:Field>
+									</pragmas>
+								</Field>
+							</fields>
+						</Struct>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/508a/2034/1A8C/57f4032f1c38" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>parameters of one obstacle</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Type name="paramObstArr">
+					<definition>
+						<Table>
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="paramObstTy"/>
+									</type>
+								</NamedType>
+							</type>
+							<size>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="OBSTNUM"/>
+									</path>
+								</IdExpression>
+							</size>
+						</Table>
+					</definition>
+					<pragmas>
+						<ed:Type oid="!ed/50d0/2034/1A8C/57f404b131a7" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+							<comment>parameters of all the obstacles</comment>
+						</ed:Type>
+					</pragmas>
+				</Type>
+				<Operator name="TraficLightsDetection" href="TraficLightsDetection.xscade"/>
+				<Operator name="TrafficLights" href="TrafficLights.xscade"/>
+				<Operator name="Speed" href="Speed.xscade"/>
+				<Operator name="SmartCityControl" href="SmartCityControl.xscade"/>
+				<Operator name="RobotSensors" href="RobotSensors.xscade"/>
+				<Operator name="ObstaclesDetection" href="ObstaclesDetection.xscade"/>
+				<Operator name="MapADT" href="MapADT.xscade"/>
+				<Operator name="Light" href="Light.xscade"/>
+				<Operator name="GroundColorDetection" href="GroundColorDetection.xscade"/>
+				<Operator name="ExitAux" href="ExitAux.xscade"/>
+				<Operator name="Exit" href="Exit.xscade"/>
+				<Operator name="EventDetection" href="EventDetection.xscade"/>
+				<Operator name="Collision" href="Collision.xscade"/>
+				<Operator name="AgregateSensors" href="AgregateSensors.xscade"/>
+				<Operator name="AgregateEvents" href="AgregateEvents.xscade"/>
+				<Operator name="OneTL" href="OneTL.xscade"/>
+				<Operator name="ScoringA" href="ScoringA.xscade"/>
+				<Operator name="WrongDir" href="WrongDir.xscade"/>
+				<Operator name="ScoringB" href="ScoringB.xscade"/>
+				<Operator name="OneObstacleDet" href="OneObstacleDet.xscade"/>
+				<Operator name="WallClock" href="WallClock.xscade"/>
+				<Operator name="OneObstacle" href="OneObstacle.xscade"/>
+				<Operator name="AllObstacles" href="AllObstacles.xscade"/>
+				<Operator name="CollisionAux" href="CollisionAux.xscade"/>
+				<Operator name="readObstacles" href="readObstacles.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/5a93/455B/1268/57bf46521cb5" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a94/455B/1268/57bf46524ac5" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a95/455B/1268/57bf46521fec" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5a96/455B/1268/57bf46525d24" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

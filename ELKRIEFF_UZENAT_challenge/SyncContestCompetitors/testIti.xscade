@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="node" name="testIti">
+			<inputs>
+				<Variable name="id">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4f1c/684D/810/57e92b955dd"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="iti">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Robot::itiElemArr"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4fc3/58B/1508/57d7c1a7ce0"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<locals>
+				<Variable name="_L1">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="Robot::itiElemArr"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4fce/58B/1508/57d7c1cb2c03"/>
+					</pragmas>
+				</Variable>
+				<Variable name="_L2">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/4f26/684D/810/57e92bb11e73"/>
+					</pragmas>
+				</Variable>
+			</locals>
+			<data>
+				<!-- _L1 = Robot::readIti(_L2); -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L1"/>
+					</lefts>
+					<right>
+						<!-- Robot::readIti(_L2) -->
+						<CallExpression>
+							<operator>
+								<OpCall name="1">
+									<operator>
+										<OperatorRef name="Robot::readIti"/>
+									</operator>
+								</OpCall>
+							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<ConstVarRef name="_L2"/>
+									</path>
+								</IdExpression>
+							</callParameters>
+						</CallExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4fcd/58B/1508/57d7c1cb1a0b"/>
+					</pragmas>
+				</Equation>
+				<!-- iti = _L1; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="iti"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="_L1"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4fd3/58B/1508/57d7c1d031c6"/>
+					</pragmas>
+				</Equation>
+				<!-- _L2 = id; -->
+				<Equation>
+					<lefts>
+						<VariableRef name="_L2"/>
+					</lefts>
+					<right>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="id"/>
+							</path>
+						</IdExpression>
+					</right>
+					<pragmas>
+						<ed:Equation oid="!ed/4f25/684D/810/57e92bb1789d"/>
+					</pragmas>
+				</Equation>
+			</data>
+			<pragmas>
+				<ed:Operator oid="!ed/4fa3/58B/1508/57d7c09e1320" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>A wrapper to test readIti imported node</comment>
+					<diagrams>
+						<NetDiagram name="diagram_testIti_1" landscape="true" format="A4 (210 297)" oid="!ed/4fa4/58B/1508/57d7c09e394a">
+							<presentationElements>
+								<EquationGE presentable="!ed/4fcd/58B/1508/57d7c1cb1a0b">
+									<position>
+										<Point x="5345" y="3440"/>
+									</position>
+									<size>
+										<Size width="1772" height="1402"/>
+									</size>
+								</EquationGE>
+								<EquationGE presentable="!ed/4fd3/58B/1508/57d7c1d031c6">
+									<position>
+										<Point x="10927" y="3889"/>
+									</position>
+									<size>
+										<Size width="317" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4fcd/58B/1508/57d7c1cb1a0b" dstEquation="!ed/4fd3/58B/1508/57d7c1d031c6">
+									<positions>
+										<Point x="7117" y="4154"/>
+										<Point x="8969" y="4154"/>
+										<Point x="8969" y="4154"/>
+										<Point x="10980" y="4154"/>
+									</positions>
+								</Edge>
+								<EquationGE presentable="!ed/4f25/684D/810/57e92bb1789d">
+									<position>
+										<Point x="3836" y="5794"/>
+									</position>
+									<size>
+										<Size width="265" height="503"/>
+									</size>
+								</EquationGE>
+								<Edge leftVarIndex="1" rightExprIndex="1" srcEquation="!ed/4f25/684D/810/57e92bb1789d" dstEquation="!ed/4fcd/58B/1508/57d7c1cb1a0b">
+									<positions>
+										<Point x="4101" y="6059"/>
+										<Point x="6244" y="6059"/>
+										<Point x="6244" y="4842"/>
+									</positions>
+								</Edge>
+							</presentationElements>
+						</NetDiagram>
+					</diagrams>
+				</ed:Operator>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>

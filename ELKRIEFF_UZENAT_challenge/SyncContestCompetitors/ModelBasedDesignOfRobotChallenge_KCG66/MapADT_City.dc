@@ -1,0 +1,43 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/config.txt
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+
+#include "kcg_consts.h"
+#include "kcg_sensors.h"
+#include "MapADT_City.h"
+
+/* City::MapADT/ */
+void MapADT_City(
+  /* RobotPos/ */
+  positionTy *RobotPos,
+  /* id/ */
+  kcg_int32 id,
+  outC_MapADT_City *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+void MapADT_init_City(outC_MapADT_City *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+void MapADT_reset_City(outC_MapADT_City *outC)
+{
+  /* The body of this function must be provided */
+
+}
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+
+
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** MapADT_City.dc
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+

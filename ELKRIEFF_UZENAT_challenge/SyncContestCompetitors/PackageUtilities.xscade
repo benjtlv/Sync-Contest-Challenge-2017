@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Package name="Utilities">
+			<declarations>
+				<Operator name="Normalize" href="Normalize.xscade"/>
+				<Operator name="Integrator" href="Integrator.xscade"/>
+				<Operator name="DecodeColor" href="DecodeColor.xscade"/>
+				<Operator name="CompareColors" href="CompareColors.xscade"/>
+				<Operator name="EncodeColor" href="EncodeColor.xscade"/>
+				<Operator name="Bound" href="Bound.xscade"/>
+				<Operator name="Variation" href="Variation.xscade"/>
+				<Operator name="UpTime" href="UpTime.xscade"/>
+				<Operator name="RotMatrix" href="RotMatrix.xscade"/>
+				<Operator name="pos2vec" href="pos2vec.xscade"/>
+				<Operator name="vec2pos" href="vec2pos.xscade"/>
+				<Operator name="AngleDist" href="AngleDist.xscade"/>
+			</declarations>
+			<pragmas>
+				<ed:Package oid="!ed/5caf/455B/1268/57bf469c54ad" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<diagrams>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5cb0/455B/1268/57bf469c46ec" blockKind="constants"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5cb1/455B/1268/57bf469c4b07" blockKind="types"/>
+						<TreeDiagram landscape="false" format="A4 (210 297)" oid="!ed/5cb2/455B/1268/57bf469c59e0" blockKind="sensors"/>
+					</diagrams>
+				</ed:Package>
+			</pragmas>
+		</Package>
+	</declarations>
+</File>

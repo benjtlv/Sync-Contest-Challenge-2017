@@ -1,0 +1,38 @@
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge_KCG66/config.txt
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+
+#include "kcg_consts.h"
+#include "kcg_sensors.h"
+#include "readIti_Robot.h"
+
+/* Robot::readIti/ */
+void readIti_Robot(/* id/ */ kcg_int32 id, outC_readIti_Robot *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+void readIti_init_Robot(outC_readIti_Robot *outC)
+{
+  /* The body of this function must be provided */
+
+}
+
+
+#ifndef KCG_NO_EXTERN_CALL_TO_RESET
+void readIti_reset_Robot(outC_readIti_Robot *outC)
+{
+  /* The body of this function must be provided */
+
+}
+#endif /* KCG_NO_EXTERN_CALL_TO_RESET */
+
+
+
+/* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** readIti_Robot.dc
+** Generation date: 2017-01-22T21:37:35
+*************************************************************$ */
+

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/lut.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libpwlinear/pwlinear.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmathext/mathext.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/math.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libmath/vect.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/filters.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/liblinear/linear.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/TruthTables.xscade"/>
+    <Option name="input_file" value="C:/Program Files (x86)/Esterel Technologies/SCADE R17.2/SCADE/libraries/SC65/libdigital/digital.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testIti.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageUtilities.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageCity.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/PackageRobot.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/ModelBasedDesignOfRobotChallenge.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testMap.xscade"/>
+    <Option name="input_file" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/EiDD_Challenge_SW.xscade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="#off#"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="expall" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="mathext::Inv"/>
+    <Option name="exp" value="mathext::Square"/>
+    <Option name="exp" value="mathext::HypotR"/>
+    <Option name="target_dir" value="C:/Users/benja/Desktop/challenge/SyncContestCompetitors/Robot__dev_KCG66"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="Robot::dev"/>
+    <Option name="auth" value="#off#"/>
+    <NamedType refType="colorTy" scadeName="colorTy" targetName="colorTy"/>
+    <NamedType refType="eventTy" scadeName="eventTy" targetName="eventTy"/>
+    <EnumType scadeName="interTy" targetName="interTy">
+      <EnumVal scadeName="waitVal" targetName="waitVal"/>
+      <EnumVal scadeName="haltVal" targetName="haltVal"/>
+      <EnumVal scadeName="okVal" targetName="okVal"/>
+    </EnumType>
+    <NamedType refType="phaseTy" scadeName="phaseTy" targetName="phaseTy"/>
+    <NamedType refType="positionTy" scadeName="positionTy" targetName="positionTy"/>
+    <NamedType refType="sensorsTy" scadeName="sensorsTy" targetName="sensorsTy"/>
+    <EnumType scadeName="statusTy" targetName="statusTy">
+      <EnumVal scadeName="Preparing" targetName="Preparing"/>
+      <EnumVal scadeName="Running" targetName="Running"/>
+      <EnumVal scadeName="Arrived" targetName="Arrived"/>
+      <EnumVal scadeName="Stopped" targetName="Stopped"/>
+    </EnumType>
+    <Constant macroDef="true" scadeName="ITISIZE" scadeType="int32" targetName="ITISIZE" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="TIMESTEP" scadeType="float64" targetName="TIMESTEP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="D" scadeType="float64" targetName="D" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="B" scadeType="float64" targetName="B" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="DELTA" scadeType="float64" targetName="DELTA" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="PI" scadeType="float64" targetName="PI" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SA" scadeType="float64" targetName="SA" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SB" scadeType="float64" targetName="SB" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SC" scadeType="float64" targetName="SC" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="SD" scadeType="float64" targetName="SD" targetType="kcg_float64"/>
+    <Constant scadeName="RED" scadeType="colorTy" targetName="RED" targetType="colorTy"/>
+    <Constant scadeName="GREEN" scadeType="colorTy" targetName="GREEN" targetType="colorTy"/>
+    <Constant scadeName="BLUE" scadeType="colorTy" targetName="BLUE" targetType="colorTy"/>
+    <Constant scadeName="YELLOW" scadeType="colorTy" targetName="YELLOW" targetType="colorTy"/>
+    <Constant scadeName="MAGENTA" scadeType="colorTy" targetName="MAGENTA" targetType="colorTy"/>
+    <Constant scadeName="CYAN" scadeType="colorTy" targetName="CYAN" targetType="colorTy"/>
+    <Constant scadeName="GRAY" scadeType="colorTy" targetName="GRAY" targetType="colorTy"/>
+    <NamedType refType="trafLTy" scadeName="trafLTy" targetName="trafLTy"/>
+    <Constant macroDef="true" scadeName="TLNUMBER" scadeType="int32" targetName="TLNUMBER" targetType="kcg_int32"/>
+    <NamedType refType="sigTy" scadeName="sigTy" targetName="sigTy"/>
+    <Constant macroDef="true" scadeName="MAXSPEED" scadeType="float64" targetName="MAXSPEED" targetType="kcg_float64"/>
+    <EnumType scadeName="colorTyQ" targetName="colorTyQ">
+      <EnumVal scadeName="redQ" targetName="redQ"/>
+      <EnumVal scadeName="greenQ" targetName="greenQ"/>
+      <EnumVal scadeName="amberQ" targetName="amberQ"/>
+      <EnumVal scadeName="otherQ" targetName="otherQ"/>
+    </EnumType>
+    <Constant scadeName="AMBER" scadeType="colorTy" targetName="AMBER" targetType="colorTy"/>
+    <Constant macroDef="true" scadeName="MAPNUM" scadeType="int32" targetName="MAPNUM" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="MAXWHEEL" scadeType="float64" targetName="MAXWHEEL" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="OBSTNUM" scadeType="int32" targetName="OBSTNUM" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="SONARFAR" scadeType="int32" targetName="SONARFAR" targetType="kcg_int32"/>
+    <NamedType refType="obstTy" scadeName="obstTy" targetName="obstTy"/>
+    <NamedType refType="trafLArr" scadeName="trafLArr" targetName="trafLArr"/>
+    <NamedType refType="obstArr" scadeName="obstArr" targetName="obstArr"/>
+    <Constant macroDef="true" scadeName="ROBST" scadeType="float64" targetName="ROBST" targetType="kcg_float64"/>
+    <Constant scadeName="DIR_INPUTS" scadeType="char^(7)" targetName="DIR_INPUTS" targetType="array_char_7"/>
+    <Constant scadeName="STOP" scadeType="Robot::itiElement" targetName="STOP" targetType="itiElement_Robot"/>
+    <Constant macroDef="true" scadeName="KP" scadeType="float64" targetName="KP" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="KD" scadeType="float64" targetName="KD" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="KI" scadeType="float64" targetName="KI" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C1" scadeType="float64" targetName="C1" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C2" scadeType="float64" targetName="C2" targetType="kcg_float64"/>
+    <Constant macroDef="true" scadeName="C3" scadeType="float64" targetName="C3" targetType="kcg_float64"/>
+    <Package scadeName="Robot">
+      <NamedType refType="wheelsTy_Robot" scadeName="wheelsTy" targetName="wheelsTy_Robot"/>
+      <NamedType refType="itiElement_Robot" scadeName="itiElement" targetName="itiElement_Robot"/>
+      <NamedType refType="itiElemArr_Robot" scadeName="itiElemArr" targetName="itiElemArr_Robot"/>
+      <EnumType scadeName="actionTy" targetName="actionTy_Robot">
+        <EnumVal scadeName="go" targetName="go_Robot"/>
+        <EnumVal scadeName="turn" targetName="turn_Robot"/>
+        <EnumVal scadeName="stop" targetName="stop_Robot"/>
+      </EnumType>
+      <RootNode headerFile="dev_Robot.h" scadeName="dev" targetCycleFct="dev_Robot" targetInitFct="dev_reset_Robot" targetInitializationFct="dev_init_Robot">
+        <Input inCtx="true" scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+        <Output inCtx="true" scadeName="d" scadeType="float64" targetName="d" targetType="kcg_float64"/>
+        <OutCtxType targetName="outC_dev_Robot"/>
+        <InCtxType targetName="inC_dev_Robot"/>
+      </RootNode>
+    </Package>
+    <Package scadeName="City">
+      <NamedType refType="mapDataTy_City" scadeName="mapDataTy" targetName="mapDataTy_City"/>
+      <NamedType refType="paramTLTy_City" scadeName="paramTLTy" targetName="paramTLTy_City"/>
+      <NamedType refType="paramTLArr_City" scadeName="paramTLArr" targetName="paramTLArr_City"/>
+      <NamedType refType="paramObstTy_City" scadeName="paramObstTy" targetName="paramObstTy_City"/>
+      <NamedType refType="paramObstArr_City" scadeName="paramObstArr" targetName="paramObstArr_City"/>
+    </Package>
+    <Package scadeName="Utilities"/>
+    <Package scadeName="digital"/>
+    <Package scadeName="truthtables">
+      <EnumType scadeName="TruthTableValues" targetName="TruthTableValues_truthtables">
+        <EnumVal scadeName="T" targetName="T_truthtables"/>
+        <EnumVal scadeName="F" targetName="F_truthtables"/>
+        <EnumVal scadeName="X" targetName="X_truthtables"/>
+      </EnumType>
+    </Package>
+    <Package scadeName="linear"/>
+    <Package scadeName="filters"/>
+    <Package scadeName="vect"/>
+    <Package scadeName="math"/>
+    <Package scadeName="mathext">
+      <Package scadeName="mathextimpl"/>
+    </Package>
+    <Package scadeName="pwlinear"/>
+    <Package scadeName="lut"/>
+    <ArrayType cellType="paramTLTy_City" size="5" targetCompFct="kcg_comp_paramTLArr_City" targetCopyFct="kcg_copy_paramTLArr_City" targetName="paramTLArr_City"/>
+    <StructType targetCompFct="kcg_comp_paramTLTy_City" targetCopyFct="kcg_copy_paramTLTy_City" targetName="paramTLTy_City">
+      <Field scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+      <Field scadeName="tGreen" scadeType="kcg_int32" targetName="tGreen" targetType="kcg_int32"/>
+      <Field scadeName="tAmber" scadeType="kcg_int32" targetName="tAmber" targetType="kcg_int32"/>
+      <Field scadeName="tRed" scadeType="kcg_int32" targetName="tRed" targetType="kcg_int32"/>
+      <Field scadeName="tPhase" scadeType="kcg_int32" targetName="tPhase" targetType="kcg_int32"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_sensorsTy" targetCopyFct="kcg_copy_sensorsTy" targetName="sensorsTy">
+      <Field scadeName="roadColor" scadeType="colorTy" targetName="roadColor" targetType="colorTy"/>
+      <Field scadeName="frontColor" scadeType="colorTy" targetName="frontColor" targetType="colorTy"/>
+      <Field scadeName="sonar" scadeType="kcg_int32" targetName="sonar" targetType="kcg_int32"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_mapDataTy_City" targetCopyFct="kcg_copy_mapDataTy_City" targetName="mapDataTy_City">
+      <Field scadeName="color" scadeType="colorTy" targetName="color" targetType="colorTy"/>
+      <Field scadeName="onRoad" scadeType="kcg_bool" targetName="onRoad" targetType="kcg_bool"/>
+      <Field scadeName="maxSpeed" scadeType="kcg_int32" targetName="maxSpeed" targetType="kcg_int32"/>
+      <Field scadeName="TLnumber" scadeType="kcg_int32" targetName="TLnumber" targetType="kcg_int32"/>
+      <Field scadeName="TLrequired" scadeType="kcg_bool" targetName="TLrequired" targetType="kcg_bool"/>
+      <Field scadeName="dirx" scadeType="kcg_float64" targetName="dirx" targetType="kcg_float64"/>
+      <Field scadeName="diry" scadeType="kcg_float64" targetName="diry" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_colorTy" targetCopyFct="kcg_copy_colorTy" targetName="colorTy">
+      <Field scadeName="red" scadeType="kcg_uint8" targetName="red" targetType="kcg_uint8"/>
+      <Field scadeName="green" scadeType="kcg_uint8" targetName="green" targetType="kcg_uint8"/>
+      <Field scadeName="blue" scadeType="kcg_uint8" targetName="blue" targetType="kcg_uint8"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_phaseTy" targetCopyFct="kcg_copy_phaseTy" targetName="phaseTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="velocity" scadeType="kcg_float64" targetName="velocity" targetType="kcg_float64"/>
+      <Field scadeName="heading" scadeType="kcg_float64" targetName="heading" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_sigTy" targetCopyFct="kcg_copy_sigTy" targetName="sigTy">
+      <Field scadeName="TLights" scadeType="trafLArr" targetName="TLights" targetType="trafLArr"/>
+      <Field scadeName="obstacles" scadeType="obstArr" targetName="obstacles" targetType="obstArr"/>
+    </StructType>
+    <ArrayType cellType="obstTy" size="10" targetCompFct="kcg_comp_obstArr" targetCopyFct="kcg_copy_obstArr" targetName="obstArr"/>
+    <StructType targetCompFct="kcg_comp_obstTy" targetCopyFct="kcg_copy_obstTy" targetName="obstTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="present" scadeType="kcg_bool" targetName="present" targetType="kcg_bool"/>
+    </StructType>
+    <ArrayType cellType="paramObstTy_City" size="10" targetCompFct="kcg_comp_paramObstArr_City" targetCopyFct="kcg_copy_paramObstArr_City" targetName="paramObstArr_City"/>
+    <StructType targetCompFct="kcg_comp_paramObstTy_City" targetCopyFct="kcg_copy_paramObstTy_City" targetName="paramObstTy_City">
+      <Field scadeName="pos" scadeType="positionTy" targetName="pos" targetType="positionTy"/>
+      <Field scadeName="since" scadeType="kcg_float64" targetName="since" targetType="kcg_float64"/>
+      <Field scadeName="till" scadeType="kcg_float64" targetName="till" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="trafLTy" size="5" targetCompFct="kcg_comp_trafLArr" targetCopyFct="kcg_copy_trafLArr" targetName="trafLArr"/>
+    <StructType targetCompFct="kcg_comp_trafLTy" targetCopyFct="kcg_copy_trafLTy" targetName="trafLTy">
+      <Field scadeName="position" scadeType="positionTy" targetName="position" targetType="positionTy"/>
+      <Field scadeName="light" scadeType="colorTyQ" targetName="light" targetType="colorTyQ"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_positionTy" targetCopyFct="kcg_copy_positionTy" targetName="positionTy">
+      <Field scadeName="x" scadeType="kcg_float64" targetName="x" targetType="kcg_float64"/>
+      <Field scadeName="y" scadeType="kcg_float64" targetName="y" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_wheelsTy_Robot" targetCopyFct="kcg_copy_wheelsTy_Robot" targetName="wheelsTy_Robot">
+      <Field scadeName="left" scadeType="kcg_float64" targetName="left" targetType="kcg_float64"/>
+      <Field scadeName="right" scadeType="kcg_float64" targetName="right" targetType="kcg_float64"/>
+    </StructType>
+    <ArrayType cellType="itiElement_Robot" size="50" targetCompFct="kcg_comp_itiElemArr_Robot" targetCopyFct="kcg_copy_itiElemArr_Robot" targetName="itiElemArr_Robot"/>
+    <StructType targetCompFct="kcg_comp_itiElement_Robot" targetCopyFct="kcg_copy_itiElement_Robot" targetName="itiElement_Robot">
+      <Field scadeName="action" scadeType="actionTy_Robot" targetName="action" targetType="actionTy_Robot"/>
+      <Field scadeName="param" scadeType="kcg_float64" targetName="param" targetType="kcg_float64"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_eventTy" targetCopyFct="kcg_copy_eventTy" targetName="eventTy">
+      <Field scadeName="lightRun" scadeType="kcg_bool" targetName="lightRun" targetType="kcg_bool"/>
+      <Field scadeName="speedExcess" scadeType="kcg_bool" targetName="speedExcess" targetType="kcg_bool"/>
+      <Field scadeName="exitRoad" scadeType="kcg_bool" targetName="exitRoad" targetType="kcg_bool"/>
+      <Field scadeName="collisionEvent" scadeType="kcg_bool" targetName="collisionEvent" targetType="kcg_bool"/>
+      <Field scadeName="dirEvent" scadeType="kcg_bool" targetName="dirEvent" targetType="kcg_bool"/>
+    </StructType>
+    <ArrayType cellType="kcg_char" size="7" targetCompFct="kcg_comp_array_char_7" targetCopyFct="kcg_copy_array_char_7" targetName="array_char_7"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

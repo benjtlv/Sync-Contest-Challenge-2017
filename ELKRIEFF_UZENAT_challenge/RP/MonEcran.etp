@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project id="1" oid_count="85">
+	<props>
+		<Prop id="2" name="@STUDIO:PRODUCT">
+			<value>RAPIDPROTO</value>
+		</Prop>
+		<Prop id="3" name="@RAPIDPROTO:RELEASE">
+			<value>R17</value>
+		</Prop>
+		<Prop id="4" name="@RAPIDPROTO:RATIO">
+			<value>1.0</value>
+			<value>1.0</value>
+		</Prop>
+		<Prop id="5" name="@RAPIDPROTO:DEFAULTCOLORTABLE">
+			<value>Widgets_colors.sct</value>
+		</Prop>
+		<Prop id="6" name="@RAPIDPROTO:DEFAULTLWTABLE">
+			<value>Widgets_line_width.swt</value>
+		</Prop>
+		<Prop id="7" name="@RAPIDPROTO:DEFAULTLSTABLE">
+			<value>Widgets_line_stipple.sst</value>
+		</Prop>
+		<Prop id="8" name="@RAPIDPROTO:TEXTURETABLE">
+			<value>texture_table_1.stt</value>
+			<value>Widgets_textures.stt</value>
+		</Prop>
+		<Prop id="9" name="@RAPIDPROTO:FONTTABLE">
+			<value>Widgets_fonts.sft</value>
+		</Prop>
+		<Prop id="12" name="@RAPIDPROTO:FONTLIBRARY">
+			<value>Fonts.dll</value>
+		</Prop>
+		<Prop id="15" name="@RAPIDPROTO:CONFTARGET">
+			<value>SuiteCosimulation</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="16" name="CONFIGURATIONS">
+			<value>14</value>
+			<value>23</value>
+			<value>31</value>
+			<value>38</value>
+			<value>45</value>
+		</Prop>
+		<Prop id="17" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="18" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="19" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="20" name="@RAPIDPROTO:INTEGRATIONMODE">
+			<value>asynchronous</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="21" name="@RAPIDPROTO:POINTERID">
+			<value>0</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="22" name="@RAPIDPROTO:KEYBOARDID">
+			<value>0</value>
+			<configuration>14</configuration>
+		</Prop>
+		<Prop id="24" name="@RAPIDPROTO:CONFTARGET">
+			<value>Windows</value>
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="25" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="26" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="27" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_Exe</value>
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="28" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="29" name="@RAPIDPROTO:POINTERID">
+			<value>0</value>
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="30" name="@RAPIDPROTO:KEYBOARDID">
+			<value>0</value>
+			<configuration>23</configuration>
+		</Prop>
+		<Prop id="32" name="@RAPIDPROTO:CONFTARGET">
+			<value>Android</value>
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="33" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="34" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="35" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="36" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="37" name="@RAPIDPROTO:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>31</configuration>
+		</Prop>
+		<Prop id="39" name="@RAPIDPROTO:CONFTARGET">
+			<value>iOS</value>
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="40" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="41" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="42" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="43" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="44" name="@RAPIDPROTO:APPORIENTATION">
+			<value>Landscape</value>
+			<configuration>38</configuration>
+		</Prop>
+		<Prop id="46" name="@RAPIDPROTO:CONFTARGET">
+			<value>FMU</value>
+			<configuration>45</configuration>
+		</Prop>
+		<Prop id="47" name="@RAPIDPROTO:CONFSOURCE">
+			<configuration>45</configuration>
+		</Prop>
+		<Prop id="48" name="@RAPIDPROTO:KCGTEMPLATE">
+			<configuration>45</configuration>
+		</Prop>
+		<Prop id="49" name="@RAPIDPROTO:CONFOUTPUT">
+			<value>%ModelName%_%Target%</value>
+			<configuration>45</configuration>
+		</Prop>
+		<Prop id="50" name="@RAPIDPROTO:APPPERIODICITY">
+			<value>33</value>
+			<configuration>45</configuration>
+		</Prop>
+		<Prop id="52" name="REPCONFIGURATIONS">
+			<value>51</value>
+		</Prop>
+		<Prop id="53" name="@SDYREP:CONFSOURCE">
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="54" name="@RAPIDPROTO:@SDYREP:OUTPUT">
+			<value>%ModelName%_Report</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="55" name="@SDYREP:INTERNATIONALIZATION">
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="56" name="@SDYREP:AUTHORS">
+			<value>&lt;authors></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="57" name="@SDYREP:CLASSIFICATION">
+			<value>&lt;document classification></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="58" name="@SDYREP:COMPANYINFO">
+			<value>&lt;company></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="59" name="@SDYREP:DISTLIST">
+			<value>&lt;distribution list></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="60" name="@SDYREP:IMAGEPATH">
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="61" name="@SDYREP:LOGOPATH">
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="62" name="@SDYREP:BANNERPATH">
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="63" name="@SDYREP:SUMMARY">
+			<value>&lt;summary></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="64" name="@SDYREP:DATE">
+			<value>&lt;date></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="65" name="@SDYREP:DESCRIPTION">
+			<value>&lt;description></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="66" name="@SDYREP:INDEX">
+			<value>&lt;index></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="67" name="@SDYREP:ISSUE">
+			<value>&lt;issue number></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="68" name="@SDYREP:REFERENCE">
+			<value>&lt;reference></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="69" name="@SDYREP:REFERENCENB">
+			<value>&lt;reference number></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="70" name="@SDYREP:SUBTITLE">
+			<value>&lt;subtitle></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="71" name="@SDYREP:TITLE">
+			<value>&lt;title></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="72" name="@SDYREP:HEADERLEFT">
+			<value>$(ReferenceNr)
+$(CreatedDate)</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="73" name="@SDYREP:HEADERCENTER">
+			<value>$(IssueNr)</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="74" name="@SDYREP:HEADERRIGHT">
+			<value>$(PageNumbering)</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="75" name="@SDYREP:FOOTERLEFT">
+			<value></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="76" name="@SDYREP:FOOTERCENTER">
+			<value>&lt;Corporate Info></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="77" name="@SDYREP:FOOTERRIGHT">
+			<value></value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="78" name="@SDYREP:SUBMODELS">
+			<value>false</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="79" name="@SDYREP:SYMBOLS">
+			<value>false</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="80" name="@SDYREP:WIDGETSETS">
+			<value>false</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="81" name="@SDYREP:SCREENSHOTS">
+			<value>true</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="82" name="@SDYREP:RESOURCES">
+			<value>$(CONFIG)/default</value>
+			<configuration>51</configuration>
+		</Prop>
+		<Prop id="83" name="@SDYREP:FORMAT">
+			<value>HTML</value>
+			<configuration>51</configuration>
+		</Prop>
+	</props>
+	<roots>
+		<Folder id="10" extensions="sct;swt;sst;sft;stt" name="Resource Files">
+			<elements>
+				<FileRef id="85" persistAs="texture_table_1.stt"/>
+			</elements>
+		</Folder>
+		<Folder id="11" extensions="rgfx;wgfx" name="Model Files">
+			<elements>
+				<FileRef id="84" persistAs="specification.rgfx"/>
+			</elements>
+		</Folder>
+		<FileRef id="13" persistAs="$(RAPID_PROTOTYPER)\Widgets\libWidgets.etp"/>
+	</roots>
+	<configurations>
+		<Configuration id="14" name="Co-simulation"/>
+		<Configuration id="23" name="Windows"/>
+		<Configuration id="31" name="Android"/>
+		<Configuration id="38" name="iOS"/>
+		<Configuration id="45" name="FMU"/>
+		<Configuration id="51" name="Reporter"/>
+	</configurations>
+</Project>

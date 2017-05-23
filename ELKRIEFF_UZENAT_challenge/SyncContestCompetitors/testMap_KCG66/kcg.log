@@ -1,0 +1,13 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config C:/Users/benja/Desktop/challenge/SyncContestCompetitors/testMap_KCG66/config.txt
+** Generation date: 2017-01-14T12:27:24
+*************************************************************$
+*** License Failure (FAIL_22): Missing license
+ Cannot find license for KCG 32-bit 6.6 (build i19)
+No warning was found
+No error was found
+A failure occurred
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg.log
+** Generation date: 2017-01-14T12:27:25
+*************************************************************$
