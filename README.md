@@ -18,3 +18,14 @@ You can see a video of our robot on this link : https://www.facebook.com/univpar
 (facebook is required though, I asked my teacher to retrieve me a link where all the videos may be, but this is the only video I have for the moment)
 
 For the source code : Two folders :
+- ELKRIEFF_UZENAT_challenge : contains all the files for exuting Scade.
+  If ever you have Scade, execute this file : ELKRIEFF_UZENAT_challenge/SyncContestCompetitors/EIDD_Challenge_SW.xscade
+- SyncContest_Robot : This is the most interesting part, and probably the one that is understandle easily, since it is all C code                                       
+  (for the most). In Driver/ folder, you have the C code that was compiled from Scade, this is very messy but we are not supposed
+  to read it, since we generate it from Scade, so if we want to make a modification, we just use scade.
+  The main files are : Driver.oil and Driver_glue.c
+  the first one is used to configure the tasks, since the sonar sensor is slow and has 50 ms frequency, and the color sensor has 
+  10  ms frequency. The Driver_glue.c is used to make the link between the C code of the Driver operator and the embedded system. 
+  This is the file where the NXT Osek API is used to initialize the sensors and give these as inputs for the Driver function. The  
+  driver operator contains two output fields that are just the computed speed of the right and left wheels. We just give these 
+  values to the two motors.
