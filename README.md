@@ -4,7 +4,7 @@ Unlike the autonomous cartographer robot project that I did in my master degree'
 
 All the photos of the competitions are placed in the pictures/ folder.
 
-Initially, I attended a course named "Synchronous programming" which tought us how to use a famous industrial tool named SCADE, used by most of the biggest companies in the world such as airbus, etc...
+Initially, I attended a course named "Synchronous programming" which tought us how to use a famous industrial tool named SCADE, used by most of the biggest companies in the world such as airbus, etc... Then, I participated to the Sync-Contest challenge, a competition sponsorized by the ANSYS (which owns SCADE) and Expectra companies.
 Me and my classmate Eric, were the only group representing the university (the other teams were a team from University of Hamburg, Germany, another representing a French engineer school, ENSTA, and the two other teams were two teams from EEID (Engineer school of Paris Diderot. they do not represent the university though).
 
 The project was divided in two part :
